@@ -1,0 +1,562 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class APICommand {
+  + APICommand(): 
+  + getCmdIdentifier(): Class<APICommand>
+  + validate(): ValidationResponse
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + createResponse(): APICommandResponse
+  + equals(Object): boolean
+}
+class APICommandResponse {
+  + APICommandResponse(Status, String): 
+  + APICommandResponse(): 
+  - status: Status
+  - textualResponse: String
+  + setTextualResponse(String): void
+  + isSuccess(): boolean
+  + hashCode(): int
+  + equals(Object): boolean
+  + isResolved(): boolean
+  + clientError(Exception): APICommandResponse
+  + serverError(String): APICommandResponse
+  + notFound(): APICommandResponse
+  + setStatus(Status): void
+  + toString(): String
+  + getStatus(): Status
+  + getTextualResponse(): String
+  # canEqual(Object): boolean
+  + serverError(Exception): APICommandResponse
+  + clientError(String): APICommandResponse
+  + ok(): APICommandResponse
+}
+class AddCommand {
+  + AddCommand(): 
+  + AddCommand(Worker): 
+  + element: Worker
+  + createResponse(): AddCommandResponse
+  + getType(): String
+  + getElement(): Worker
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + getInlineArgs(): Field<?>[]
+  + toString(): String
+  + setElement(Worker): void
+  + validate(): ValidationResponse
+  + equals(Object): boolean
+}
+class AddCommandResponse {
+  + AddCommandResponse(): 
+  - id: Integer
+  + getId(): Integer
+  + getUserMessage(): String
+  + setId(Integer): void
+}
+class AddIfMaxCommand {
+  + AddIfMaxCommand(): 
+  + equals(Object): boolean
+  + toString(): String
+  + getType(): String
+  + hashCode(): int
+  # canEqual(Object): boolean
+}
+class AddIfMinCommand {
+  + AddIfMinCommand(): 
+  + equals(Object): boolean
+  + toString(): String
+  + hashCode(): int
+  + getType(): String
+  # canEqual(Object): boolean
+}
+class ClearCommand {
+  + ClearCommand(): 
+  + getType(): String
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + equals(Object): boolean
+  + toString(): String
+}
+class CollectionInfo {
+  + CollectionInfo(): 
+  + CollectionInfo(String, String, ZonedDateTime, Integer): 
+  - type: String
+  - name: String
+  - initializationDate: ZonedDateTime
+  - itemsCount: Integer
+  + setItemsCount(Integer): void
+  + hashCode(): int
+  + getName(): String
+  + setType(String): void
+  + getItemsCount(): Integer
+  + getType(): String
+  + equals(Object): boolean
+  + getInitializationDate(): ZonedDateTime
+  + toString(): String
+  + setName(String): void
+  + setInitializationDate(ZonedDateTime): void
+  # canEqual(Object): boolean
+}
+class Coordinates {
+  + Coordinates(): 
+  + Coordinates(Integer, float): 
+  - y: float
+  - x: Integer
+  + getX(): Integer
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + compareTo(Coordinates): int
+  + getY(): float
+  + setX(Integer): void
+  + setY(float): void
+  + toString(): String
+  + equals(Object): boolean
+}
+class CoordinatesValidator {
+  + CoordinatesValidator(): 
+  + validateAll(Coordinates): ValidationResponse
+  + validateY(Float): ValidationResponse
+  + validateX(Integer): ValidationResponse
+}
+class ExecuteScriptCommand {
+  + ExecuteScriptCommand(List<APICommand>): 
+  + ExecuteScriptCommand(): 
+  - commands: List<APICommand>
+  + createResponse(): ExecuteScriptCommandResponse
+  # canEqual(Object): boolean
+  + setCommands(List<APICommand>): void
+  + toString(): String
+  + getCommands(): List<APICommand>
+  + equals(Object): boolean
+  + getType(): String
+  + hashCode(): int
+  + getInlineArgs(): Field<?>[]
+}
+class ExecuteScriptCommandResponse {
+  + ExecuteScriptCommandResponse(): 
+  + getUserMessage(): String
+}
+class Field<T> {
+  + Field(): 
+  + Field(String, Class<T>): 
+  - name: String
+  - valueClass: Class<T>
+  + equals(Object): boolean
+  + toString(): String
+  + setValueClass(Class<T>): void
+  + getValueClass(): Class<T>
+  # canEqual(Object): boolean
+  + getName(): String
+  + hashCode(): int
+  + setName(String): void
+}
+annotation FieldValidator << annotation >> {
+  + value(): Class<Validator>
+}
+class FieldWithDesc<T> {
+  + FieldWithDesc(String, Class<T>, String, IValidator<T>, boolean): 
+  - promptMsg: String
+  - validator: IValidator<T>
+  - nullAble: boolean
+  + getPromptMsg(): String
+  + isNullAble(): boolean
+  + toString(): String
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + getValidator(): IValidator<T>
+  + equals(Object): boolean
+}
+class FilterLessPosCommand {
+  + FilterLessPosCommand(): 
+  + FilterLessPosCommand(Position): 
+  + position: Position
+  + getPosition(): Position
+  + getInlineArgs(): Field<?>[]
+  + toString(): String
+  + setPosition(Position): void
+  + equals(Object): boolean
+  + createResponse(): FilterLessPosCommandResponse
+  + getType(): String
+  + hashCode(): int
+  # canEqual(Object): boolean
+}
+class FilterLessPosCommandResponse {
+  + FilterLessPosCommandResponse(): 
+  + getUserMessage(): String
+}
+class GetWorkerCommand {
+  + GetWorkerCommand(Integer): 
+  + GetWorkerCommand(): 
+  + id: Integer
+  + setId(Integer): void
+  + toString(): String
+  + getType(): String
+  + getId(): Integer
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + createResponse(): GetWorkerCommandResponse
+}
+class GetWorkerCommandResponse {
+  + GetWorkerCommandResponse(): 
+  - worker: Worker
+  + toString(): String
+  # canEqual(Object): boolean
+  + getUserMessage(): String
+  + getWorker(): Worker
+  + equals(Object): boolean
+  + setWorker(Worker): void
+  + hashCode(): int
+}
+class GetWorkerIdsCommand {
+  + GetWorkerIdsCommand(): 
+  + equals(Object): boolean
+  + getType(): String
+  + createResponse(): GetWorkerIdsCommandResponse
+  # canEqual(Object): boolean
+  + toString(): String
+  + hashCode(): int
+}
+class GetWorkerIdsCommandResponse {
+  + GetWorkerIdsCommandResponse(): 
+}
+interface IAPIMessage << interface >>
+interface IIdentifiableCommand<K> << interface >> {
+  + getCmdIdentifier(): K
+}
+interface IKeyedEntity<K> << interface >> {
+  + getPrimaryKey(): K
+}
+interface ISetCollection<K, V> << interface >>
+interface IValidator<T> << interface >> {
+  + validate(T): ValidationResponse
+}
+class InfoCommand {
+  + InfoCommand(): 
+  + createResponse(): InfoCommandResponse
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + getType(): String
+}
+class InfoCommandResponse {
+  + InfoCommandResponse(): 
+  - result: CollectionInfo
+  + getResult(): CollectionInfo
+  + setResult(CollectionInfo): void
+  + getUserMessage(): String
+}
+annotation InputNullable << annotation >>
+annotation InteractText << annotation >> {
+  + value(): String
+}
+class ListAPICommandResponse<T> {
+  + ListAPICommandResponse(): 
+  - result: List<T>
+  + setResult(List<T>): void
+  + getResult(): List<T>
+  + getUserMessage(): String
+}
+annotation NotPromptRequired << annotation >>
+class Organization {
+  + Organization(String, OrganizationType): 
+  + Organization(): 
+  ~ fullName: String
+  ~ type: OrganizationType
+  + equals(Object): boolean
+  + setType(OrganizationType): void
+  + getFullName(): String
+  + toString(): String
+  + setFullName(String): void
+  + hashCode(): int
+  + compareTo(Organization): int
+  # canEqual(Object): boolean
+  + getComparator(): Comparator<Organization>
+  + getType(): OrganizationType
+}
+enum OrganizationType << enumeration >> {
+  - OrganizationType(int): 
+  + COMMERCIAL: 
+  + PUBLIC: 
+  - value: int
+  + OPEN_JOINT_STOCK_COMPANY: 
+  + PRIVATE_LIMITED_COMPANY: 
+  + getValue(): int
+  + valueOf(String): OrganizationType
+  + values(): OrganizationType[]
+}
+class OrganizationValidator {
+  + OrganizationValidator(): 
+  + validateAll(Organization): ValidationResponse
+  + validateFullName(String): ValidationResponse
+}
+enum Position << enumeration >> {
+  - Position(int): 
+  + ENGINEER: 
+  + HEAD_OF_DEPARTMENT: 
+  + CLEANER: 
+  + LEAD_DEVELOPER: 
+  + value: int
+  + MANAGER_OF_CLEANING: 
+  + getValue(): int
+  + valueOf(String): Position
+  + values(): Position[]
+}
+class PrintDescendingCommand {
+  + PrintDescendingCommand(): 
+  + hashCode(): int
+  # canEqual(Object): boolean
+  + createResponse(): PrintDescendingCommandResponse
+  + equals(Object): boolean
+  + getType(): String
+  + toString(): String
+}
+class PrintDescendingCommandResponse {
+  + PrintDescendingCommandResponse(): 
+  + getUserMessage(): String
+}
+class RemoveByIdCommand {
+  + RemoveByIdCommand(): 
+  + RemoveByIdCommand(Integer): 
+  + id: Integer
+  + getId(): Integer
+  + hashCode(): int
+  + getInlineArgs(): Field<?>[]
+  + toString(): String
+  # canEqual(Object): boolean
+  + getType(): String
+  + equals(Object): boolean
+  + setId(Integer): void
+}
+class RemoveGreaterCommand {
+  + RemoveGreaterCommand(Worker): 
+  + RemoveGreaterCommand(): 
+  + element: Worker
+  + hashCode(): int
+  # canEqual(Object): boolean
+  + toString(): String
+  + validate(): ValidationResponse
+  + getType(): String
+  + getInteractArgs(): Field<?>[]
+  + equals(Object): boolean
+  + setElement(Worker): void
+  + getElement(): Worker
+}
+class SaveCommand {
+  + SaveCommand(): 
+  + equals(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + getType(): String
+  # canEqual(Object): boolean
+}
+class ShowCommand {
+  + ShowCommand(): 
+  + createResponse(): ShowCommandResponse
+  + hashCode(): int
+  + getType(): String
+  + toString(): String
+  # canEqual(Object): boolean
+  + equals(Object): boolean
+}
+class ShowCommandResponse {
+  + ShowCommandResponse(): 
+  + getUserMessage(): String
+}
+enum Status << enumeration >> {
+  - Status(): 
+  + OK: 
+  + UNPROCESSED: 
+  + CLIENT_ERROR: 
+  + SERVER_ERROR: 
+  + NOT_FOUND: 
+  + isError(): boolean
+  + valueOf(String): Status
+  + values(): Status[]
+}
+class UniqueOrganisationCommand {
+  + UniqueOrganisationCommand(): 
+  # canEqual(Object): boolean
+  + equals(Object): boolean
+  + hashCode(): int
+  + createResponse(): UniqueOrganisationCommandResponse
+  + getType(): String
+  + toString(): String
+}
+class UniqueOrganisationCommandResponse {
+  + UniqueOrganisationCommandResponse(): 
+  - organizations: List<Organization>
+  + setOrganizations(List<Organization>): void
+  + getUserMessage(): String
+  + getOrganizations(): List<Organization>
+}
+class UpdateCommand {
+  + UpdateCommand(): 
+  + UpdateCommand(Integer, Worker): 
+  + id: Integer
+  + element: Worker
+  + getType(): String
+  + getElement(): Worker
+  + toString(): String
+  + hashCode(): int
+  + validate(): ValidationResponse
+  + setId(Integer): void
+  + getInteractArgs(): Field<?>[]
+  + setElement(Worker): void
+  + getInlineArgs(): Field<?>[]
+  + getId(): Integer
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+}
+class UserAPICommand {
+  + UserAPICommand(): 
+}
+interface UserPrintableAPICommandResponse << interface >> {
+  + getUserMessage(): String
+}
+interface UserPromptedAPICommand << interface >> {
+  + getInteractArgs(): Field<?>[]
+  + getInlineArgs(): Field<?>[]
+  + getType(): String
+}
+class ValidationResponse {
+  + ValidationResponse(boolean, String): 
+  - allowed: boolean
+  - msg: String
+  + equals(Object): boolean
+  + setAllowed(boolean): void
+  + setMsg(String): void
+  + toString(): String
+  + hashCode(): int
+  # canEqual(Object): boolean
+  + isAllowed(): boolean
+  + getMsg(): String
+}
+interface Validator << interface >>
+class Worker {
+  + Worker(): 
+  + Worker(Integer, ZonedDateTime, String, float, Date, LocalDate, Coordinates, Organization, Position): 
+  - salary: float
+  - endDate: LocalDate
+  - name: String
+  - coordinates: Coordinates
+  - position: Position
+  - id: Integer
+  - organization: Organization
+  - startDate: Date
+  - creationDate: ZonedDateTime
+  + withCreationDate(ZonedDateTime): Worker
+  + nicePrintFormat(List<Worker>): String
+  + setEndDate(LocalDate): void
+  + getEndDate(): LocalDate
+  + getOrganization(): Organization
+  + getName(): String
+  + getCreationDate(): ZonedDateTime
+  + setStartDate(Date): void
+  + setPosition(Position): void
+  + setSalary(float): void
+  + equals(Object): boolean
+  + setName(String): void
+  + getCoordinates(): Coordinates
+  + getPosition(): Position
+  + getPrimaryKey(): Integer
+  + getId(): Integer
+  + toString(): String
+  + getSalary(): float
+  + setOrganization(Organization): void
+  + getComparator(): Comparator<Worker>
+  + getStartDate(): Date
+  + compareTo(Worker): int
+  + setCoordinates(Coordinates): void
+  + withId(Integer): Worker
+}
+class WorkerCollection {
+  + WorkerCollection(): 
+  + addAll(Collection<Worker>): boolean
+  + add(Worker): boolean
+}
+class WorkerValidator {
+  + WorkerValidator(): 
+  + validateAll(Worker): ValidationResponse
+  + validateName(String): ValidationResponse
+  + validateCoordinates(Coordinates): ValidationResponse
+  + validateStartDate(Date): ValidationResponse
+  + validateId(Integer): ValidationResponse
+  + validateSalary(Float): ValidationResponse
+}
+
+APICommand                         -[#008200,dashed]-^  IAPIMessage                       
+APICommand                         -[#008200,dashed]-^  IIdentifiableCommand              
+APICommandResponse                 -[#008200,dashed]-^  IAPIMessage                       
+APICommandResponse                "1" *-[#595959,plain]-> "status\n1" Status                            
+APICommandResponse                 -[#008200,dashed]-^  UserPrintableAPICommandResponse   
+AddCommand                         -[#000082,plain]-^  UserAPICommand                    
+AddCommand                        "1" *-[#595959,plain]-> "element\n1" Worker                            
+AddCommandResponse                 -[#000082,plain]-^  APICommandResponse                
+AddCommandResponse                 +-[#820000,plain]-  AddCommand                        
+AddCommandResponse                 -[#008200,dashed]-^  UserPrintableAPICommandResponse   
+AddIfMaxCommand                    -[#000082,plain]-^  AddCommand                        
+AddIfMinCommand                    -[#000082,plain]-^  AddCommand                        
+ClearCommand                       -[#000082,plain]-^  UserAPICommand                    
+CoordinatesValidator               -[#008200,dashed]-^  Validator                         
+ExecuteScriptCommand              "1" *-[#595959,plain]-> "commands\n*" APICommand                        
+ExecuteScriptCommand               -[#000082,plain]-^  UserAPICommand                    
+ExecuteScriptCommandResponse       +-[#820000,plain]-  ExecuteScriptCommand              
+ExecuteScriptCommandResponse       -[#000082,plain]-^  ListAPICommandResponse            
+FieldWithDesc                      -[#000082,plain]-^  Field                             
+FieldWithDesc                     "1" *-[#595959,plain]-> "validator\n1" IValidator                        
+FilterLessPosCommand              "1" *-[#595959,plain]-> "position\n1" Position                          
+FilterLessPosCommand               -[#000082,plain]-^  UserAPICommand                    
+FilterLessPosCommandResponse       +-[#820000,plain]-  FilterLessPosCommand              
+FilterLessPosCommandResponse       -[#000082,plain]-^  ListAPICommandResponse            
+GetWorkerCommand                   -[#000082,plain]-^  UserAPICommand                    
+GetWorkerCommandResponse           -[#000082,plain]-^  APICommandResponse                
+GetWorkerCommandResponse           +-[#820000,plain]-  GetWorkerCommand                  
+GetWorkerCommandResponse           -[#008200,dashed]-^  UserPrintableAPICommandResponse   
+GetWorkerCommandResponse          "1" *-[#595959,plain]-> "worker\n1" Worker                            
+GetWorkerIdsCommand                -[#000082,plain]-^  UserAPICommand                    
+GetWorkerIdsCommandResponse        +-[#820000,plain]-  GetWorkerIdsCommand               
+GetWorkerIdsCommandResponse        -[#000082,plain]-^  ListAPICommandResponse            
+ISetCollection                     -[#595959,dashed]->  IKeyedEntity                      
+InfoCommand                        -[#000082,plain]-^  UserAPICommand                    
+InfoCommandResponse                -[#000082,plain]-^  APICommandResponse                
+InfoCommandResponse               "1" *-[#595959,plain]-> "result\n1" CollectionInfo                    
+InfoCommandResponse                +-[#820000,plain]-  InfoCommand                       
+InfoCommandResponse                -[#008200,dashed]-^  UserPrintableAPICommandResponse   
+ListAPICommandResponse             -[#000082,plain]-^  APICommandResponse                
+Organization                      "1" *-[#595959,plain]-> "type\n1" OrganizationType                  
+OrganizationValidator              -[#008200,dashed]-^  Validator                         
+PrintDescendingCommand             -[#000082,plain]-^  UserAPICommand                    
+PrintDescendingCommandResponse     -[#000082,plain]-^  ListAPICommandResponse            
+PrintDescendingCommandResponse     +-[#820000,plain]-  PrintDescendingCommand            
+RemoveByIdCommand                  -[#000082,plain]-^  UserAPICommand                    
+RemoveGreaterCommand               -[#000082,plain]-^  UserAPICommand                    
+RemoveGreaterCommand              "1" *-[#595959,plain]-> "element\n1" Worker                            
+SaveCommand                        -[#000082,plain]-^  UserAPICommand                    
+ShowCommand                        -[#000082,plain]-^  UserAPICommand                    
+ShowCommandResponse                -[#000082,plain]-^  ListAPICommandResponse            
+ShowCommandResponse                +-[#820000,plain]-  ShowCommand                       
+Status                             +-[#820000,plain]-  APICommandResponse                
+UniqueOrganisationCommand          -[#000082,plain]-^  UserAPICommand                    
+UniqueOrganisationCommandResponse  -[#000082,plain]-^  APICommandResponse                
+UniqueOrganisationCommandResponse "1" *-[#595959,plain]-> "organizations\n*" Organization                      
+UniqueOrganisationCommandResponse  +-[#820000,plain]-  UniqueOrganisationCommand         
+UniqueOrganisationCommandResponse  -[#008200,dashed]-^  UserPrintableAPICommandResponse   
+UpdateCommand                      -[#000082,plain]-^  UserAPICommand                    
+UpdateCommand                     "1" *-[#595959,plain]-> "element\n1" Worker                            
+UserAPICommand                     -[#000082,plain]-^  APICommand                        
+UserAPICommand                     -[#008200,dashed]-^  UserPromptedAPICommand            
+ValidationResponse                 -[#008200,dashed]-^  Validator                         
+Worker                            "1" *-[#595959,plain]-> "coordinates\n1" Coordinates                       
+Worker                             -[#008200,dashed]-^  IKeyedEntity                      
+Worker                            "1" *-[#595959,plain]-> "organization\n1" Organization                      
+Worker                            "1" *-[#595959,plain]-> "position\n1" Position                          
+WorkerCollection                   -[#008200,dashed]-^  ISetCollection                    
+WorkerValidator                    -[#008200,dashed]-^  Validator                         
+@enduml

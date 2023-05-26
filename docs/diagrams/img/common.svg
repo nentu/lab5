@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css"
+     height="759px" preserveAspectRatio="none" style="width:3697px;height:759px;background:#FFFFFF;" version="1.1"
+     viewBox="0 0 3697 759" width="3697px" zoomAndPan="magnify">
+    <defs/>
+    <g><!--MD5=[761ea50d9f02152e1b194e4be0b24879]
+class APIClientException-->
+        <g id="elem_APIClientException">
+            <rect codeLine="22" fill="#FFFFFF" height="77.0439" id="APIClientException" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="244" x="108" y="113"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="149" x="155.5" y="132.0752">APIClientException
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="109" x2="351" y1="140.0146" y2="140.0146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="109" x2="351" y1="148.0146" y2="148.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="203" x="114"
+                  y="166.0898">+APIClientException(String):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="232" x="114"
+                  y="183.1045">+APIClientException(Throwable):
+            </text>
+        </g><!--MD5=[c169e7d1ac0c7228995cc0f4e510ecd3]
+class AbstractConsoleArgumentsParser-->
+        <g id="elem_AbstractConsoleArgumentsParser">
+            <rect codeLine="26" fill="#FFFFFF" height="179.1318" id="AbstractConsoleArgumentsParser" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="334" x="387" y="62"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="262" x="423" y="81.0752">AbstractConsoleArgumentsParser
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="720" y1="89.0146" y2="89.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="88" x="393"
+                  y="107.0898">-log: Logger
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="185" x="393"
+                  y="124.1045">-formatter: HelpFormatter
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="220" x="393"
+                  y="141.1191">-parsedOptions: CommandLine
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="206" x="393"
+                  y="158.1338">-parser: CommandLineParser
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="388" x2="720" y1="165.0732" y2="165.0732"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="322" x="393"
+                  y="183.1484">+AbstractConsoleArgumentsParser(String[]):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="288" x="393"
+                  y="200.1631">-parse(Options, String[]): CommandLine
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="211" x="393"
+                  y="217.1777">+getOptions(): CommandLine
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="187" x="393"
+                  y="234.1924">#createOptions(): Options
+            </text>
+        </g><!--MD5=[a0a1f7f9662f43ef0ece806266f72a6f]
+class Executor-->
+        <g id="elem_Executor">
+            <rect codeLine="36" fill="#FFFFFF" height="230.1758" id="Executor" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="696" x="756" y="36.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="69" x="1069.5" y="55.5752">Executor
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="757" x2="1451" y1="63.5146" y2="63.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="684" x="762"
+                  y="81.5898">-operationMap: Map&lt;Class&lt;APICommand&gt;, Operation&lt;APICommand, APICommandResponse&gt;&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="88" x="762"
+                  y="98.6045">-log: Logger
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="221" x="762"
+                  y="115.6191">+MAX_RECURSION_DEPTH: int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="230" x="762"
+                  y="132.6338">-childExecutors: List&lt;Executor&gt;
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="757" x2="1451" y1="139.5732" y2="139.5732"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="92" x="762"
+                  y="157.6484">+Executor():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="346" x="762"
+                  y="174.6631">+execute(APICommand): APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="480" x="762"
+                  y="191.6777">+executeBatch(List&lt;APICommand&gt;): List&lt;APICommandResponse&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="462" x="762"
+                  y="208.6924">+registerVoidOperation(Class&lt;T&gt;, NoReturnOperation&lt;T&gt;): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="537" x="762"
+                  y="225.707">+registerOperation(Class&lt;T&gt;, Operation&lt;T, APICommandResponse&gt;): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="374" x="762"
+                  y="242.7217">#execute(APICommand, int): APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="243" x="762"
+                  y="259.7363">+registerExecutor(Executor): void
+            </text>
+        </g><!--MD5=[b0e40f0c39f625d643b1f5b496d53d35]
+class FileAccessException-->
+        <g id="elem_FileAccessException">
+            <rect codeLine="49" fill="#FFFFFF" height="179.1318" id="FileAccessException" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="415" x="1934.5" y="385"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="154" x="2065" y="404.0752">FileAccessException
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1935.5" x2="2348.5" y1="412.0146" y2="412.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="93" x="1940.5"
+                  y="430.0898">-path: String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="152" x="1940.5"
+                  y="447.1045">-type: OperationType
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1935.5" x2="2348.5" y1="454.0439" y2="454.0439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="403" x="1940.5"
+                  y="472.1191">+FileAccessException(Exception, String, OperationType):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="324" x="1940.5"
+                  y="489.1338">+FileAccessException(String, OperationType):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="382" x="1940.5"
+                  y="506.1484">+FileAccessException(Exception, File, OperationType):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="303" x="1940.5"
+                  y="523.1631">+FileAccessException(File, OperationType):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="131" x="1940.5"
+                  y="540.1777">+getPath(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="194" x="1940.5"
+                  y="557.1924">+getType(): OperationType
+            </text>
+        </g><!--MD5=[6d4717cd035eac7033f7f366a0087a6d]
+class FileController-->
+        <g id="elem_FileController">
+            <rect codeLine="59" fill="#FFFFFF" height="247.1904" id="FileController" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="271" x="2384.5" y="351"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="104" x="2468" y="370.0752">FileController
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2385.5" x2="2654.5" y1="378.0146" y2="378.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="63" x="2390.5"
+                  y="396.0898">#file: File
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2385.5" x2="2654.5" y1="403.0293" y2="403.0293"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="163" x="2390.5"
+                  y="421.1045">+FileController(String):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="228" x="2390.5"
+                  y="438.1191">+FileController(String, boolean):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="234" x="2390.5"
+                  y="455.1338">+creationDate(): ZonedDateTime
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="185" x="2390.5"
+                  y="472.1484">#checkReadAccess(): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="131" x="2390.5"
+                  y="489.1631">+getPath(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="259" x="2390.5"
+                  y="506.1777">#ensureExistence(boolean): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="155" x="2390.5"
+                  y="523.1924">-loadPath(String): File
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="191" x="2390.5"
+                  y="540.207">-checkExistence(): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="188" x="2390.5"
+                  y="557.2217">#checkWriteAccess(): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="146" x="2390.5"
+                  y="574.2363">-checkAccess(): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="128" x="2390.5"
+                  y="591.251">+check(): boolean
+            </text>
+        </g><!--MD5=[a9a1cf1effea8b0a49d86e314f79dfde]
+class FileIOController-->
+        <g id="elem_FileIOController">
+            <rect codeLine="73" fill="#FFFFFF" height="162.1172" id="FileIOController" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="293" x="2373.5" y="70.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="124" x="2458" y="89.5752">FileIOController
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2374.5" x2="2665.5" y1="97.5146" y2="97.5146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2374.5" x2="2665.5" y1="105.5146" y2="105.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="179" x="2379.5"
+                  y="123.5898">+FileIOController(String):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="244" x="2379.5"
+                  y="140.6045">+FileIOController(String, boolean):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="140" x="2379.5"
+                  y="157.6191">+write(byte[]): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="95" x="2379.5"
+                  y="174.6338">+clear(): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="266" x="2379.5"
+                  y="191.6484">+openReadStream(): FileInputStream
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="281" x="2379.5"
+                  y="208.6631">+openWriteStream(): FileOutputStream
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="108" x="2379.5"
+                  y="225.6777">+read(): byte[]
+            </text>
+        </g><!--MD5=[ef8f8e825ec35b6db9451ba2eb8a8155]
+class FileUtils-->
+        <g id="elem_FileUtils">
+            <rect codeLine="82" fill="#FFFFFF" height="230.1758" id="FileUtils" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="498" x="1487" y="36.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="59" x="1706.5" y="55.5752">FileUtils
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1488" x2="1984" y1="63.5146" y2="63.5146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1488" x2="1984" y1="71.5146" y2="71.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="81" x="1493"
+                  y="89.5898">+FileUtils():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="130" x="1493"
+                  y="106.6045">+read(File): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="156" x="1493"
+                  y="123.6191">+deleteDir(Path): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="127" x="1493"
+                  y="140.6338">+delete(File): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="171" x="1493"
+                  y="157.6484">+createDir(String): Path
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="172" x="1493"
+                  y="174.6631">+write(File, String): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="342" x="1493"
+                  y="191.6777">+checkParentDirectoryPermissions(File): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="153" x="1493"
+                  y="208.6924">+exists(File): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="205" x="1493"
+                  y="225.707">+createFile(Path, String): File
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="166" x="1493"
+                  y="242.7217">+getParentDir(File): File
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="486" x="1493"
+                  y="259.7363">+parsePermissions(String): FileAttribute&lt;Set&lt;PosixFilePermission&gt;&gt;
+            </text>
+        </g><!--MD5=[5a85cc44919b3ca52dba57e77f440a41]
+class InvalidDataFileException-->
+        <g id="elem_InvalidDataFileException">
+            <rect codeLine="95" fill="#FFFFFF" height="145.1025" id="InvalidDataFileException" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="436" x="12" y="402"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="191" x="134.5" y="421.0752">InvalidDataFileException
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="447" y1="429.0146" y2="429.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="93" x="18"
+                  y="447.0898">-path: String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="123" x="18"
+                  y="464.1045">-contents: byte[]
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="447" y1="471.0439" y2="471.0439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="424" x="18"
+                  y="489.1191">+InvalidDataFileException(String, byte[], SerDesException):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="160" x="18"
+                  y="506.1338">+getMessage(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="165" x="18"
+                  y="523.1484">+getContents(): byte[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="131" x="18"
+                  y="540.1631">+getPath(): String
+            </text>
+        </g><!--MD5=[7a4c6d9dce21d5f557f7bcbf757fa94d]
+class JSONSerDesService-->
+        <g id="elem_JSONSerDesService">
+            <rect codeLine="103" fill="#FFFFFF" height="94.0586" id="JSONSerDesService" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="431" x="2701.5" y="104.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="151" x="2836" y="123.5752">JSONSerDesService
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="9" x="3126.5" y="101.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="7" x="3127.5" y="114.5645">T
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2702.5" x2="3131.5" y1="131.5146" y2="131.5146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2702.5" x2="3131.5" y1="139.5146" y2="139.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="235" x="2707.5"
+                  y="157.5898">+JSONSerDesService(Class&lt;T&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="251" x="2707.5"
+                  y="174.6045">#getObjectMapper(): ObjectMapper
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="419" x="2707.5"
+                  y="191.6191">#getPolymorphicValidator(): BasicPolymorphicTypeValidator
+            </text>
+        </g><!--MD5=[654d3ca46e3a3e3865aaaaf3ffe63678]
+class NoReturnOperation-->
+        <g id="elem_NoReturnOperation">
+            <rect codeLine="108" fill="#FFFFFF" height="74.6133" id="NoReturnOperation" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="168" x="483" y="437"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68" x="527.5" y="454.0645">«interface»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" font-weight="bold"
+                  lengthAdjust="spacing" textLength="151" x="486" y="470.6592">NoReturnOperation
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="9" x="645" y="434"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="7" x="646" y="447.0645">T
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="484" x2="650" y1="478.5986" y2="478.5986"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="484" x2="650" y1="486.5986" y2="486.5986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="109" x="489"
+                  y="504.6738">+apply(T): void
+            </text>
+        </g><!--MD5=[06591d594c991ba1702232680c4cdc77]
+class ObjectMapperFactory-->
+        <g id="elem_ObjectMapperFactory">
+            <rect codeLine="111" fill="#FFFFFF" height="77.0439" id="ObjectMapperFactory" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="237" x="686.5" y="436"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="167" x="721.5" y="455.0752">ObjectMapperFactory
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="687.5" x2="922.5" y1="463.0146" y2="463.0146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="687.5" x2="922.5" y1="471.0146" y2="471.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="178" x="692.5"
+                  y="489.0898">+ObjectMapperFactory():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="225" x="692.5"
+                  y="506.1045">+createMapper(): ObjectMapper
+            </text>
+        </g><!--MD5=[cca5d97aaf46870920fae66c9bd85cdd]
+class Operation-->
+        <g id="elem_Operation">
+            <rect codeLine="115" fill="#FFFFFF" height="74.6133" id="Operation" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="110" x="959" y="437"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68" x="966.5" y="454.0645">«interface»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" font-weight="bold"
+                  lengthAdjust="spacing" textLength="77" x="962" y="470.6592">Operation
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="25" x="1047" y="434"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="23" x="1048" y="447.0645">T, V
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="960" x2="1068" y1="478.5986" y2="478.5986"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="960" x2="1068" y1="486.5986" y2="486.5986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="90" x="965"
+                  y="504.6738">+apply(T): V
+            </text>
+        </g><!--MD5=[cc4941acd9f25cf973013d8901d108c0]
+class OperationType-->
+        <g id="elem_OperationType">
+            <rect codeLine="118" fill="#FFFFFF" height="278.7891" id="OperationType" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="244" x="2020" y="12"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="93" x="2095.5" y="29.0645">«enumeration»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="115" x="2084.5" y="45.6592">OperationType
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2021" x2="2263" y1="53.5986" y2="53.5986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="112" x="2026"
+                  y="71.6738">+PERM_WRITE:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="65" x="2026"
+                  y="88.6885">+WRITE:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="74" x="2026"
+                  y="105.7031">+CREATE:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="143" x="2026"
+                  y="122.7178">+SET_PERMISSION:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="55" x="2026"
+                  y="139.7324">+OPEN:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="57" x="2026"
+                  y="156.7471">+READ:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="104" x="2026"
+                  y="173.7617">+PERM_READ:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="138" x="2026"
+                  y="190.7764">-description: String
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2021" x2="2263" y1="197.7158" y2="197.7158"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="128" x="2026"
+                  y="215.791">-OperationType():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="171" x="2026"
+                  y="232.8057">-OperationType(String):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="179" x="2026"
+                  y="249.8203">+getDescription(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="232" x="2026"
+                  y="266.835">+valueOf(String): OperationType
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="193" x="2026"
+                  y="283.8496">+values(): OperationType[]
+            </text>
+        </g><!--MD5=[fc26920c0028197b58c483e6ce4f83b6]
+class SerDesException-->
+        <g id="elem_SerDesException">
+            <rect codeLine="133" fill="#FFFFFF" height="145.1025" id="SerDesException" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="274" x="3416" y="402"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="130" x="3488" y="421.0752">SerDesException
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3417" x2="3689" y1="429.0146" y2="429.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="208" x="3422"
+                  y="447.0898">-internalException: Exception
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="112" x="3422"
+                  y="464.1045">-direction: Type
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3417" x2="3689" y1="471.0439" y2="471.0439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="262" x="3422"
+                  y="489.1191">+SerDesException(Type, Exception):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="249" x="3422"
+                  y="506.1338">+getInternalException(): Exception
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="135" x="3422"
+                  y="523.1484">+toString(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="153" x="3422"
+                  y="540.1631">+getDirection(): Type
+            </text>
+        </g><!--MD5=[3a6b3ac2109cf17577e54c40a11f263c]
+class SerDesService-->
+        <g id="elem_SerDesService">
+            <rect codeLine="141" fill="#FFFFFF" height="145.1025" id="SerDesService" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="263" x="2951.5" y="402"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="110" x="3022.5" y="421.0752">SerDesService
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="9" x="3208.5" y="399"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="7" x="3209.5" y="412.0645">T
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2952.5" x2="3213.5" y1="429.0146" y2="429.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="168" x="2957.5"
+                  y="447.0898">-mapper: ObjectMapper
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="156" x="2957.5"
+                  y="464.1045">-baseClass: Class&lt;T&gt;
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2952.5" x2="3213.5" y1="471.0439" y2="471.0439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="198" x="2957.5"
+                  y="489.1191">+SerDesService(Class&lt;T&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="141" x="2957.5"
+                  y="506.1338">+serialize(T): byte[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="158" x="2957.5"
+                  y="523.1484">+deserialize(byte[]): T
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="251" x="2957.5"
+                  y="540.1631">#getObjectMapper(): ObjectMapper
+            </text>
+        </g><!--MD5=[9f2662342d5d1f1f1508405b42c87f69]
+class SetupJUL-->
+        <g id="elem_SetupJUL">
+            <rect codeLine="149" fill="#FFFFFF" height="77.0439" id="SetupJUL" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="242" x="109" y="666.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="73" x="193.5" y="685.5752">SetupJUL
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="110" x2="350" y1="693.5146" y2="693.5146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="110" x2="350" y1="701.5146" y2="701.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="95" x="115"
+                  y="719.5898">+SetupJUL():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="230" x="115"
+                  y="736.6045">+loadProperties(Class&lt;?&gt;): void
+            </text>
+        </g><!--MD5=[4296a1ab0576a383a1a509d52c22ebf0]
+class Type-->
+        <g id="elem_Type">
+            <rect codeLine="153" fill="#FFFFFF" height="142.6719" id="Type" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="175" x="3465.5" y="80"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="93" x="3506.5" y="97.0645">«enumeration»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="38" x="3534" y="113.6592">Type
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3466.5" x2="3639.5" y1="121.5986" y2="121.5986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="113" x="3471.5"
+                  y="139.6738">+DESERIALIZE:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="93" x="3471.5"
+                  y="156.6885">+SERIALIZE:
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3466.5" x2="3639.5" y1="163.6279" y2="163.6279"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="59" x="3471.5"
+                  y="181.7031">-Type():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="124" x="3471.5"
+                  y="198.7178">+values(): Type[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="163" x="3471.5"
+                  y="215.7324">+valueOf(String): Type
+            </text>
+        </g><!--MD5=[2356422f0b171adae8a901d167ecd8b0]
+class ValueDeserializer-->
+        <g id="elem_ValueDeserializer">
+            <rect codeLine="160" fill="#FFFFFF" height="94.0586" id="ValueDeserializer" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="250" x="386" y="658"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="132" x="445" y="677.0752">ValueDeserializer
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="387" x2="635" y1="685.0146" y2="685.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="168" x="392"
+                  y="703.0898">-mapper: ObjectMapper
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="387" x2="635" y1="710.0293" y2="710.0293"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="147" x="392"
+                  y="728.1045">+ValueDeserializer():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="238" x="392"
+                  y="745.1191">+deserialize(Class&lt;K&gt;, String): K
+            </text>
+        </g><!--MD5=[968951716562b046ac42ee688e9ebd5b]
+class XMLSerDesService-->
+        <g id="elem_XMLSerDesService">
+            <rect codeLine="165" fill="#FFFFFF" height="77.0439" id="XMLSerDesService" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="263" x="3167.5" y="113"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="143" x="3222" y="132.0752">XMLSerDesService
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="9" x="3424.5" y="110"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="7" x="3425.5" y="123.0645">T
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3168.5" x2="3429.5" y1="140.0146" y2="140.0146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3168.5" x2="3429.5" y1="148.0146" y2="148.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="227" x="3173.5"
+                  y="166.0898">+XMLSerDesService(Class&lt;T&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="251" x="3173.5"
+                  y="183.1045">#getObjectMapper(): ObjectMapper
+            </text>
+        </g><!--MD5=[3e850670f0dbef9e0fc9efb5134ac0d3]
+link FileIOController to FileController-->
+        <g id="link_FileIOController_FileController">
+            <path codeLine="170" d="M2520,232.59 C2520,232.59 2520,330.87 2520,330.87 " fill="none"
+                  id="FileIOController-to-FileController" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="none" points="2527,330.87,2520,350.87,2513,330.87,2527,330.87"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[f5d04f04370122cf252680d6b2798e15]
+link JSONSerDesService to SerDesService-->
+        <g id="link_JSONSerDesService_SerDesService">
+            <path codeLine="171" d="M3042,198.81 C3042,198.81 3042,381.96 3042,381.96 " fill="none"
+                  id="JSONSerDesService-to-SerDesService" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="none" points="3049,381.96,3042,401.96,3035,381.96,3049,381.96"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[d8da52b434e5862642b8d99f374c4917]
+reverse link OperationType to FileAccessException-->
+        <g id="link_OperationType_FileAccessException">
+            <path codeLine="172" d="M2142,306.29 C2142,306.29 2142,384.83 2142,384.83 " fill="none"
+                  id="OperationType-backto-FileAccessException" style="stroke:#000000;stroke-width:1.0;"/>
+            <ellipse cx="2142" cy="299.29" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2142" x2="2142" y1="307.29" y2="291.29"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2134" x2="2150" y1="299.29" y2="299.29"/>
+        </g><!--MD5=[cfe92338ec0548272e453952adabaae8]
+reverse link Type to SerDesException-->
+        <g id="link_Type_SerDesException">
+            <path codeLine="173" d="M3553,238.18 C3553,238.18 3553,401.9 3553,401.9 " fill="none"
+                  id="Type-backto-SerDesException" style="stroke:#000000;stroke-width:1.0;"/>
+            <ellipse cx="3553" cy="231.18" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3553" x2="3553" y1="239.18" y2="223.18"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3545" x2="3561" y1="231.18" y2="231.18"/>
+        </g><!--MD5=[f9e188e19f5582a771bbec8164801049]
+link XMLSerDesService to SerDesService-->
+        <g id="link_XMLSerDesService_SerDesService">
+            <path codeLine="174" d="M3191,190.14 C3191,190.14 3191,381.83 3191,381.83 " fill="none"
+                  id="XMLSerDesService-to-SerDesService" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="none" points="3198,381.83,3191,401.83,3184,381.83,3198,381.83"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[43fc7c4f63816e563a52666fa9b8bd4f]
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+hide circle
+
+<style>
+classDiagram {
+    class {
+        header {
+            FontStyle bold
+        }
+    }
+}
+</style>
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class APIClientException {
+  + APIClientException(String): 
+  + APIClientException(Throwable): 
+}
+class AbstractConsoleArgumentsParser {
+  + AbstractConsoleArgumentsParser(String[]): 
+  - log: Logger
+  - formatter: HelpFormatter
+  - parsedOptions: CommandLine
+  - parser: CommandLineParser
+  - parse(Options, String[]): CommandLine
+  + getOptions(): CommandLine
+  # createOptions(): Options
+}
+class Executor {
+  + Executor(): 
+  - operationMap: Map<Class<APICommand>, Operation<APICommand, APICommandResponse>>
+  - log: Logger
+  + MAX_RECURSION_DEPTH: int
+  - childExecutors: List<Executor>
+  + execute(APICommand): APICommandResponse
+  + executeBatch(List<APICommand>): List<APICommandResponse>
+  + registerVoidOperation(Class<T>, NoReturnOperation<T>): void
+  + registerOperation(Class<T>, Operation<T, APICommandResponse>): void
+  # execute(APICommand, int): APICommandResponse
+  + registerExecutor(Executor): void
+}
+class FileAccessException {
+  + FileAccessException(Exception, String, OperationType): 
+  + FileAccessException(String, OperationType): 
+  + FileAccessException(Exception, File, OperationType): 
+  + FileAccessException(File, OperationType): 
+  - path: String
+  - type: OperationType
+  + getPath(): String
+  + getType(): OperationType
+}
+class FileController {
+  + FileController(String): 
+  + FileController(String, boolean): 
+  # file: File
+  + creationDate(): ZonedDateTime
+  # checkReadAccess(): void
+  + getPath(): String
+  # ensureExistence(boolean): boolean
+  - loadPath(String): File
+  - checkExistence(): boolean
+  # checkWriteAccess(): void
+  - checkAccess(): void
+  + check(): boolean
+}
+class FileIOController {
+  + FileIOController(String): 
+  + FileIOController(String, boolean): 
+  + write(byte[]): void
+  + clear(): void
+  + openReadStream(): FileInputStream
+  + openWriteStream(): FileOutputStream
+  + read(): byte[]
+}
+class FileUtils {
+  + FileUtils(): 
+  + read(File): String
+  + deleteDir(Path): void
+  + delete(File): void
+  + createDir(String): Path
+  + write(File, String): void
+  + checkParentDirectoryPermissions(File): boolean
+  + exists(File): boolean
+  + createFile(Path, String): File
+  + getParentDir(File): File
+  + parsePermissions(String): FileAttribute<Set<PosixFilePermission>>
+}
+class InvalidDataFileException {
+  + InvalidDataFileException(String, byte[], SerDesException): 
+  - path: String
+  - contents: byte[]
+  + getMessage(): String
+  + getContents(): byte[]
+  + getPath(): String
+}
+class JSONSerDesService<T> {
+  + JSONSerDesService(Class<T>): 
+  # getObjectMapper(): ObjectMapper
+  # getPolymorphicValidator(): BasicPolymorphicTypeValidator
+}
+interface NoReturnOperation<T> << interface >> {
+  + apply(T): void
+}
+class ObjectMapperFactory {
+  + ObjectMapperFactory(): 
+  + createMapper(): ObjectMapper
+}
+interface Operation<T, V> << interface >> {
+  + apply(T): V
+}
+enum OperationType << enumeration >> {
+  - OperationType(): 
+  - OperationType(String): 
+  + PERM_WRITE: 
+  + WRITE: 
+  + CREATE: 
+  + SET_PERMISSION: 
+  + OPEN: 
+  + READ: 
+  + PERM_READ: 
+  - description: String
+  + getDescription(): String
+  + valueOf(String): OperationType
+  + values(): OperationType[]
+}
+class SerDesException {
+  + SerDesException(Type, Exception): 
+  - internalException: Exception
+  - direction: Type
+  + getInternalException(): Exception
+  + toString(): String
+  + getDirection(): Type
+}
+class SerDesService<T> {
+  + SerDesService(Class<T>): 
+  - mapper: ObjectMapper
+  - baseClass: Class<T>
+  + serialize(T): byte[]
+  + deserialize(byte[]): T
+  # getObjectMapper(): ObjectMapper
+}
+class SetupJUL {
+  + SetupJUL(): 
+  + loadProperties(Class<?>): void
+}
+enum Type << enumeration >> {
+  - Type(): 
+  + DESERIALIZE: 
+  + SERIALIZE: 
+  + values(): Type[]
+  + valueOf(String): Type
+}
+class ValueDeserializer {
+  + ValueDeserializer(): 
+  - mapper: ObjectMapper
+  + deserialize(Class<K>, String): K
+}
+class XMLSerDesService<T> {
+  + XMLSerDesService(Class<T>): 
+  # getObjectMapper(): ObjectMapper
+}
+
+FileIOController                - -^  FileController                 
+JSONSerDesService               - -^  SerDesService                  
+OperationType                   +- -  FileAccessException            
+Type                            +- -  SerDesException                
+XMLSerDesService                - -^  SerDesService                  
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+top to bottom direction
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+hide circle
+
+<style>
+classDiagram {
+    class {
+        header {
+            FontStyle bold
+        }
+    }
+}
+</style>
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+top to bottom direction
+skinparam linetype ortho
+
+class APIClientException {
+  + APIClientException(String): 
+  + APIClientException(Throwable): 
+}
+class AbstractConsoleArgumentsParser {
+  + AbstractConsoleArgumentsParser(String[]): 
+  - log: Logger
+  - formatter: HelpFormatter
+  - parsedOptions: CommandLine
+  - parser: CommandLineParser
+  - parse(Options, String[]): CommandLine
+  + getOptions(): CommandLine
+  # createOptions(): Options
+}
+class Executor {
+  + Executor(): 
+  - operationMap: Map<Class<APICommand>, Operation<APICommand, APICommandResponse>>
+  - log: Logger
+  + MAX_RECURSION_DEPTH: int
+  - childExecutors: List<Executor>
+  + execute(APICommand): APICommandResponse
+  + executeBatch(List<APICommand>): List<APICommandResponse>
+  + registerVoidOperation(Class<T>, NoReturnOperation<T>): void
+  + registerOperation(Class<T>, Operation<T, APICommandResponse>): void
+  # execute(APICommand, int): APICommandResponse
+  + registerExecutor(Executor): void
+}
+class FileAccessException {
+  + FileAccessException(Exception, String, OperationType): 
+  + FileAccessException(String, OperationType): 
+  + FileAccessException(Exception, File, OperationType): 
+  + FileAccessException(File, OperationType): 
+  - path: String
+  - type: OperationType
+  + getPath(): String
+  + getType(): OperationType
+}
+class FileController {
+  + FileController(String): 
+  + FileController(String, boolean): 
+  # file: File
+  + creationDate(): ZonedDateTime
+  # checkReadAccess(): void
+  + getPath(): String
+  # ensureExistence(boolean): boolean
+  - loadPath(String): File
+  - checkExistence(): boolean
+  # checkWriteAccess(): void
+  - checkAccess(): void
+  + check(): boolean
+}
+class FileIOController {
+  + FileIOController(String): 
+  + FileIOController(String, boolean): 
+  + write(byte[]): void
+  + clear(): void
+  + openReadStream(): FileInputStream
+  + openWriteStream(): FileOutputStream
+  + read(): byte[]
+}
+class FileUtils {
+  + FileUtils(): 
+  + read(File): String
+  + deleteDir(Path): void
+  + delete(File): void
+  + createDir(String): Path
+  + write(File, String): void
+  + checkParentDirectoryPermissions(File): boolean
+  + exists(File): boolean
+  + createFile(Path, String): File
+  + getParentDir(File): File
+  + parsePermissions(String): FileAttribute<Set<PosixFilePermission>>
+}
+class InvalidDataFileException {
+  + InvalidDataFileException(String, byte[], SerDesException): 
+  - path: String
+  - contents: byte[]
+  + getMessage(): String
+  + getContents(): byte[]
+  + getPath(): String
+}
+class JSONSerDesService<T> {
+  + JSONSerDesService(Class<T>): 
+  # getObjectMapper(): ObjectMapper
+  # getPolymorphicValidator(): BasicPolymorphicTypeValidator
+}
+interface NoReturnOperation<T> << interface >> {
+  + apply(T): void
+}
+class ObjectMapperFactory {
+  + ObjectMapperFactory(): 
+  + createMapper(): ObjectMapper
+}
+interface Operation<T, V> << interface >> {
+  + apply(T): V
+}
+enum OperationType << enumeration >> {
+  - OperationType(): 
+  - OperationType(String): 
+  + PERM_WRITE: 
+  + WRITE: 
+  + CREATE: 
+  + SET_PERMISSION: 
+  + OPEN: 
+  + READ: 
+  + PERM_READ: 
+  - description: String
+  + getDescription(): String
+  + valueOf(String): OperationType
+  + values(): OperationType[]
+}
+class SerDesException {
+  + SerDesException(Type, Exception): 
+  - internalException: Exception
+  - direction: Type
+  + getInternalException(): Exception
+  + toString(): String
+  + getDirection(): Type
+}
+class SerDesService<T> {
+  + SerDesService(Class<T>): 
+  - mapper: ObjectMapper
+  - baseClass: Class<T>
+  + serialize(T): byte[]
+  + deserialize(byte[]): T
+  # getObjectMapper(): ObjectMapper
+}
+class SetupJUL {
+  + SetupJUL(): 
+  + loadProperties(Class<?>): void
+}
+enum Type << enumeration >> {
+  - Type(): 
+  + DESERIALIZE: 
+  + SERIALIZE: 
+  + values(): Type[]
+  + valueOf(String): Type
+}
+class ValueDeserializer {
+  + ValueDeserializer(): 
+  - mapper: ObjectMapper
+  + deserialize(Class<K>, String): K
+}
+class XMLSerDesService<T> {
+  + XMLSerDesService(Class<T>): 
+  # getObjectMapper(): ObjectMapper
+}
+
+FileIOController                - -^  FileController                 
+JSONSerDesService               - -^  SerDesService                  
+OperationType                   +- -  FileAccessException            
+Type                            +- -  SerDesException                
+XMLSerDesService                - -^  SerDesService                  
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>

@@ -1,0 +1,672 @@
+
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+hide circle
+
+<style>
+classDiagram {
+    class {
+        header {
+            FontStyle bold
+        }
+    }
+}
+</style>
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class APIClientException {
+  + APIClientException(Throwable): 
+  + APIClientException(String): 
+}
+interface APIClientReceiver << interface >> {
+  + call(APICommand): APICommandResponse
+}
+class APICommand {
+  + APICommand(): 
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + validate(): ValidationResponse
+  + getCmdIdentifier(): Class<APICommand>
+  + createResponse(): APICommandResponse
+}
+class APICommandRegistry {
+  + APICommandRegistry(List<UserAPICommand>): 
+  - cmdList: List<UserAPICommand>
+  - map: HashMap<String, UserAPICommand>
+  + getCommand(String): UserAPICommand
+  + getCommands(): List<UserAPICommand>
+}
+class APICommandResponse {
+  + APICommandResponse(Status, String): 
+  + APICommandResponse(): 
+  - status: Status
+  - textualResponse: String
+  + getStatus(): Status
+  + getTextualResponse(): String
+  + setStatus(Status): void
+  + setTextualResponse(String): void
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + clientError(String): APICommandResponse
+  + clientError(Exception): APICommandResponse
+  + serverError(Exception): APICommandResponse
+  + notFound(): APICommandResponse
+  + ok(): APICommandResponse
+  + isSuccess(): boolean
+  + serverError(String): APICommandResponse
+  + isResolved(): boolean
+}
+class APICommandsDescriptionHolder {
+  + APICommandsDescriptionHolder(Class<?>[]): 
+  - dataDescriptions: Map<Class<?>, List<FieldWithDesc<?>>>
+  + equals(Object): boolean
+  + hashCode(): int
+  # canEqual(Object): boolean
+  - addToMap(Class<?>): void
+  + toString(): String
+  + getDataDescriptions(): Map<Class<?>, List<FieldWithDesc<?>>>
+  + setDataDescriptions(Map<Class<?>, List<FieldWithDesc<?>>>): void
+  + getValidator(Class<Validator>, Field): IValidator<T>
+}
+class APIUIException {
+  + APIUIException(Throwable): 
+}
+class APIUILocalCommand {
+  + APIUILocalCommand(APIClientReceiver, UIReceiver, APICommandRegistry): 
+  # apiClientReceiver: APIClientReceiver
+  - mapper: ObjectMapper
+  - registry: APICommandRegistry
+  + execute(String, Map<String, Object>): ClientCommandResponse<APICommandResponse>
+  + getCommandInlineArgs(String): List<Field<?>>
+  # prepareAPIMessage(String, Map<String, Object>): APICommand
+  # retrieveAPICommand(String): UserAPICommand
+}
+class AbstractAPIClientReceiverFactory {
+  + AbstractAPIClientReceiverFactory(): 
+  + create(): APIClientReceiver
+}
+class AbstractCommandDecorator {
+  + AbstractCommandDecorator(AbstractLocalCommand): 
+  # decoratee: AbstractLocalCommand
+  + execute(String, Map<String, Object>): ClientCommandResponse<?>
+}
+class AbstractConsoleArgumentsParser {
+  + AbstractConsoleArgumentsParser(String[]): 
+  - parser: CommandLineParser
+  - parsedOptions: CommandLine
+  - formatter: HelpFormatter
+  - log: Logger
+  - parse(Options, String[]): CommandLine
+  # createOptions(): Options
+  + getOptions(): CommandLine
+}
+class AbstractLocalCommand {
+  + AbstractLocalCommand(): 
+  + execute(String, Map<String, Object>): ClientCommandResponse<?>
+}
+class AdminAPICommandRegistry {
+  + AdminAPICommandRegistry(): 
+}
+class AdminAPICommandsDescriptionHolder {
+  + AdminAPICommandsDescriptionHolder(): 
+}
+class AdminClientCommandRegistry {
+  + AdminClientCommandRegistry(APIClientReceiver, ScriptExecutor, UIReceiver, APICommandRegistry): 
+  - registry: APICommandRegistry
+  + withUI(UIReceiver): AdminClientCommandRegistry
+}
+class AdminTexts {
+  + AdminTexts(): 
+  - textList: Map<TextKeys, String>
+  + get(TextKeys): String
+}
+class CLIController {
+  + CLIController(APICommandsDescriptionHolder, ConsolePrinter, InputStream, boolean): 
+  - objectScanner: ObjectScanner
+  - printer: ConsolePrinter
+  - isRepeatable: boolean
+  - scanner: Scanner
+  + ok(): void
+  + interactSuggestion(): void
+  + fill(Class<T>, T): T
+  + hasNextLine(): boolean
+  + nextLine(): String
+  + error(String): void
+  + display(String): void
+  + ok(String): void
+}
+class ClassUtils {
+  + ClassUtils(): 
+  + wrap(Class<T>): Class<T>
+}
+entity ClientCommandResponse<T> << record >> {
+  + ClientCommandResponse(boolean, String, T): 
+  - message: String
+  - payload: T
+  - isSuccess: boolean
+  + isSuccess(): boolean
+  + payload(): T
+  + message(): String
+  + ok(): ClientCommandResponse<T>
+  + error(String): ClientCommandResponse<T>
+}
+class ClientConsoleArgumentsParser {
+  + ClientConsoleArgumentsParser(String[]): 
+  + getPort(): Integer
+  + getHost(): String
+  + getServerFullAddr(): InetSocketAddress
+  # createOptions(): Options
+}
+class CommandParserTest {
+  + CommandParserTest(): 
+}
+class CommandRegistry {
+  + CommandRegistry(APIClientReceiver, ScriptExecutor): 
+  # api: APIClientReceiver
+  - commandMap: Map<String, AbstractLocalCommand>
+  # scriptExecutor: ScriptExecutor
+  + getCommand(String): AbstractLocalCommand
+  # register(UILocalCommand): void
+  + withUI(UIReceiver): CommandRegistry
+  # registerFromAPI(Collection<UserAPICommand>, AbstractLocalCommand): void
+  # register(Collection<String>, AbstractLocalCommand): void
+  # register(String, AbstractLocalCommand): void
+}
+class ConsolePrinter {
+  + ConsolePrinter(): 
+  + getStub(): ConsolePrinter
+  + display(String): void
+  + displayInLine(String): void
+}
+class CoordinatesValidator {
+  + CoordinatesValidator(): 
+  + validateX(Integer): ValidationResponse
+  + validateAll(Coordinates): ValidationResponse
+  + validateY(Float): ValidationResponse
+}
+class Executor {
+  + Executor(): 
+  - log: Logger
+  + MAX_RECURSION_DEPTH: int
+  - operationMap: Map<Class<APICommand>, Operation<APICommand, APICommandResponse>>
+  - childExecutors: List<Executor>
+  + registerOperation(Class<T>, Operation<T, APICommandResponse>): void
+  + executeBatch(List<APICommand>): List<APICommandResponse>
+  + registerVoidOperation(Class<T>, NoReturnOperation<T>): void
+  + execute(APICommand): APICommandResponse
+  + registerExecutor(Executor): void
+  # execute(APICommand, int): APICommandResponse
+}
+class ExitLocalCommand {
+  + ExitLocalCommand(UIReceiver): 
+  + execute(String, Map<String, Object>): ClientCommandResponse<UserPrintableAPICommandResponse>
+  + getExternalName(): String
+}
+class Field<T> {
+  + Field(String, Class<T>): 
+  + Field(): 
+  - name: String
+  - valueClass: Class<T>
+  + getName(): String
+  + getValueClass(): Class<T>
+  + setName(String): void
+  + setValueClass(Class<T>): void
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+}
+annotation FieldValidator << annotation >> {
+  + value(): Class<Validator>
+}
+class FieldWithDesc<T> {
+  + FieldWithDesc(String, Class<T>, String, IValidator<T>, boolean): 
+  - promptMsg: String
+  - validator: IValidator<T>
+  - nullAble: boolean
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + getPromptMsg(): String
+  + getValidator(): IValidator<T>
+  + isNullAble(): boolean
+  + toString(): String
+}
+class FileAccessException {
+  + FileAccessException(String, OperationType): 
+  + FileAccessException(Exception, File, OperationType): 
+  + FileAccessException(Exception, String, OperationType): 
+  + FileAccessException(File, OperationType): 
+  - type: OperationType
+  - path: String
+  + getType(): OperationType
+  + getPath(): String
+}
+class FileIOController {
+  + FileIOController(String): 
+  + FileIOController(String, boolean): 
+  + write(byte[]): void
+  + read(): byte[]
+  + openReadStream(): FileInputStream
+  + openWriteStream(): FileOutputStream
+  + clear(): void
+}
+class GeneralAPIUILocalCommand {
+  + GeneralAPIUILocalCommand(APIClientReceiver, UIReceiver, APICommandRegistry): 
+  + getExternalName(): String
+}
+class HelpLocalCommand {
+  + HelpLocalCommand(UIReceiver): 
+  + getExternalName(): String
+  + execute(String, Map<String, Object>): ClientCommandResponse
+}
+class HelpLocalCommand {
+  + HelpLocalCommand(UIReceiver): 
+  + getExternalName(): String
+  + execute(String, Map<String, Object>): ClientCommandResponse
+}
+interface IFileCreator << interface >> {
+  + create(): void
+}
+interface IValidator<T> << interface >> {
+  + validate(T): ValidationResponse
+}
+annotation InputNullable << annotation >>
+annotation InteractText << annotation >> {
+  + value(): String
+}
+class Interpreter {
+  + Interpreter(CommandRegistry, UIReceiver, UICommandInvoker): 
+  - invoker: UICommandInvoker
+  - uiReceiver: UIReceiver
+  - registryCommand: CommandRegistry
+  + run(): void
+}
+entity InvocationHistoryItem << record >> {
+  + InvocationHistoryItem(UICallableCommand, List<String>): 
+  - command: UICallableCommand
+  - args: List<String>
+  + args(): List<String>
+  + command(): UICallableCommand
+}
+class LocalExecutorAPIConnector {
+  + LocalExecutorAPIConnector(Executor): 
+  - currentExecutor: Executor
+  + call(APICommand): APICommandResponse
+}
+class LocalScriptExecutorTests {
+  + LocalScriptExecutorTests(): 
+}
+class MainClientCommandRegistry {
+  + MainClientCommandRegistry(APIClientReceiver, ScriptExecutor, UIReceiver, APICommandRegistry, UICommandInvoker): 
+  - invoker: UICommandInvoker
+  - registry: APICommandRegistry
+  + withUI(UIReceiver): MainClientCommandRegistry
+}
+class MainTexts {
+  + MainTexts(): 
+  - textList: Map<TextKeys, String>
+  + get(TextKeys): String
+}
+class NetworkServerConnector {
+  + NetworkServerConnector(SocketAPIClient): 
+  - apiController: SocketAPIClient
+  + call(APICommand): APICommandResponse
+}
+class NotRepeatableException {
+  + NotRepeatableException(): 
+}
+class ObjectMapperFactory {
+  + ObjectMapperFactory(): 
+  + createMapper(): ObjectMapper
+}
+class ObjectScanner {
+  + ObjectScanner(APICommandsDescriptionHolder, ConsolePrinter, Scanner): 
+  - mapper: ObjectMapper
+  - dataDescription: Map<Class<?>, List<FieldWithDesc<?>>>
+  - scaner: Scanner
+  - printer: ConsolePrinter
+  - scan(): String
+  - enterField(FieldWithDesc<T>, Map<String, Object>, Object): int
+  + scan(Class<T>, T): ScannerRespond<T>
+  - interactValue(Class<T>, T): ScannerRespond<T>
+}
+class ObjectScannerTest {
+  + ObjectScannerTest(): 
+}
+enum OperationType << enumeration >> {
+  - OperationType(String): 
+  - OperationType(): 
+  + WRITE: 
+  + CREATE: 
+  + OPEN: 
+  - description: String
+  + SET_PERMISSION: 
+  + PERM_READ: 
+  + PERM_WRITE: 
+  + READ: 
+  + valueOf(String): OperationType
+  + getDescription(): String
+  + values(): OperationType[]
+}
+class OrganizationValidator {
+  + OrganizationValidator(): 
+  + validateFullName(String): ValidationResponse
+  + validateAll(Organization): ValidationResponse
+}
+class ParserException {
+  + ParserException(String): 
+}
+class RepeatLocalCommand {
+  + RepeatLocalCommand(UIReceiver, UICommandInvoker): 
+  - invoker: UICommandInvoker
+  + execute(String, Map<String, Object>): ClientCommandResponse<UserPrintableAPICommandResponse>
+  + getExternalName(): String
+}
+class ScannerRespond<T> {
+  + ScannerRespond(T, int): 
+  + object: T
+  + countOfRepeat: int
+  + hashCode(): int
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + getObject(): T
+  + getCountOfRepeat(): int
+  + toString(): String
+}
+class ScriptException {
+  + ScriptException(String): 
+}
+class ScriptExecutor {
+  + ScriptExecutor(APICommandsDescriptionHolder, UICommandInvoker): 
+  - commandRegistry: CommandRegistry
+  - invoker: UICommandInvoker
+  - descriptionHolder: APICommandsDescriptionHolder
+  - recursionController: ScriptRecursionController
+  + process(String): void
+  + setRegistry(CommandRegistry): void
+}
+class ScriptLocalCommand {
+  + ScriptLocalCommand(APIClientReceiver, UIReceiver, ScriptExecutor, APICommandRegistry): 
+  - scriptExecutor: ScriptExecutor
+  + getCommandInlineArgs(String): List<Field<?>>
+  + execute(String, Map<String, Object>): ClientCommandResponse
+  # prepareAPIMessage(String, Map<String, Object>): APICommand
+  + getExternalName(): String
+}
+class ScriptRecursionController {
+  + ScriptRecursionController(): 
+  - visitedPaths: Set<String>
+  + clear(): void
+  + enter(String): boolean
+  + getDepth(): int
+  + leave(String): void
+}
+class ScriptRecursionRootException {
+  + ScriptRecursionRootException(String): 
+}
+class SocketAPIClient {
+  + SocketAPIClient(IClientTransport<SocketMessage>): 
+  - serDesService: JSONSerDesService<IAPIMessage>
+  # serialize(APICommand): SocketMessage
+  # deserialize(SocketMessage): APICommandResponse
+}
+enum Status << enumeration >> {
+  + Status(): 
+  + UNPROCESSED: 
+  + CLIENT_ERROR: 
+  + SERVER_ERROR: 
+  + NOT_FOUND: 
+  + OK: 
+  + values(): Status[]
+  + isError(): boolean
+  + valueOf(String): Status
+}
+class StringUtils {
+  + StringUtils(): 
+  + capitalize(String): String
+}
+enum TextKeys << enumeration >> {
+  - TextKeys(): 
+  + GREEETING: 
+  + HELP: 
+  + values(): TextKeys[]
+  + valueOf(String): TextKeys
+}
+enum TextKeys << enumeration >> {
+  - TextKeys(): 
+  + WORKERINTERACT: 
+  + APIEXCEPTION: 
+  + valueOf(String): TextKeys
+  + values(): TextKeys[]
+}
+enum TextKeys << enumeration >> {
+  - TextKeys(): 
+  + GREEETING: 
+  + HELP: 
+  + values(): TextKeys[]
+  + valueOf(String): TextKeys
+}
+class Texts {
+  + Texts(): 
+  - textList: Map<TextKeys, String>
+  + get(TextKeys): String
+}
+class UDPAPIClientFactory {
+  + UDPAPIClientFactory(InetSocketAddress): 
+  - serverAddress: InetSocketAddress
+  + create(): APIClientReceiver
+}
+class UDPClientTransport {
+  + UDPClientTransport(SocketAddress): 
+  - sendDurationTimeout: Duration
+  - serverAddress: SocketAddress
+  ~ serDesService: JSONSerDesService<SocketMessage>
+  - socket: DatagramSocket
+  - sendFrame(Frame): void
+  + receive(Duration): SocketMessage
+  - receiveFrame(Duration): Frame
+  + send(SocketMessage): void
+}
+interface UICallableCommand << interface >> {
+  + executeWithArgs(List<String>): ClientCommandResponse<UserPrintableAPICommandResponse>
+}
+class UICommandInvoker {
+  + UICommandInvoker(UIReceiver): 
+  - commandHistory: List<InvocationHistoryItem>
+  - screenUIReceiver: UIReceiver
+  # print(String, ClientCommandResponse<UserPrintableAPICommandResponse>): void
+  + invokeLast(): boolean
+  + invoke(UICallableCommand, List<String>): boolean
+}
+interface UIInputReceiver << interface >> {
+  + fill(Class<T>): T
+  + hasNextLine(): boolean
+  + fill(Class<T>, T): T
+  + nextLine(): String
+}
+class UILocalCommand {
+  + UILocalCommand(UIReceiver): 
+  # uiReceiver: UIReceiver
+  + NAME_ARG: String
+  - valueDes: ValueDeserializer
+  + getCommandInlineArgs(String): List<Field<?>>
+  + executeWithArgs(List<String>): ClientCommandResponse<UserPrintableAPICommandResponse>
+  + execute(String, Map<String, Object>): ClientCommandResponse<UserPrintableAPICommandResponse>
+  - getFullInlineArgs(String): List<Field<?>>
+  + getExternalName(): String
+}
+interface UIReceiver << interface >> {
+  + display(String): void
+  + ok(String): void
+  + ok(): void
+  + interactSuggestion(): void
+  + error(String): void
+}
+class UpdateLocalCommand {
+  + UpdateLocalCommand(APIClientReceiver, UIReceiver, APICommandRegistry): 
+  + getExternalName(): String
+  # retrieveAPICommand(String): UserAPICommand
+  # prepareAPIMessage(String, Map<String, Object>): APICommand
+}
+class UserAPICommandRegistry {
+  + UserAPICommandRegistry(): 
+}
+class UserAPICommandsDescriptionHolder {
+  + UserAPICommandsDescriptionHolder(): 
+}
+interface UserPrintableAPICommandResponse << interface >> {
+  + getUserMessage(): String
+}
+interface UserPromptedAPICommand << interface >> {
+  + getType(): String
+  + getInlineArgs(): Field<?>[]
+  + getInteractArgs(): Field<?>[]
+}
+class ValidationResponse {
+  + ValidationResponse(boolean, String): 
+  - allowed: boolean
+  - msg: String
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + isAllowed(): boolean
+  + getMsg(): String
+  + setAllowed(boolean): void
+  + setMsg(String): void
+  + toString(): String
+}
+interface Validator << interface >>
+class ValueDeserializer {
+  + ValueDeserializer(): 
+  - mapper: ObjectMapper
+  + deserialize(Class<K>, String): K
+}
+class Worker {
+  + Worker(Integer, ZonedDateTime, String, float, Date, LocalDate, Coordinates, Organization, Position): 
+  + Worker(): 
+  - salary: float
+  - name: String
+  - endDate: LocalDate
+  - creationDate: ZonedDateTime
+  - organization: Organization
+  - position: Position
+  - startDate: Date
+  - id: Integer
+  - coordinates: Coordinates
+  + getSalary(): float
+  + getId(): Integer
+  + getCreationDate(): ZonedDateTime
+  + getName(): String
+  + setStartDate(Date): void
+  + setEndDate(LocalDate): void
+  + getStartDate(): Date
+  + setSalary(float): void
+  + getEndDate(): LocalDate
+  + getCoordinates(): Coordinates
+  + setName(String): void
+  + setOrganization(Organization): void
+  + withCreationDate(ZonedDateTime): Worker
+  + getOrganization(): Organization
+  + withId(Integer): Worker
+  + getPosition(): Position
+  + setPosition(Position): void
+  + toString(): String
+  + setCoordinates(Coordinates): void
+  + nicePrintFormat(List<Worker>): String
+  + equals(Object): boolean
+  + getComparator(): Comparator<Worker>
+  + getPrimaryKey(): Integer
+  + compareTo(Worker): int
+}
+class WorkerValidator {
+  + WorkerValidator(): 
+  + validateSalary(Float): ValidationResponse
+  + validateCoordinates(Coordinates): ValidationResponse
+  + validateId(Integer): ValidationResponse
+  + validateName(String): ValidationResponse
+  + validateAll(Worker): ValidationResponse
+  + validateStartDate(Date): ValidationResponse
+}
+
+APICommandResponse                "1" *--> "status\n1" Status                            
+APICommandResponse                 ..^  UserPrintableAPICommandResponse   
+APIUILocalCommand                 "1" *--> "apiClientReceiver\n1" APIClientReceiver                 
+APIUILocalCommand                 "1" *--> "registry\n1" APICommandRegistry                
+APIUILocalCommand                  --^  UILocalCommand                    
+AbstractCommandDecorator           --^  AbstractLocalCommand              
+AbstractCommandDecorator          "1" *--> "decoratee\n1" AbstractLocalCommand              
+AdminAPICommandRegistry            --^  APICommandRegistry                
+AdminAPICommandsDescriptionHolder  --^  APICommandsDescriptionHolder      
+AdminClientCommandRegistry        "1" *--> "registry\n1" APICommandRegistry                
+AdminClientCommandRegistry         --^  CommandRegistry                   
+AdminTexts                        "1" *--> "textList\n*" TextKeys                          
+AdminTexts                         --^  Texts                             
+CLIController                     "1" *--> "printer\n1" ConsolePrinter                    
+CLIController                     "1" *--> "objectScanner\n1" ObjectScanner                     
+CLIController                      ..^  UIReceiver                        
+ClientConsoleArgumentsParser       --^  AbstractConsoleArgumentsParser    
+CommandRegistry                   "1" *--> "api\n1" APIClientReceiver                 
+CommandRegistry                   "1" *--> "commandMap\n*" AbstractLocalCommand              
+CommandRegistry                   "1" *--> "scriptExecutor\n1" ScriptExecutor                    
+CoordinatesValidator               ..^  Validator                         
+ExitLocalCommand                   --^  UILocalCommand                    
+FieldWithDesc                      --^  Field                             
+FieldWithDesc                     "1" *--> "validator\n1" IValidator                        
+FileAccessException               "1" *--> "type\n1" OperationType                     
+GeneralAPIUILocalCommand           --^  APIUILocalCommand                 
+HelpLocalCommand                   --^  UILocalCommand                    
+HelpLocalCommand                   --^  UILocalCommand                    
+Interpreter                       "1" *--> "registryCommand\n1" CommandRegistry                   
+Interpreter                       "1" *--> "invoker\n1" UICommandInvoker                  
+Interpreter                       "1" *--> "uiReceiver\n1" UIReceiver                        
+LocalExecutorAPIConnector          ..^  APIClientReceiver                 
+LocalExecutorAPIConnector         "1" *--> "currentExecutor\n1" Executor                          
+MainClientCommandRegistry         "1" *--> "registry\n1" APICommandRegistry                
+MainClientCommandRegistry          --^  CommandRegistry                   
+MainClientCommandRegistry         "1" *--> "invoker\n1" UICommandInvoker                  
+MainTexts                         "1" *--> "textList\n*" TextKeys                          
+MainTexts                          --^  Texts                             
+NetworkServerConnector             ..^  APIClientReceiver                 
+NetworkServerConnector            "1" *--> "apiController\n1" SocketAPIClient                   
+ObjectScanner                     "1" *--> "printer\n1" ConsolePrinter                    
+OperationType                      +--  FileAccessException               
+OrganizationValidator              ..^  Validator                         
+RepeatLocalCommand                "1" *--> "invoker\n1" UICommandInvoker                  
+RepeatLocalCommand                 --^  UILocalCommand                    
+ScannerRespond                     +--  ObjectScanner                     
+ScriptExecutor                    "1" *--> "descriptionHolder\n1" APICommandsDescriptionHolder      
+ScriptExecutor                    "1" *--> "commandRegistry\n1" CommandRegistry                   
+ScriptExecutor                    "1" *--> "recursionController\n1" ScriptRecursionController         
+ScriptExecutor                    "1" *--> "invoker\n1" UICommandInvoker                  
+ScriptLocalCommand                 --^  APIUILocalCommand                 
+ScriptLocalCommand                "1" *--> "scriptExecutor\n1" ScriptExecutor                    
+Status                             +--  APICommandResponse                
+TextKeys                           +--  AdminTexts                        
+TextKeys                           +--  MainTexts                         
+TextKeys                           +--  Texts                             
+Texts                             "1" *--> "textList\n*" TextKeys                          
+UDPAPIClientFactory                --^  AbstractAPIClientReceiverFactory  
+UICommandInvoker                  "1" *--> "commandHistory\n*" InvocationHistoryItem             
+UICommandInvoker                  "1" *--> "screenUIReceiver\n1" UIReceiver                        
+UILocalCommand                     --^  AbstractLocalCommand              
+UILocalCommand                     ..^  UICallableCommand                 
+UILocalCommand                    "1" *--> "uiReceiver\n1" UIReceiver                        
+UILocalCommand                    "1" *--> "valueDes\n1" ValueDeserializer                 
+UIReceiver                         --^  UIInputReceiver                   
+UpdateLocalCommand                 --^  APIUILocalCommand                 
+UserAPICommandRegistry             --^  APICommandRegistry                
+UserAPICommandsDescriptionHolder   --^  APICommandsDescriptionHolder      
+ValidationResponse                 ..^  Validator                         
+WorkerValidator                    ..^  Validator                         
+@enduml

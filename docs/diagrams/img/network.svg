@@ -1,0 +1,3260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css"
+     height="2666px" preserveAspectRatio="none" style="width:5334px;height:2666px;background:#FFFFFF;" version="1.1"
+     viewBox="0 0 5334 2666" width="5334px" zoomAndPan="magnify">
+    <defs/>
+    <g><!--MD5=[d21e4fbff52b80cc046f1a5e125c3088]
+class APIApplication-->
+        <g id="elem_APIApplication">
+            <rect codeLine="22" fill="#FFFFFF" height="77.0439" id="APIApplication" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="218" x="3650" y="1025.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="115" x="3701.5" y="1044.5752">APIApplication
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3651" x2="3867" y1="1052.5146" y2="1052.5146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3651" x2="3867" y1="1060.5146" y2="1060.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="128" x="3656"
+                  y="1078.5898">+APIApplication():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="206" x="3656"
+                  y="1095.6045">+filter(AppRequest): boolean
+            </text>
+        </g><!--MD5=[7dd50213aeff8577d2b1d8dc5a1431d1]
+class APICommand-->
+        <g id="elem_APICommand">
+            <rect codeLine="26" fill="#FFFFFF" height="179.1318" id="APICommand" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="321" x="3962.5" y="497.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="107" x="4069.5" y="516.5752">APICommand
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3963.5" x2="4282.5" y1="524.5146" y2="524.5146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3963.5" x2="4282.5" y1="532.5146" y2="532.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="123" x="3968.5"
+                  y="550.5898">+APICommand():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="180" x="3968.5"
+                  y="567.6045">+equals(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="197" x="3968.5"
+                  y="584.6191">#canEqual(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="3968.5"
+                  y="601.6338">+hashCode(): int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="135" x="3968.5"
+                  y="618.6484">+toString(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="224" x="3968.5"
+                  y="635.6631">+validate(): ValidationResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="304" x="3968.5"
+                  y="652.6777">+getCmdIdentifier(): Class&lt;APICommand&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="309" x="3968.5"
+                  y="669.6924">+createResponse(): APICommandResponse
+            </text>
+        </g><!--MD5=[f69ea8f59b712e7a65959ad6662c8907]
+class APICommandResponse-->
+        <g id="elem_APICommandResponse">
+            <rect codeLine="36" fill="#FFFFFF" height="383.3076" id="APICommandResponse" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="358" x="4325" y="872.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="182" x="4413" y="891.5752">APICommandResponse
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4326" x2="4682" y1="899.5146" y2="899.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="110" x="4331"
+                  y="917.5898">-status: Status
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="179" x="4331"
+                  y="934.6045">-textualResponse: String
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4326" x2="4682" y1="941.5439" y2="941.5439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="192" x="4331"
+                  y="959.6191">+APICommandResponse():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="292" x="4331"
+                  y="976.6338">+APICommandResponse(Status, String):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="151" x="4331"
+                  y="993.6484">+getStatus(): Status
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="221" x="4331"
+                  y="1010.6631">+getTextualResponse(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="179" x="4331"
+                  y="1027.6777">+setStatus(Status): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="249" x="4331"
+                  y="1044.6924">+setTextualResponse(String): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="180" x="4331"
+                  y="1061.707">+equals(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="197" x="4331"
+                  y="1078.7217">#canEqual(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="4331"
+                  y="1095.7363">+hashCode(): int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="135" x="4331"
+                  y="1112.751">+toString(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="312" x="4331"
+                  y="1129.7656">+clientError(String): APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="338" x="4331"
+                  y="1146.7803">+clientError(Exception): APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="346" x="4331"
+                  y="1163.7949">+serverError(Exception): APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="265" x="4331"
+                  y="1180.8096">+notFound(): APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="214" x="4331"
+                  y="1197.8242">+ok(): APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="157" x="4331"
+                  y="1214.8389">+isSuccess(): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="320" x="4331"
+                  y="1231.8535">+serverError(String): APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="163" x="4331"
+                  y="1248.8682">+isResolved(): boolean
+            </text>
+        </g><!--MD5=[8b3b249bff01f8f7f0a79dfa372a82b6]
+class AbstractAPIClient-->
+        <g id="elem_AbstractAPIClient">
+            <rect codeLine="58" fill="#FFFFFF" height="196.1465" id="AbstractAPIClient" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="357" x="811.5" y="966"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="138" x="915.5" y="985.0752">AbstractAPIClient
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="9" x="1162.5" y="963"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="7" x="1163.5" y="976.0645">T
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="812.5" x2="1167.5" y1="993.0146" y2="993.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="230" x="817.5"
+                  y="1011.0898">-transport: IClientTransport&lt;T&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="178" x="817.5"
+                  y="1028.1045">-currentMessageId: Long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="133" x="817.5"
+                  y="1045.1191">-timeout: Duration
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="812.5" x2="1167.5" y1="1052.0586" y2="1052.0586"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="296" x="817.5"
+                  y="1070.1338">+AbstractAPIClient(IClientTransport&lt;T&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="345" x="817.5"
+                  y="1087.1484">+request(APICommand): APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="192" x="817.5"
+                  y="1104.1631">#serialize(APICommand): T
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="203" x="817.5"
+                  y="1121.1777">+setTimeout(Duration): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="278" x="817.5"
+                  y="1138.1924">#deserialize(T): APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="185" x="817.5"
+                  y="1155.207">-validateReply(T): boolean
+            </text>
+        </g><!--MD5=[71465a87d273e1deeeec9417dc24e1b1]
+class AbstractApplication-->
+        <g id="elem_AbstractApplication">
+            <rect codeLine="69" fill="#FFFFFF" height="247.1904" id="AbstractApplication" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="577" x="3156.5" y="1408"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="151" x="3369.5" y="1427.0752">AbstractApplication
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3157.5" x2="3732.5" y1="1435.0146" y2="1435.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="88" x="3162.5"
+                  y="1453.0898">-log: Logger
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="279" x="3162.5"
+                  y="1470.1045">-processors: List&lt;AbstractApplication&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="372" x="3162.5"
+                  y="1487.1191">-anyCommandHandler: IApplicationCommandHandler
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="565" x="3162.5"
+                  y="1504.1338">-commandHandlers: Map&lt;Class&lt;APICommand&gt;, IApplicationCommandHandler&gt;
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3157.5" x2="3732.5" y1="1511.0732" y2="1511.0732"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="165" x="3162.5"
+                  y="1529.1484">+AbstractApplication():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="224" x="3162.5"
+                  y="1546.1631">+use(AbstractApplication): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="261" x="3162.5"
+                  y="1563.1777">#process(AppRequest): AppRequest
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="449" x="3162.5"
+                  y="1580.1924">+on(Class&lt;APICommand&gt;, IApplicationCommandHandler): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="286" x="3162.5"
+                  y="1597.207">+on(IApplicationCommandHandler): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="461" x="3162.5"
+                  y="1614.2217">+on(IApplicationCommandHandler, Class&lt;APICommand&gt;[]): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="97" x="3162.5"
+                  y="1631.2363">+start(): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="442" x="3162.5"
+                  y="1648.251">-safeProcessCall(AppRequest, Consumer&lt;AppRequest&gt;): void
+            </text>
+        </g><!--MD5=[55001c49987380ebbe51eebf4f62df65]
+class AbstractInputTransportApplication-->
+        <g id="elem_AbstractInputTransportApplication">
+            <rect codeLine="83" fill="#FFFFFF" height="179.1318" id="AbstractInputTransportApplication" rx="2.5"
+                  ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="456" x="2102" y="974.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="272" x="2180" y="993.5752">AbstractInputTransportApplication
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="26" x="2535" y="971.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="24" x="2536" y="984.5645">U, L
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2103" x2="2557" y1="1001.5146" y2="1001.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="88" x="2108"
+                  y="1019.5898">-log: Logger
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="256" x="2108"
+                  y="1036.6045">-transport: IServerTransport&lt;U, L&gt;
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2103" x2="2557" y1="1043.5439" y2="1043.5439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="444" x="2108"
+                  y="1061.6191">+AbstractInputTransportApplication(IServerTransport&lt;U, L&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="206" x="2108"
+                  y="1078.6338">+filter(AppRequest): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="250" x="2108"
+                  y="1095.6484">#supplySession(U, L): Session&lt;U&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="208" x="2108"
+                  y="1112.6631">#deserialize(L): APICommand
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="97" x="2108"
+                  y="1129.6777">+start(): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="133" x="2108"
+                  y="1146.6924">-handle(U, L): void
+            </text>
+        </g><!--MD5=[e21f64b21dffec936ed6392293ef5b34]
+class AbstractOutputTransportApplication-->
+        <g id="elem_AbstractOutputTransportApplication">
+            <rect codeLine="93" fill="#FFFFFF" height="179.1318" id="AbstractOutputTransportApplication" rx="2.5"
+                  ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="468" x="3115" y="974.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="282" x="3194" y="993.5752">AbstractOutputTransportApplication
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="26" x="3560" y="971.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="24" x="3561" y="984.5645">U, L
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3116" x2="3582" y1="1001.5146" y2="1001.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="88" x="3121"
+                  y="1019.5898">-log: Logger
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="256" x="3121"
+                  y="1036.6045">-transport: IServerTransport&lt;U, L&gt;
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3116" x2="3582" y1="1043.5439" y2="1043.5439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="456" x="3121"
+                  y="1061.6191">+AbstractOutputTransportApplication(IServerTransport&lt;U, L&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="280" x="3121"
+                  y="1078.6338">#send(U, APICommandResponse): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="433" x="3121"
+                  y="1095.6484">#supplyResponse(AppRequest): AppResponseController&lt;U&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="206" x="3121"
+                  y="1112.6631">+filter(AppRequest): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="261" x="3121"
+                  y="1129.6777">#process(AppRequest): AppRequest
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="260" x="3121"
+                  y="1146.6924">#serialize(APICommandResponse): L
+            </text>
+        </g><!--MD5=[60b1aa37594212737e4fb1e7e7f86795]
+class AppRequest-->
+        <g id="elem_AppRequest">
+            <rect codeLine="103" fill="#FFFFFF" height="315.249" id="AppRequest" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="651" x="4646.5" y="12"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="94" x="4925" y="31.0752">AppRequest
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4647.5" x2="5296.5" y1="39.0146" y2="39.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="65" x="4652.5"
+                  y="57.0898">-id: Long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="166" x="4652.5"
+                  y="74.1045">-payload: APICommand
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="137" x="4652.5"
+                  y="91.1191">-status: ReqStatus
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="156" x="4652.5"
+                  y="108.1338">-session: Session&lt;?&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="279" x="4652.5"
+                  y="125.1484">-response: AppResponseController&lt;?&gt;
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4647.5" x2="5296.5" y1="132.0879" y2="132.0879"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="639" x="4652.5"
+                  y="150.1631">+AppRequest(ReqStatus, Long, Session&lt;?&gt;, AppResponseController&lt;?&gt;,
+                APICommand):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="115" x="4652.5"
+                  y="167.1777">+AppRequest():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="81" x="4652.5"
+                  y="184.1924">+id(): Long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="295" x="4652.5"
+                  y="201.207">+response(): AppResponseController&lt;?&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="206" x="4652.5"
+                  y="218.2217">+setStatus(ReqStatus): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="182" x="4652.5"
+                  y="235.2363">+payload(): APICommand
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="153" x="4652.5"
+                  y="252.251">+status(): ReqStatus
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="350" x="4652.5"
+                  y="269.2656">+setResponse(AppResponseController&lt;?&gt;): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="135" x="4652.5"
+                  y="286.2803">+toString(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="172" x="4652.5"
+                  y="303.2949">+session(): Session&lt;?&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="179" x="4652.5"
+                  y="320.3096">+isTerminated(): boolean
+            </text>
+        </g><!--MD5=[782ed1b435d23dc521e12a03b8b32759]
+class AppResponseController-->
+        <g id="elem_AppResponseController">
+            <rect codeLine="121" fill="#FFFFFF" height="298.2344" id="AppResponseController" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="510" x="4319" y="438"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="184" x="4475.5" y="457.0752">AppResponseController
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="11" x="4821" y="435"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="9" x="4822" y="448.0645">U
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4320" x2="4828" y1="465.0146" y2="465.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="88" x="4325"
+                  y="483.0898">-log: Logger
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="65" x="4325"
+                  y="500.1045">-id: Long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="246" x="4325"
+                  y="517.1191">-response: APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="163" x="4325"
+                  y="534.1338">-isTerminated: boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="335" x="4325"
+                  y="551.1484">-destination: IDestinationServerApplication&lt;U&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="87" x="4325"
+                  y="568.1631">-recipient: U
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4320" x2="4828" y1="575.1025" y2="575.1025"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="486" x="4325"
+                  y="593.1777">+AppResponseController(AppRequest, IDestinationServerApplication
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" text-decoration="underline"
+                  textLength="12" x="4811" y="593.1777">):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="151" x="4325"
+                  y="610.1924">+getStatus(): Status
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="97" x="4325"
+                  y="627.207">+send(): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="324" x="4325"
+                  y="644.2217">+status(Status): AppResponseController&lt;U&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="428" x="4325"
+                  y="661.2363">+from(APICommandResponse): AppResponseController&lt;U&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="179" x="4325"
+                  y="678.251">+isTerminated(): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="130" x="4325"
+                  y="695.2656">+terminate(): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="106" x="4325"
+                  y="712.2803">+getId(): Long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="337" x="4325"
+                  y="729.2949">+message(String): AppResponseController&lt;U&gt;
+            </text>
+        </g><!--MD5=[21acf77f447dc6dc580d7119efd9bb52]
+class ApplicationBuildException-->
+        <g id="elem_ApplicationBuildException">
+            <rect codeLine="138" fill="#FFFFFF" height="60.0293" id="ApplicationBuildException" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="263" x="20.5" y="139.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="201" x="51.5" y="158.5752">ApplicationBuildException
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="21.5" x2="282.5" y1="166.5146" y2="166.5146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="21.5" x2="282.5" y1="174.5146" y2="174.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="251" x="26.5"
+                  y="192.5898">+ApplicationBuildException(String):
+            </text>
+        </g><!--MD5=[a2ccf484e00b81f2384af8099ff73402]
+class ClientMain-->
+        <g id="elem_ClientMain">
+            <rect codeLine="141" fill="#FFFFFF" height="111.0732" id="ClientMain" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="247" x="691.5" y="114"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="80" x="775" y="133.0752">ClientMain
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="692.5" x2="937.5" y1="141.0146" y2="141.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="192" x="697.5"
+                  y="159.0898">-client: UDPClientTransport
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="692.5" x2="937.5" y1="166.0293" y2="166.0293"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="99" x="697.5"
+                  y="184.1045">+ClientMain():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="151" x="697.5"
+                  y="201.1191">+main(String[]): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="235" x="697.5"
+                  y="218.1338">+clientRun(SocketMessage): void
+            </text>
+        </g><!--MD5=[64ad5f0319badfc6629542683b018b66]
+class CommandType-->
+        <g id="elem_CommandType">
+            <rect codeLine="147" fill="#FFFFFF" height="193.7158" id="CommandType" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="246" x="1767" y="1434.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="93" x="1843.5" y="1451.5645">«enumeration»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="116" x="1832" y="1468.1592">CommandType
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1768" x2="2012" y1="1476.0986" y2="1476.0986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="54" x="1773"
+                  y="1494.1738">+HALT:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="57" x="1773"
+                  y="1511.1885">+NACK:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="57" x="1773"
+                  y="1528.2031">+DATA:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="46" x="1773"
+                  y="1545.2178">+INIT:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="47" x="1773"
+                  y="1562.2324">+ACK:
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1768" x2="2012" y1="1569.1719" y2="1569.1719"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="130" x="1773"
+                  y="1587.2471">-CommandType():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="195" x="1773"
+                  y="1604.2617">+values(): CommandType[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="234" x="1773"
+                  y="1621.2764">+valueOf(String): CommandType
+            </text>
+        </g><!--MD5=[ad58c7e76c48f0446c128dd36cec0a8d]
+class ErrorHandlingApplication-->
+        <g id="elem_ErrorHandlingApplication">
+            <rect codeLine="157" fill="#FFFFFF" height="94.0586" id="ErrorHandlingApplication" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="273" x="3654.5" y="540"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="195" x="3693.5" y="559.0752">ErrorHandlingApplication
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3655.5" x2="3926.5" y1="567.0146" y2="567.0146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3655.5" x2="3926.5" y1="575.0146" y2="575.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="201" x="3660.5"
+                  y="593.0898">+ErrorHandlingApplication():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="261" x="3660.5"
+                  y="610.1045">#process(AppRequest): AppRequest
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="206" x="3660.5"
+                  y="627.1191">+filter(AppRequest): boolean
+            </text>
+        </g><!--MD5=[678ba86161b65c93147b2a3a8cf02be2]
+class Frame-->
+        <g id="elem_Frame">
+            <rect codeLine="162" fill="#FFFFFF" height="366.293" id="Frame" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="329" x="4339.5" y="2293"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="48" x="4480" y="2312.0752">Frame
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4340.5" x2="4667.5" y1="2320.0146" y2="2320.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="115" x="4345.5"
+                  y="2338.0898">-payload: byte[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="150" x="4345.5"
+                  y="2355.1045">+PAYLOAD_SIZE: int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="114" x="4345.5"
+                  y="2372.1191">+MAX_SIZE: int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="169" x="4345.5"
+                  y="2389.1338">-currentPayloadSize: int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="60" x="4345.5"
+                  y="2406.1484">-id: long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="119" x="4345.5"
+                  y="2423.1631">+FIRST_ID: long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="142" x="4345.5"
+                  y="2440.1777">+HEADER_SIZE: int
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4340.5" x2="4667.5" y1="2447.1172" y2="2447.1172"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="102" x="4345.5"
+                  y="2465.1924">+Frame(long):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="155" x="4345.5"
+                  y="2482.207">+Frame(long, byte[]):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="132" x="4345.5"
+                  y="2499.2217">+toBytes(): byte[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="135" x="4345.5"
+                  y="2516.2363">+toString(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="317" x="4345.5"
+                  y="2533.251">+fromChannel(ReadableByteChannel): Frame
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="197" x="4345.5"
+                  y="2550.2656">#canEqual(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="211" x="4345.5"
+                  y="2567.2803">+getCurrentPayloadSize(): int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="101" x="4345.5"
+                  y="2584.2949">+getId(): long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="153" x="4345.5"
+                  y="2601.3096">+getPayload(): byte[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="180" x="4345.5"
+                  y="2618.3242">+equals(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="4345.5"
+                  y="2635.3389">+hashCode(): int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="193" x="4345.5"
+                  y="2652.3535">+fromBytes(byte[]): Frame
+            </text>
+        </g><!--MD5=[4c7afd925db3949928ed10f359a263eb]
+class IAPIMessage-->
+        <g id="elem_IAPIMessage">
+            <rect codeLine="183" fill="#FFFFFF" height="57.5986" id="IAPIMessage" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="109" x="4125.5" y="1502.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68" x="4146" y="1519.5645">«interface»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" font-weight="bold"
+                  lengthAdjust="spacing" textLength="103" x="4128.5" y="1536.1592">IAPIMessage
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4126.5" x2="4233.5" y1="1544.0986" y2="1544.0986"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4126.5" x2="4233.5" y1="1552.0986" y2="1552.0986"/>
+        </g><!--MD5=[4f2f92b2f16a69ce84f2367cfde8e903]
+class IApplicationCommandHandler-->
+        <g id="elem_IApplicationCommandHandler">
+            <rect codeLine="184" fill="#FFFFFF" height="74.6133" id="IApplicationCommandHandler" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="241" x="3191.5" y="1970"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68" x="3278" y="1987.0645">«interface»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" font-weight="bold"
+                  lengthAdjust="spacing" textLength="235" x="3194.5" y="2003.6592">IApplicationCommandHandler
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3192.5" x2="3431.5" y1="2011.5986" y2="2011.5986"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3192.5" x2="3431.5" y1="2019.5986" y2="2019.5986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="195" x="3197.5"
+                  y="2037.6738">+handle(AppRequest): void
+            </text>
+        </g><!--MD5=[1a4dc486f2b7292f3452009672f53d26]
+class IClientTransport-->
+        <g id="elem_IClientTransport">
+            <rect codeLine="187" fill="#FFFFFF" height="91.6279" id="IClientTransport" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="164" x="792" y="1485.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68" x="834.5" y="1502.5645">«interface»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" font-weight="bold"
+                  lengthAdjust="spacing" textLength="128" x="804.5" y="1519.1592">IClientTransport
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="9" x="950" y="1482.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="7" x="951" y="1495.5645">T
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="793" x2="955" y1="1527.0986" y2="1527.0986"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="793" x2="955" y1="1535.0986" y2="1535.0986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="152" x="798"
+                  y="1553.1738">+receive(Duration): T
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="106" x="798"
+                  y="1570.1885">+send(T): void
+            </text>
+        </g><!--MD5=[94eace518bc2891ef9d8f193a68659bc]
+class IDestinationServerApplication-->
+        <g id="elem_IDestinationServerApplication">
+            <rect codeLine="191" fill="#FFFFFF" height="74.6133" id="IDestinationServerApplication" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="292" x="4718" y="1026.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68" x="4823.5" y="1043.5645">«interface»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" font-weight="bold"
+                  lengthAdjust="spacing" textLength="233" x="4741" y="1060.1592">IDestinationServerApplication
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="11" x="5002" y="1023.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="9" x="5003" y="1036.5645">U
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4719" x2="5009" y1="1068.0986" y2="1068.0986"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4719" x2="5009" y1="1076.0986" y2="1076.0986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="280" x="4724"
+                  y="1094.1738">+send(U, APICommandResponse): void
+            </text>
+        </g><!--MD5=[37a66c112d047565668fbac653eda452]
+class IFilteredApplication-->
+        <g id="elem_IFilteredApplication">
+            <rect codeLine="194" fill="#FFFFFF" height="74.6133" id="IFilteredApplication" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="218" x="3468" y="1970"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68" x="3543" y="1987.0645">«interface»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" font-weight="bold"
+                  lengthAdjust="spacing" textLength="152" x="3501" y="2003.6592">IFilteredApplication
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3469" x2="3685" y1="2011.5986" y2="2011.5986"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3469" x2="3685" y1="2019.5986" y2="2019.5986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="206" x="3474"
+                  y="2037.6738">+filter(AppRequest): boolean
+            </text>
+        </g><!--MD5=[7348211856db2d71212859ac69d59ca7]
+class IIdentifiableCommand-->
+        <g id="elem_IIdentifiableCommand">
+            <rect codeLine="197" fill="#FFFFFF" height="74.6133" id="IIdentifiableCommand" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="196" x="4094" y="1026.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68" x="4152" y="1043.5645">«interface»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" font-weight="bold"
+                  lengthAdjust="spacing" textLength="178" x="4097" y="1060.1592">IIdentifiableCommand
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="10" x="4283" y="1023.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="8" x="4284" y="1036.5645">K
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4095" x2="4289" y1="1068.0986" y2="1068.0986"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4095" x2="4289" y1="1076.0986" y2="1076.0986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="161" x="4100"
+                  y="1094.1738">+getCmdIdentifier(): K
+            </text>
+        </g><!--MD5=[a3675fea4e66e54c3f7d5540b71618b7]
+class IIdentifiableMessage-->
+        <g id="elem_IIdentifiableMessage">
+            <rect codeLine="200" fill="#FFFFFF" height="91.6279" id="IIdentifiableMessage" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="169" x="1562.5" y="1485.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68" x="1613" y="1502.5645">«interface»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" font-weight="bold"
+                  lengthAdjust="spacing" textLength="163" x="1565.5" y="1519.1592">IIdentifiableMessage
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1563.5" x2="1730.5" y1="1527.0986" y2="1527.0986"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1563.5" x2="1730.5" y1="1535.0986" y2="1535.0986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="106" x="1568.5"
+                  y="1553.1738">+getId(): Long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="134" x="1568.5"
+                  y="1570.1885">+setId(Long): void
+            </text>
+        </g><!--MD5=[00a932a8b4842f2c6bdf3db3c8c31600]
+class IMessageHandler-->
+        <g id="elem_IMessageHandler">
+            <rect codeLine="204" fill="#FFFFFF" height="74.6133" id="IMessageHandler" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="171" x="2837.5" y="1026.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68" x="2873.5" y="1043.5645">«interface»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" font-weight="bold"
+                  lengthAdjust="spacing" textLength="134" x="2840.5" y="1060.1592">IMessageHandler
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="29" x="2982.5" y="1023.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="27" x="2983.5" y="1036.5645">U, M
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2838.5" x2="3007.5" y1="1068.0986" y2="1068.0986"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2838.5" x2="3007.5" y1="1076.0986" y2="1076.0986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="140" x="2843.5"
+                  y="1094.1738">+handle(U, M): void
+            </text>
+        </g><!--MD5=[ab3d5d5291175bfa4b89b0fc74d449a5]
+class IServerTransport-->
+        <g id="elem_IServerTransport">
+            <rect codeLine="207" fill="#FFFFFF" height="108.6426" id="IServerTransport" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="310" x="2811" y="1477"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="68" x="2918" y="1494.0645">«interface»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" font-weight="bold"
+                  lengthAdjust="spacing" textLength="136" x="2884" y="1510.6592">IServerTransport
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="26" x="3098" y="1474"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="24" x="3099" y="1487.0645">U, L
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2812" x2="3120" y1="1518.5986" y2="1518.5986"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2812" x2="3120" y1="1526.5986" y2="1526.5986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="125" x="2817"
+                  y="1544.6738">+send(U, L): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="298" x="2817"
+                  y="1561.6885">+subscribe(IMessageHandler&lt;U, L&gt;): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="87" x="2817"
+                  y="1578.7031">+run(): void
+            </text>
+        </g><!--MD5=[7a4c6d9dce21d5f557f7bcbf757fa94d]
+class JSONSerDesService-->
+        <g id="elem_JSONSerDesService">
+            <rect codeLine="212" fill="#FFFFFF" height="94.0586" id="JSONSerDesService" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="431" x="1203.5" y="1017"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="151" x="1338" y="1036.0752">JSONSerDesService
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="9" x="1628.5" y="1014"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="7" x="1629.5" y="1027.0645">T
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1204.5" x2="1633.5" y1="1044.0146" y2="1044.0146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1204.5" x2="1633.5" y1="1052.0146" y2="1052.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="235" x="1209.5"
+                  y="1070.0898">+JSONSerDesService(Class&lt;T&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="419" x="1209.5"
+                  y="1087.1045">#getPolymorphicValidator(): BasicPolymorphicTypeValidator
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="251" x="1209.5"
+                  y="1104.1191">#getObjectMapper(): ObjectMapper
+            </text>
+        </g><!--MD5=[220f5f32351d35cc72380e3951491ed2]
+class Pair-->
+        <g id="elem_Pair">
+            <rect codeLine="217" fill="#FFFFFF" height="196.1465" id="Pair" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="209" x="2593.5" y="966"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="30" x="2669.5" y="985.0752">Pair
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="25" x="2780.5" y="963"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="23" x="2781.5" y="976.0645">T, K
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2594.5" x2="2801.5" y1="993.0146" y2="993.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="55" x="2599.5"
+                  y="1011.0898">-first: T
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="78" x="2599.5"
+                  y="1028.1045">-second: K
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2594.5" x2="2801.5" y1="1035.0439" y2="1035.0439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="83" x="2599.5"
+                  y="1053.1191">+Pair(T, K):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="135" x="2599.5"
+                  y="1070.1338">+toString(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="180" x="2599.5"
+                  y="1087.1484">+equals(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="119" x="2599.5"
+                  y="1104.1631">+getSecond(): K
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="197" x="2599.5"
+                  y="1121.1777">#canEqual(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="2599.5"
+                  y="1138.1924">+hashCode(): int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="97" x="2599.5"
+                  y="1155.207">+getFirst(): T
+            </text>
+        </g><!--MD5=[c1143eb98677c381f4065163119851aa]
+class ReqStatus-->
+        <g id="elem_ReqStatus">
+            <rect codeLine="228" fill="#FFFFFF" height="176.7012" id="ReqStatus" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="215" x="4864.5" y="498.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="93" x="4925.5" y="515.5645">«enumeration»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="79" x="4932.5" y="532.1592">ReqStatus
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4865.5" x2="5078.5" y1="540.0986" y2="540.0986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="85" x="4870.5"
+                  y="558.1738">+CREATED:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="93" x="4870.5"
+                  y="575.1885">+UNKNOWN:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="76" x="4870.5"
+                  y="592.2031">+INVALID:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="77" x="4870.5"
+                  y="609.2178">+NORMAL:
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4865.5" x2="5078.5" y1="616.1572" y2="616.1572"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="99" x="4870.5"
+                  y="634.2324">-ReqStatus():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="164" x="4870.5"
+                  y="651.2471">+values(): ReqStatus[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="203" x="4870.5"
+                  y="668.2617">+valueOf(String): ReqStatus
+            </text>
+        </g><!--MD5=[3a6b3ac2109cf17577e54c40a11f263c]
+class SerDesService-->
+        <g id="elem_SerDesService">
+            <rect codeLine="237" fill="#FFFFFF" height="145.1025" id="SerDesService" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="263" x="1264.5" y="1459"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="110" x="1335.5" y="1478.0752">SerDesService
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="9" x="1521.5" y="1456"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="7" x="1522.5" y="1469.0645">T
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1265.5" x2="1526.5" y1="1486.0146" y2="1486.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="168" x="1270.5"
+                  y="1504.0898">-mapper: ObjectMapper
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="156" x="1270.5"
+                  y="1521.1045">-baseClass: Class&lt;T&gt;
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1265.5" x2="1526.5" y1="1528.0439" y2="1528.0439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="198" x="1270.5"
+                  y="1546.1191">+SerDesService(Class&lt;T&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="141" x="1270.5"
+                  y="1563.1338">+serialize(T): byte[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="158" x="1270.5"
+                  y="1580.1484">+deserialize(byte[]): T
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="251" x="1270.5"
+                  y="1597.1631">#getObjectMapper(): ObjectMapper
+            </text>
+        </g><!--MD5=[2ca1536628238a7dc78c5d90808014f9]
+class Session-->
+        <g id="elem_Session">
+            <rect codeLine="245" fill="#FFFFFF" height="213.1611" id="Session" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="209" x="5114.5" y="480.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="59" x="5183.5" y="499.5752">Session
+            </text>
+            <rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+                  width="10" x="5316.5" y="477.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="8" x="5317.5" y="490.5645">K
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="5115.5" x2="5322.5" y1="507.5146" y2="507.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="92" x="5120.5"
+                  y="525.5898">-state: State
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="84" x="5120.5"
+                  y="542.6045">-address: K
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="5115.5" x2="5322.5" y1="549.5439" y2="549.5439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="94" x="5120.5"
+                  y="567.6191">+Session(K):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="197" x="5120.5"
+                  y="584.6338">#canEqual(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="5120.5"
+                  y="601.6484">+hashCode(): int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="135" x="5120.5"
+                  y="618.6631">+toString(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="133" x="5120.5"
+                  y="635.6777">+getState(): State
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="161" x="5120.5"
+                  y="652.6924">+setState(State): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="125" x="5120.5"
+                  y="669.707">+getAddress(): K
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="180" x="5120.5"
+                  y="686.7217">+equals(Object): boolean
+            </text>
+        </g><!--MD5=[0bf92b38fef3eb21349076c29c2a2f01]
+class SizeLimitException-->
+        <g id="elem_SizeLimitException">
+            <rect codeLine="257" fill="#FFFFFF" height="60.0293" id="SizeLimitException" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="215" x="318.5" y="139.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="144" x="354" y="158.5752">SizeLimitException
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="319.5" x2="532.5" y1="166.5146" y2="166.5146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="319.5" x2="532.5" y1="174.5146" y2="174.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="203" x="324.5"
+                  y="192.5898">+SizeLimitException(String):
+            </text>
+        </g><!--MD5=[a33f55a96012de31bf43aec038de530b]
+class SocketAPIClient-->
+        <g id="elem_SocketAPIClient">
+            <rect codeLine="260" fill="#FFFFFF" height="111.0732" id="SocketAPIClient" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="395" x="1164.5" y="531.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="125" x="1299.5" y="550.5752">SocketAPIClient
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1165.5" x2="1558.5" y1="558.5146" y2="558.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="365" x="1170.5"
+                  y="576.5898">-serDesService: JSONSerDesService&lt;IAPIMessage&gt;
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1165.5" x2="1558.5" y1="583.5293" y2="583.5293"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="383" x="1170.5"
+                  y="601.6045">+SocketAPIClient(IClientTransport&lt;SocketMessage&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="377" x="1170.5"
+                  y="618.6191">#deserialize(SocketMessage): APICommandResponse
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="291" x="1170.5"
+                  y="635.6338">#serialize(APICommand): SocketMessage
+            </text>
+        </g><!--MD5=[119f61d31e764d979695f328db5f1e87]
+class SocketMessage-->
+        <g id="elem_SocketMessage">
+            <rect codeLine="266" fill="#FFFFFF" height="434.3516" id="SocketMessage" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="397" x="1669.5" y="847"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="118" x="1809" y="866.0752">SocketMessage
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1670.5" x2="2065.5" y1="874.0146" y2="874.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="186" x="1675.5"
+                  y="892.0898">-cmdType: CommandType
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="101" x="1675.5"
+                  y="909.1045">-replyId: Long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="65" x="1675.5"
+                  y="926.1191">-id: Long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="115" x="1675.5"
+                  y="943.1338">-payload: byte[]
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1670.5" x2="2065.5" y1="950.0732" y2="950.0732"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="180" x="1675.5"
+                  y="968.1484">+SocketMessage(byte[]):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="242" x="1675.5"
+                  y="985.1631">+SocketMessage(CommandType):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="332" x="1675.5"
+                  y="1002.1777">+SocketMessage(CommandType, Long, Long):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="137" x="1675.5"
+                  y="1019.1924">+SocketMessage():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="385" x="1675.5"
+                  y="1036.207">+SocketMessage(CommandType, Long, Long, byte[]):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="106" x="1675.5"
+                  y="1053.2217">+getId(): Long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="228" x="1675.5"
+                  y="1070.2363">+getCmdType(): CommandType
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="197" x="1675.5"
+                  y="1087.251">#canEqual(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="158" x="1675.5"
+                  y="1104.2656">+isRequest(): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="134" x="1675.5"
+                  y="1121.2803">+setId(Long): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="256" x="1675.5"
+                  y="1138.2949">+setCmdType(CommandType): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="172" x="1675.5"
+                  y="1155.3096">+setReplyId(Long): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="153" x="1675.5"
+                  y="1172.3242">+getPayload(): byte[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="144" x="1675.5"
+                  y="1189.3389">+getReplyId(): Long
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="1675.5"
+                  y="1206.3535">+hashCode(): int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="135" x="1675.5"
+                  y="1223.3682">+toString(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="180" x="1675.5"
+                  y="1240.3828">+equals(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="169" x="1675.5"
+                  y="1257.3975">+isResponse(): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="181" x="1675.5"
+                  y="1274.4121">+setPayload(byte[]): void
+            </text>
+        </g><!--MD5=[60d6b92408f98aed8df94d5c6e04aa63]
+class State-->
+        <g id="elem_State">
+            <rect codeLine="291" fill="#FFFFFF" height="159.6865" id="State" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="179" x="5129.5" y="984"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="93" x="5172.5" y="1001.0645">«enumeration»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="40" x="5199" y="1017.6592">State
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="5130.5" x2="5307.5" y1="1025.5986" y2="1025.5986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="100" x="5135.5"
+                  y="1043.6738">+OPERATING:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="58" x="5135.5"
+                  y="1060.6885">+DEAD:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="85" x="5135.5"
+                  y="1077.7031">+CREATED:
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="5130.5" x2="5307.5" y1="1084.6426" y2="1084.6426"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="63" x="5135.5"
+                  y="1102.7178">-State():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="167" x="5135.5"
+                  y="1119.7324">+valueOf(String): State
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="128" x="5135.5"
+                  y="1136.7471">+values(): State[]
+            </text>
+        </g><!--MD5=[e3d83ec5fd90ea9f3f2bfe265cb53458]
+class Status-->
+        <g id="elem_Status">
+            <rect codeLine="311" fill="#FFFFFF" height="380.877" id="Status" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="188" x="4410" y="1341"/>
+            <text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="93" x="4457.5" y="1358.0645">«enumeration»
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="49" x="4479.5" y="1374.6592">Status
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4411" x2="4597" y1="1382.5986" y2="1382.5986"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="91" x="4416"
+                  y="1400.6738">+NETWORK:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="50" x="4416"
+                  y="1417.6885">+IDLE:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="151" x="4416"
+                  y="1434.7031">+READINGFINISHED:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="100" x="4416"
+                  y="1451.7178">+EXECUTING:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="83" x="4416"
+                  y="1468.7324">+SENDING:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="54" x="4416"
+                  y="1485.7471">+HALT:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="83" x="4416"
+                  y="1502.7617">+READING:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="125" x="4416"
+                  y="1519.7764">+UNPROCESSED:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="127" x="4416"
+                  y="1536.791">+CLIENT_ERROR:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="134" x="4416"
+                  y="1553.8057">+SERVER_ERROR:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="106" x="4416"
+                  y="1570.8203">+NOT_FOUND:
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="38" x="4416"
+                  y="1587.835">+OK:
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4411" x2="4597" y1="1594.7744" y2="1594.7744"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="72" x="4416"
+                  y="1612.8496">-Status():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="137" x="4416"
+                  y="1629.8643">+values(): Status[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="176" x="4416"
+                  y="1646.8789">+valueOf(String): Status
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="76" x="4416"
+                  y="1663.8936">+Status():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="137" x="4416"
+                  y="1680.9082">+values(): Status[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="136" x="4416"
+                  y="1697.9229">+isError(): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="176" x="4416"
+                  y="1714.9375">+valueOf(String): Status
+            </text>
+        </g><!--MD5=[ce412bba70468a1d0a978abbe836d432]
+class TransportSession-->
+        <g id="elem_TransportSession">
+            <rect codeLine="322" fill="#FFFFFF" height="451.3662" id="TransportSession" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="467" x="4270.5" y="1782"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="136" x="4436" y="1801.0752">TransportSession
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4271.5" x2="4736.5" y1="1809.0146" y2="1809.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="110" x="4276.5"
+                  y="1827.0898">-status: Status
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="189" x="4276.5"
+                  y="1844.1045">-receiveFrameList: Frame[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="251" x="4276.5"
+                  y="1861.1191">-consumerAddress: SocketAddress
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="75" x="4276.5"
+                  y="1878.1338">-pipe: Pipe
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="210" x="4276.5"
+                  y="1895.1484">-sendFrameList: List&lt;Frame&gt;
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4271.5" x2="4736.5" y1="1902.0879" y2="1902.0879"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="355" x="4276.5"
+                  y="1920.1631">+TransportSession(SocketAddress, Status, Pipe):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="455" x="4276.5"
+                  y="1937.1777">+TransportSession(SocketAddress, Status, Pipe, List&lt;Frame&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="224" x="4276.5"
+                  y="1954.1924">+checkFinishReading(): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="4276.5"
+                  y="1971.207">+hashCode(): int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="135" x="4276.5"
+                  y="1988.2217">+toString(): String
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="293" x="4276.5"
+                  y="2005.2363">+getConsumerAddress(): SocketAddress
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="251" x="4276.5"
+                  y="2022.251">+getSendFrameList(): List&lt;Frame&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="113" x="4276.5"
+                  y="2039.2656">+getPipe(): Pipe
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="197" x="4276.5"
+                  y="2056.2803">#canEqual(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="295" x="4276.5"
+                  y="2073.2949">+getNetworkSession(): TransportSession
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="179" x="4276.5"
+                  y="2090.3096">+setStatus(Status): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="151" x="4276.5"
+                  y="2107.3242">+getStatus(): Status
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="321" x="4276.5"
+                  y="2124.3389">+setConsumerAddress(SocketAddress): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="201" x="4276.5"
+                  y="2141.3535">+addToList(Frame): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="260" x="4276.5"
+                  y="2158.3682">+setReceiveFrameList(Frame[]): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="141" x="4276.5"
+                  y="2175.3828">+setPipe(Pipe): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="279" x="4276.5"
+                  y="2192.3975">+setSendFrameList(List&lt;Frame&gt;): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="180" x="4276.5"
+                  y="2209.4121">+equals(Object): boolean
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="232" x="4276.5"
+                  y="2226.4268">+getReceiveFrameList(): Frame[]
+            </text>
+        </g><!--MD5=[f8210eeda10e8a4efe843ec2a921f1c1]
+class TransportUtils-->
+        <g id="elem_TransportUtils">
+            <rect codeLine="348" fill="#FFFFFF" height="145.1025" id="TransportUtils" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="280" x="12" y="514.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="110" x="97" y="533.5752">TransportUtils
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="291" y1="541.5146" y2="541.5146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="13" x2="291" y1="549.5146" y2="549.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="129" x="18"
+                  y="567.5898">+TransportUtils():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="244" x="18"
+                  y="584.6045">+joinFrames(List&lt;Frame&gt;): byte[]
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="224" x="18"
+                  y="601.6191">-separate(byte[]): List&lt;byte[]&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="205" x="18"
+                  y="618.6338">+IntToBytes(int): ByteBuffer
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="268" x="18"
+                  y="635.6484">+separateBytes(byte[]): List&lt;Frame&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="189" x="18"
+                  y="652.6631">-join(List&lt;byte[]&gt;): byte[]
+            </text>
+        </g><!--MD5=[4ee6936fe9830cb3b0ec354c8b6a3e33]
+class UDPClientTransport-->
+        <g id="elem_UDPClientTransport">
+            <rect codeLine="356" fill="#FFFFFF" height="196.1465" id="UDPClientTransport" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="401" x="614.5" y="489"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="153" x="738.5" y="508.0752">UDPClientTransport
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="615.5" x2="1014.5" y1="516.0146" y2="516.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="226" x="620.5"
+                  y="534.0898">-serverAddress: SocketAddress
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="181" x="620.5"
+                  y="551.1045">-socket: DatagramSocket
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="231" x="620.5"
+                  y="568.1191">-sendDurationTimeout: Duration
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="389" x="620.5"
+                  y="585.1338">~serDesService: JSONSerDesService&lt;SocketMessage&gt;
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="615.5" x2="1014.5" y1="592.0732" y2="592.0732"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="273" x="620.5"
+                  y="610.1484">+UDPClientTransport(SocketAddress):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="225" x="620.5"
+                  y="627.1631">-receiveFrame(Duration): Frame
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="205" x="620.5"
+                  y="644.1777">+send(SocketMessage): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="251" x="620.5"
+                  y="661.1924">+receive(Duration): SocketMessage
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="179" x="620.5"
+                  y="678.207">-sendFrame(Frame): void
+            </text>
+        </g><!--MD5=[b1860f3a84dd59ccee838bbef338e758]
+class UDPInputTransportApplication-->
+        <g id="elem_UDPInputTransportApplication">
+            <rect codeLine="367" fill="#FFFFFF" height="128.0879" id="UDPInputTransportApplication" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="621" x="1720.5" y="523"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="239" x="1911.5" y="542.0752">UDPInputTransportApplication
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1721.5" x2="2340.5" y1="550.0146" y2="550.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="88" x="1726.5"
+                  y="568.0898">-log: Logger
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="371" x="1726.5"
+                  y="585.1045">-serDesService: JSONSerDesService&lt;APICommand&gt;
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1721.5" x2="2340.5" y1="592.0439" y2="592.0439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="609" x="1726.5"
+                  y="610.1191">+UDPInputTransportApplication(IServerTransport&lt;SocketAddress, SocketMessage&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="542" x="1726.5"
+                  y="627.1338">#supplySession(SocketAddress, SocketMessage): Session&lt;SocketAddress&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="308" x="1726.5"
+                  y="644.1484">#deserialize(SocketMessage): APICommand
+            </text>
+        </g><!--MD5=[af4668e54ad0575d8ba0fce7f175ad55]
+class UDPOutputTransportApplication-->
+        <g id="elem_UDPOutputTransportApplication">
+            <rect codeLine="374" fill="#FFFFFF" height="111.0732" id="UDPOutputTransportApplication" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="633" x="2986.5" y="531.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="249" x="3178.5" y="550.5752">UDPOutputTransportApplication
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2987.5" x2="3618.5" y1="558.5146" y2="558.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="440" x="2992.5"
+                  y="576.5898">-serDesService: JSONSerDesService&lt;APICommandResponse&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="88" x="2992.5"
+                  y="593.6045">-log: Logger
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2987.5" x2="3618.5" y1="600.5439" y2="600.5439"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="621" x="2992.5"
+                  y="618.6191">+UDPOutputTransportApplication(IServerTransport&lt;SocketAddress, SocketMessage&gt;):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="360" x="2992.5"
+                  y="635.6338">#serialize(APICommandResponse): SocketMessage
+            </text>
+        </g><!--MD5=[187fff85cbc932182de4a6bafc7bac95]
+class UDPServerFactory-->
+        <g id="elem_UDPServerFactory">
+            <rect codeLine="380" fill="#FFFFFF" height="77.0439" id="UDPServerFactory" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="252" x="327" y="548.5"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="141" x="382.5" y="567.5752">UDPServerFactory
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="328" x2="578" y1="575.5146" y2="575.5146"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="328" x2="578" y1="583.5146" y2="583.5146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="156" x="333"
+                  y="601.5898">+UDPServerFactory():
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="240" x="333"
+                  y="618.6045">+create(int): UDPServerTransport
+            </text>
+        </g><!--MD5=[3aa9c88db0563963a21e00716d22173d]
+class UDPServerTransport-->
+        <g id="elem_UDPServerTransport">
+            <rect codeLine="384" fill="#FFFFFF" height="400.3223" id="UDPServerTransport" rx="2.5" ry="2.5"
+                  style="stroke:#000000;stroke-width:1.0;" width="506" x="2445" y="387"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="160" x="2618" y="406.0752">UDPServerTransport
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2446" x2="2950" y1="414.0146" y2="414.0146"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="413" x="2451"
+                  y="432.0898">-sendFrameQueue: Queue&lt;Pair&lt;SocketAddress, Frame&gt;&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="434" x="2451"
+                  y="449.1045">-handler: IMessageHandler&lt;SocketAddress, SocketMessage&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="389" x="2451"
+                  y="466.1191">~serDesService: JSONSerDesService&lt;SocketMessage&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="190" x="2451"
+                  y="483.1338">-networkKey: SelectionKey
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="100" x="2451"
+                  y="500.1484">-TIMEOUT: int
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="364" x="2451"
+                  y="517.1631">-clientSinkMap: Map&lt;SocketAddress, SinkChannel&gt;
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="130" x="2451"
+                  y="534.1777">-selector: Selector
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="266" x="2451"
+                  y="551.1924">-datagramChannel: DatagramChannel
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="88" x="2451"
+                  y="568.207">-log: Logger
+            </text>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2446" x2="2950" y1="575.1465" y2="575.1465"/>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="299" x="2451"
+                  y="593.2217">+UDPServerTransport(DatagramChannel):
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="87" x="2451"
+                  y="610.2363">+run(): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="416" x="2451"
+                  y="627.251">-regSendClient(SocketAddress, Frame, List&lt;Frame&gt;): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="437" x="2451"
+                  y="644.2656">-regClient(SocketAddress, Frame, Status, List&lt;Frame&gt;): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="494" x="2451"
+                  y="661.2803">+subscribe(IMessageHandler&lt;SocketAddress, SocketMessage&gt;): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="304" x="2451"
+                  y="678.2949">-readNewFrame(SelectionKey, Frame): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="321" x="2451"
+                  y="695.3096">+send(SocketAddress, SocketMessage): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="362" x="2451"
+                  y="712.3242">-scheduleSend(Pair&lt;SocketAddress, Frame&gt;): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="282" x="2451"
+                  y="729.3389">-closeSessionByKey(SelectionKey): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="328" x="2451"
+                  y="746.3535">-headerFrame(TransportSession, Frame): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="241" x="2451"
+                  y="763.3682">-finishReading(SelectionKey): void
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="313" x="2451"
+                  y="780.3828">-regRecvClient(SocketAddress, Frame): void
+            </text>
+        </g><!--MD5=[b405c1e750a906a83d9778adb0c44b0d]
+link APIApplication to AbstractApplication-->
+        <g id="link_APIApplication_AbstractApplication">
+            <path codeLine="408" d="M3691.75,1102.66 C3691.75,1102.66 3691.75,1387.84 3691.75,1387.84 " fill="none"
+                  id="APIApplication-to-AbstractApplication" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="none" points="3698.75,1387.84,3691.75,1407.84,3684.75,1387.84,3698.75,1387.84"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[2df0e118e8c1d4c5cdf7b2988176fd38]
+link APICommand to IAPIMessage-->
+        <g id="link_APICommand_IAPIMessage">
+            <path codeLine="409"
+                  d="M4028.25,676.76 C4028.25,912.64 4028.25,1532 4028.25,1532 C4028.25,1532 4105.21,1532 4105.21,1532 "
+                  fill="none" id="APICommand-to-IAPIMessage"
+                  style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="4105.21,1525,4125.21,1532,4105.21,1539,4105.21,1525"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[6af46468270a0cc7b942c938c7dd3fc3]
+link APICommand to IIdentifiableCommand-->
+        <g id="link_APICommand_IIdentifiableCommand">
+            <path codeLine="410" d="M4188.75,676.72 C4188.75,676.72 4188.75,1006.44 4188.75,1006.44 " fill="none"
+                  id="APICommand-to-IIdentifiableCommand"
+                  style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="4195.75,1006.44,4188.75,1026.44,4181.75,1006.44,4195.75,1006.44"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[09f84dbdc5185dab43996524985c8596]
+link APICommandResponse to IAPIMessage-->
+        <g id="link_APICommandResponse_IAPIMessage">
+            <path codeLine="411"
+                  d="M4367.5,1255.7 C4367.5,1384.95 4367.5,1532 4367.5,1532 C4367.5,1532 4254.74,1532 4254.74,1532 "
+                  fill="none" id="APICommandResponse-to-IAPIMessage"
+                  style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="4254.74,1539,4234.74,1532,4254.74,1525,4254.74,1539"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[39ad465f69f687599d8d256d63390e65]
+link APICommandResponse to Status-->
+        <g id="link_APICommandResponse_Status">
+            <path codeLine="412" d="M4472.67,1267.84 C4472.67,1267.84 4472.67,1327.94 4472.67,1327.94 " fill="none"
+                  id="APICommandResponse-Status" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="4472.67,1340.94,4476.67,1331.94,4472.67,1335.94,4468.67,1331.94,4472.67,1340.94"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4472.67" x2="4472.67" y1="1335.94" y2="1327.94"/>
+            <polygon fill="#000000"
+                     points="4472.67,1255.84,4468.67,1261.84,4472.67,1267.84,4476.67,1261.84,4472.67,1255.84"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4463.0691" y="1330.0561">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="42"
+                  x="4428.6259" y="1277.0147">status
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4445.6259" y="1292.814">1
+            </text>
+        </g><!--MD5=[dc171a04fbfb000db77e165445d82db9]
+reverse link Status to APICommandResponse-->
+        <g id="link_Status_APICommandResponse">
+            <path codeLine="439" d="M4535.33,1325.68 C4535.33,1325.68 4535.33,1255.73 4535.33,1255.73 " fill="none"
+                  id="Status-backto-APICommandResponse" style="stroke:#000000;stroke-width:1.0;"/>
+            <ellipse cx="4535.33" cy="1332.68" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4535.33" x2="4535.33" y1="1324.68" y2="1340.68"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4543.33" x2="4527.33" y1="1332.68" y2="1332.68"/>
+        </g><!--MD5=[ea07eef47bcf576ca4b05720f22541a8]
+link AbstractAPIClient to IClientTransport-->
+        <g id="link_AbstractAPIClient_IClientTransport">
+            <path codeLine="413" d="M883.75,1174 C883.75,1174 883.75,1472.47 883.75,1472.47 " fill="none"
+                  id="AbstractAPIClient-IClientTransport" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="883.75,1485.47,887.75,1476.47,883.75,1480.47,879.75,1476.47,883.75,1485.47"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="883.75" x2="883.75" y1="1480.47" y2="1472.47"/>
+            <polygon fill="#000000" points="883.75,1162,879.75,1168,883.75,1174,887.75,1168,883.75,1162"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="876.7023"
+                  y="1474.7709">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="61"
+                  x="813.1348" y="1183.0662">transport
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="839.6348"
+                  y="1198.8655">1
+            </text>
+        </g><!--MD5=[6d614c179dee4e8e6328ae2be3e7ddc2]
+link AbstractAPIClient to IIdentifiableMessage-->
+        <g id="link_AbstractAPIClient_IIdentifiableMessage">
+            <path codeLine="414"
+                  d="M1168.87,1137 C1348.39,1137 1598.5,1137 1598.5,1137 C1598.5,1137 1598.5,1480.47 1598.5,1480.47 "
+                  fill="none" id="AbstractAPIClient-to-IIdentifiableMessage"
+                  style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#000000" points="1598.5,1485.47,1602.5,1476.47,1598.5,1480.47,1594.5,1476.47,1598.5,1485.47"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[8f807a4db30e97fd62240a419d493061]
+link AbstractApplication to IApplicationCommandHandler-->
+        <g id="link_AbstractApplication_IApplicationCommandHandler">
+            <path codeLine="415" d="M3312,1667.01 C3312,1667.01 3312,1956.9 3312,1956.9 " fill="none"
+                  id="AbstractApplication-IApplicationCommandHandler" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="3312,1969.9,3316,1960.9,3312,1964.9,3308,1960.9,3312,1969.9"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3312" x2="3312" y1="1964.9" y2="1956.9"/>
+            <polygon fill="#000000" points="3312,1655.01,3308,1661.01,3312,1667.01,3316,1661.01,3312,1655.01"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="3303.2125" y="1959.2075">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="118" x="3182.9"
+                  y="1676.1281">commandHandlers
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="9" x="3237.4"
+                  y="1691.9275">*
+            </text>
+        </g><!--MD5=[6664fa05fc26030db1826b5e661357e4]
+link AbstractApplication to IFilteredApplication-->
+        <g id="link_AbstractApplication_IFilteredApplication">
+            <path codeLine="416" d="M3577,1655.01 C3577,1655.01 3577,1949.9 3577,1949.9 " fill="none"
+                  id="AbstractApplication-to-IFilteredApplication"
+                  style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="3584,1949.9,3577,1969.9,3570,1949.9,3584,1949.9"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[f2db2c9aaf3c1fabd32bdbd4941746de]
+link AbstractInputTransportApplication to AbstractApplication-->
+        <g id="link_AbstractInputTransportApplication_AbstractApplication">
+            <path codeLine="417"
+                  d="M2444,1153.88 C2444,1259.92 2444,1422 2444,1422 C2444,1422 3136.48,1422 3136.48,1422 " fill="none"
+                  id="AbstractInputTransportApplication-to-AbstractApplication"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="none" points="3136.48,1415,3156.48,1422,3136.48,1429,3136.48,1415"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[ae7daa6d48649fafc50c280655c24dfb]
+link AbstractInputTransportApplication to IIdentifiableMessage-->
+        <g id="link_AbstractInputTransportApplication_IIdentifiableMessage">
+            <path codeLine="418"
+                  d="M2216,1153.54 C2216,1245.41 2216,1375 2216,1375 C2216,1375 1710.83,1375 1710.83,1375 C1710.83,1375 1710.83,1480.39 1710.83,1480.39 "
+                  fill="none" id="AbstractInputTransportApplication-to-IIdentifiableMessage"
+                  style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#000000"
+                     points="1710.83,1485.39,1714.83,1476.39,1710.83,1480.39,1706.83,1476.39,1710.83,1485.39"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[ccb2b9109c37de2c50e61158c4a16b46]
+link AbstractInputTransportApplication to IServerTransport-->
+        <g id="link_AbstractInputTransportApplication_IServerTransport">
+            <path codeLine="419"
+                  d="M2330,1165.68 C2330,1165.68 2330,1532 2330,1532 C2330,1532 2797.82,1532 2797.82,1532 " fill="none"
+                  id="AbstractInputTransportApplication-IServerTransport" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="2810.82,1532,2801.82,1528,2805.82,1532,2801.82,1536,2810.82,1532"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2805.82" x2="2797.82" y1="1532" y2="1532"/>
+            <polygon fill="#000000" points="2330,1153.68,2326,1159.68,2330,1165.68,2334,1159.68,2330,1153.68"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="2321.6688" y="1174.8252">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="61"
+                  x="2741.9866" y="1513.4572">transport
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="2768.4866" y="1529.2565">1
+            </text>
+        </g><!--MD5=[d42d33a873498b52cf35d33aca1013ea]
+link AbstractOutputTransportApplication to AbstractApplication-->
+        <g id="link_AbstractOutputTransportApplication_AbstractApplication">
+            <path codeLine="420" d="M3369.75,1153.59 C3369.75,1153.59 3369.75,1387.77 3369.75,1387.77 " fill="none"
+                  id="AbstractOutputTransportApplication-to-AbstractApplication"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="none" points="3376.75,1387.77,3369.75,1407.77,3362.75,1387.77,3376.75,1387.77"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[48a1c07f7717410cd818a76b7e54deb3]
+link AbstractOutputTransportApplication to IServerTransport-->
+        <g id="link_AbstractOutputTransportApplication_IServerTransport">
+            <path codeLine="421"
+                  d="M3138.75,1165.68 C3138.75,1165.68 3138.75,1532 3138.75,1532 C3138.75,1532 3134.24,1532 3134.24,1532 "
+                  fill="none" id="AbstractOutputTransportApplication-IServerTransport"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="3121.24,1532,3130.24,1536,3126.24,1532,3130.24,1528,3121.24,1532"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="3126.24" x2="3134.24" y1="1532" y2="1532"/>
+            <polygon fill="#000000"
+                     points="3138.75,1153.68,3134.75,1159.68,3138.75,1165.68,3142.75,1159.68,3138.75,1153.68"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="3113.0074" y="1174.8252">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="61"
+                  x="3128.1366" y="1507.9965">transport
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="3154.6366" y="1523.7958">1
+            </text>
+        </g><!--MD5=[e7e7335b24f1ead6108b58e9b40c705b]
+link AppRequest to APICommand-->
+        <g id="link_AppRequest_APICommand">
+            <path codeLine="422" d="M4634.49,276 C4634.49,276 4123,276 4123,276 C4123,276 4123,484.46 4123,484.46 "
+                  fill="none" id="AppRequest-APICommand" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="4123,497.46,4127,488.46,4123,492.46,4119,488.46,4123,497.46"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4123" x2="4123" y1="492.46" y2="484.46"/>
+            <polygon fill="#000000" points="4646.49,276,4640.49,272,4634.49,276,4640.49,280,4646.49,276"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4630.7671" y="276.3966">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="51"
+                  x="4069.8883" y="470.8505">payload
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4091.3883" y="486.6498">1
+            </text>
+        </g><!--MD5=[1d532e517e833f4d4afb193f16e7ca34]
+link AppRequest to AppResponseController-->
+        <g id="link_AppRequest_AppResponseController">
+            <path codeLine="423" d="M4737.75,339.04 C4737.75,339.04 4737.75,424.69 4737.75,424.69 " fill="none"
+                  id="AppRequest-AppResponseController" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="4737.75,437.69,4741.75,428.69,4737.75,432.69,4733.75,428.69,4737.75,437.69"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4737.75" x2="4737.75" y1="432.69" y2="424.69"/>
+            <polygon fill="#000000" points="4737.75,327.04,4733.75,333.04,4737.75,339.04,4741.75,333.04,4737.75,327.04"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4738.4863" y="427.1997">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="59"
+                  x="4665.9746" y="348.4999">response
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4691.4746" y="364.2992">1
+            </text>
+        </g><!--MD5=[75bd76b90487c191750dac1b97bf0cfd]
+link AppRequest to ReqStatus-->
+        <g id="link_AppRequest_ReqStatus">
+            <path codeLine="424" d="M4936.17,339.04 C4936.17,339.04 4936.17,485.42 4936.17,485.42 " fill="none"
+                  id="AppRequest-ReqStatus" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="4936.17,498.42,4940.17,489.42,4936.17,493.42,4932.17,489.42,4936.17,498.42"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4936.17" x2="4936.17" y1="493.42" y2="485.42"/>
+            <polygon fill="#000000" points="4936.17,327.04,4932.17,333.04,4936.17,339.04,4940.17,333.04,4936.17,327.04"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4924.4982" y="487.6831">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="42"
+                  x="4891.4173" y="348.4999">status
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4908.4173" y="364.2992">1
+            </text>
+        </g><!--MD5=[b418339eae524899112d8d208b0797a8]
+reverse link ReqStatus to AppRequest-->
+        <g id="link_ReqStatus_AppRequest">
+            <path codeLine="432" d="M5007.83,483.46 C5007.83,483.46 5007.83,327.04 5007.83,327.04 " fill="none"
+                  id="ReqStatus-backto-AppRequest" style="stroke:#000000;stroke-width:1.0;"/>
+            <ellipse cx="5007.83" cy="490.46" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="5007.83" x2="5007.83" y1="482.46" y2="498.46"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="5015.83" x2="4999.83" y1="490.46" y2="490.46"/>
+        </g><!--MD5=[64cdfa4a4b537e2ccd44ddbede78eb5f]
+link AppRequest to Session-->
+        <g id="link_AppRequest_Session">
+            <path codeLine="425" d="M5206,339.04 C5206,339.04 5206,467.33 5206,467.33 " fill="none"
+                  id="AppRequest-Session" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="5206,480.33,5210,471.33,5206,475.33,5202,471.33,5206,480.33"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="5206" x2="5206" y1="475.33" y2="467.33"/>
+            <polygon fill="#000000" points="5206,327.04,5202,333.04,5206,339.04,5210,333.04,5206,327.04"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="5196.6984" y="469.6831">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="48"
+                  x="5168.1719" y="348.4999">session
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="5188.1719" y="364.2992">1
+            </text>
+        </g><!--MD5=[8f7e2463a8dae0eaa618e80a961f1456]
+link AppResponseController to APICommandResponse-->
+        <g id="link_AppResponseController_APICommandResponse">
+            <path codeLine="426" d="M4504,748.29 C4504,748.29 4504,859.15 4504,859.15 " fill="none"
+                  id="AppResponseController-APICommandResponse" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="4504,872.15,4508,863.15,4504,867.15,4500,863.15,4504,872.15"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4504" x2="4504" y1="867.15" y2="859.15"/>
+            <polygon fill="#000000" points="4504,736.29,4500,742.29,4504,748.29,4508,742.29,4504,736.29"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4495.8313" y="861.8201">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="59"
+                  x="4440.1805" y="757.3507">response
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4465.6805" y="773.15">1
+            </text>
+        </g><!--MD5=[b938bfbb6628b021e02b1dc0540f03f4]
+link AppResponseController to IDestinationServerApplication-->
+        <g id="link_AppResponseController_IDestinationServerApplication">
+            <path codeLine="427" d="M4773.5,748.29 C4773.5,748.29 4773.5,1013.45 4773.5,1013.45 " fill="none"
+                  id="AppResponseController-IDestinationServerApplication" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="4773.5,1026.45,4777.5,1017.45,4773.5,1021.45,4769.5,1017.45,4773.5,1026.45"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4773.5" x2="4773.5" y1="1021.45" y2="1013.45"/>
+            <polygon fill="#000000" points="4773.5,736.29,4769.5,742.29,4773.5,748.29,4777.5,742.29,4773.5,736.29"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4746.8953" y="1015.7674">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="73"
+                  x="4708.3953" y="757.3507">destination
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4740.8953" y="773.15">1
+            </text>
+        </g><!--MD5=[987d3a83e09c9e5ea3a30f625f1816c6]
+link ClientMain to UDPClientTransport-->
+        <g id="link_ClientMain_UDPClientTransport">
+            <path codeLine="428" d="M815,237.37 C815,237.37 815,475.67 815,475.67 " fill="none"
+                  id="ClientMain-UDPClientTransport" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="815,488.67,819,479.67,815,483.67,811,479.67,815,488.67"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="815" x2="815" y1="483.67" y2="475.67"/>
+            <polygon fill="#000000" points="815,225.37,811,231.37,815,237.37,819,231.37,815,225.37"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="806.6813"
+                  y="478.3325">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="36"
+                  x="777.0313" y="246.2747">client
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="791.0313"
+                  y="262.074">1
+            </text>
+        </g><!--MD5=[439728da8b941ce8ab8ebfe21e5b52c2]
+reverse link CommandType to SocketMessage-->
+        <g id="link_CommandType_SocketMessage">
+            <path codeLine="429" d="M1849,1419.35 C1849,1419.35 1849,1281.48 1849,1281.48 " fill="none"
+                  id="CommandType-backto-SocketMessage" style="stroke:#000000;stroke-width:1.0;"/>
+            <ellipse cx="1849" cy="1426.35" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1849" x2="1849" y1="1418.35" y2="1434.35"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1857" x2="1841" y1="1426.35" y2="1426.35"/>
+        </g><!--MD5=[ed0153c36c538419aabb3eca06041efd]
+link SocketMessage to CommandType-->
+        <g id="link_SocketMessage_CommandType">
+            <path codeLine="436" d="M1931,1293.33 C1931,1293.33 1931,1421.38 1931,1421.38 " fill="none"
+                  id="SocketMessage-CommandType" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="1931,1434.38,1935,1425.38,1931,1429.38,1927,1425.38,1931,1434.38"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1931" x2="1931" y1="1429.38" y2="1421.38"/>
+            <polygon fill="#000000" points="1931,1281.33,1927,1287.33,1931,1293.33,1935,1287.33,1931,1281.33"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="1926.0641" y="1423.8308">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="60"
+                  x="1872.1859" y="1302.7716">cmdType
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="1898.1859" y="1318.5709">1
+            </text>
+        </g><!--MD5=[460506e29d5a3af172834128dd7d0656]
+link ErrorHandlingApplication to APIApplication-->
+        <g id="link_ErrorHandlingApplication_APIApplication">
+            <path codeLine="430" d="M3761.25,634.04 C3761.25,634.04 3761.25,1005.43 3761.25,1005.43 " fill="none"
+                  id="ErrorHandlingApplication-to-APIApplication" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="none" points="3768.25,1005.43,3761.25,1025.43,3754.25,1005.43,3768.25,1005.43"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[f5d04f04370122cf252680d6b2798e15]
+link JSONSerDesService to SerDesService-->
+        <g id="link_JSONSerDesService_SerDesService">
+            <path codeLine="431" d="M1396,1111.4 C1396,1111.4 1396,1438.83 1396,1438.83 " fill="none"
+                  id="JSONSerDesService-to-SerDesService" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="none" points="1403,1438.83,1396,1458.83,1389,1438.83,1403,1438.83"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[7fe99a2f5f36c6b6a1cf23346efc3e3d]
+link Session to State-->
+        <g id="link_Session_State">
+            <path codeLine="433" d="M5189.17,705.75 C5189.17,705.75 5189.17,970.93 5189.17,970.93 " fill="none"
+                  id="Session-State" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="5189.17,983.93,5193.17,974.93,5189.17,978.93,5185.17,974.93,5189.17,983.93"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="5189.17" x2="5189.17" y1="978.93" y2="970.93"/>
+            <polygon fill="#000000" points="5189.17,693.75,5185.17,699.75,5189.17,705.75,5193.17,699.75,5189.17,693.75"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="5177.6813" y="973.0265">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="35"
+                  x="5151.1379" y="714.6655">state
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="5164.6379" y="730.4648">1
+            </text>
+        </g><!--MD5=[fe33a819d877490b5553c5071b9a30ca]
+reverse link State to Session-->
+        <g id="link_State_Session">
+            <path codeLine="438" d="M5248.83,968.89 C5248.83,968.89 5248.83,693.84 5248.83,693.84 " fill="none"
+                  id="State-backto-Session" style="stroke:#000000;stroke-width:1.0;"/>
+            <ellipse cx="5248.83" cy="975.89" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="5248.83" x2="5248.83" y1="967.89" y2="983.89"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="5256.83" x2="5240.83" y1="975.89" y2="975.89"/>
+        </g><!--MD5=[10514b0ad1e853d956ea6833c421bfb7]
+link SocketAPIClient to AbstractAPIClient-->
+        <g id="link_SocketAPIClient_AbstractAPIClient">
+            <path codeLine="434" d="M1186,642.89 C1186,753.99 1186,992 1186,992 C1186,992 1184.26,992 1184.26,992 "
+                  fill="none" id="SocketAPIClient-to-AbstractAPIClient" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="none" points="1188.61,999,1168.61,992,1188.61,985,1188.61,999"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[313b39d423713d1db271083dbed330d2]
+link SocketAPIClient to JSONSerDesService-->
+        <g id="link_SocketAPIClient_JSONSerDesService">
+            <path codeLine="435" d="M1440.83,654.65 C1440.83,654.65 1440.83,1003.9 1440.83,1003.9 " fill="none"
+                  id="SocketAPIClient-JSONSerDesService" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="1440.83,1016.9,1444.83,1007.9,1440.83,1011.9,1436.83,1007.9,1440.83,1016.9"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1440.83" x2="1440.83" y1="1011.9" y2="1003.9"/>
+            <polygon fill="#000000" points="1440.83,642.65,1436.83,648.65,1440.83,654.65,1444.83,648.65,1440.83,642.65"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="1435.6717" y="1006.327">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="93"
+                  x="1351.3661" y="663.5306">serDesService
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="1393.8661" y="679.3299">1
+            </text>
+        </g><!--MD5=[ee9b6db97d9d7e07128f6fb8feb23a3e]
+link SocketMessage to IIdentifiableMessage-->
+        <g id="link_SocketMessage_IIdentifiableMessage">
+            <path codeLine="437" d="M1690.17,1281.33 C1690.17,1281.33 1690.17,1465.44 1690.17,1465.44 " fill="none"
+                  id="SocketMessage-to-IIdentifiableMessage"
+                  style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="1697.17,1465.44,1690.17,1485.44,1683.17,1465.44,1697.17,1465.44"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[a9980fd1ac63c664820e51125d3be412]
+reverse link Status to TransportSession-->
+        <g id="link_Status_TransportSession">
+            <path codeLine="440" d="M4472.67,1737.02 C4472.67,1737.02 4472.67,1781.81 4472.67,1781.81 " fill="none"
+                  id="Status-backto-TransportSession" style="stroke:#000000;stroke-width:1.0;"/>
+            <ellipse cx="4472.67" cy="1730.02" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4472.67" x2="4472.67" y1="1738.02" y2="1722.02"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4464.67" x2="4480.67" y1="1730.02" y2="1730.02"/>
+        </g><!--MD5=[765f0617ae03f9c1427e5b11408a6424]
+link TransportSession to Status-->
+        <g id="link_TransportSession_Status">
+            <path codeLine="442" d="M4535.33,1769.7 C4535.33,1769.7 4535.33,1735.13 4535.33,1735.13 " fill="none"
+                  id="TransportSession-Status" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="4535.33,1722.13,4531.33,1731.13,4535.33,1727.13,4539.33,1731.13,4535.33,1722.13"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4535.33" x2="4535.33" y1="1727.13" y2="1735.13"/>
+            <polygon fill="#000000" points="4535.33,1781.7,4539.33,1775.7,4535.33,1769.7,4531.33,1775.7,4535.33,1781.7"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4528.3976" y="1742.9573">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="42"
+                  x="4493.7012" y="1755.1023">status
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4510.7012" y="1770.9016">1
+            </text>
+        </g><!--MD5=[cf8bc149f1565c5b2520a57a61286ada]
+link TransportSession to Frame-->
+        <g id="link_TransportSession_Frame">
+            <path codeLine="441" d="M4504,2245.17 C4504,2245.17 4504,2279.91 4504,2279.91 " fill="none"
+                  id="TransportSession-Frame" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="4504,2292.91,4508,2283.91,4504,2287.91,4500,2283.91,4504,2292.91"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="4504" x2="4504" y1="2287.91" y2="2279.91"/>
+            <polygon fill="#000000" points="4504,2233.17,4500,2239.17,4504,2245.17,4508,2239.17,4504,2233.17"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="4495.8188" y="2282.3552">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="111"
+                  x="4391.1789" y="2254.157">receiveFrameList
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="9"
+                  x="4442.1789" y="2269.9563">*
+            </text>
+        </g><!--MD5=[71faa787506b5db157171ac8cbe72d11]
+link UDPClientTransport to IClientTransport-->
+        <g id="link_UDPClientTransport_IClientTransport">
+            <path codeLine="443" d="M801.75,685.41 C801.75,685.41 801.75,1465.46 801.75,1465.46 " fill="none"
+                  id="UDPClientTransport-to-IClientTransport"
+                  style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="808.75,1465.46,801.75,1485.46,794.75,1465.45,808.75,1465.46"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[50011443dac774e7ee02e71a889fa16c]
+link UDPClientTransport to JSONSerDesService-->
+        <g id="link_UDPClientTransport_JSONSerDesService">
+            <path codeLine="444"
+                  d="M1027.81,668 C1027.81,668 1322.17,668 1322.17,668 C1322.17,668 1322.17,1003.63 1322.17,1003.63 "
+                  fill="none" id="UDPClientTransport-JSONSerDesService" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="1322.17,1016.63,1326.17,1007.63,1322.17,1011.63,1318.17,1007.63,1322.17,1016.63"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1322.17" x2="1322.17" y1="1011.63" y2="1003.63"/>
+            <polygon fill="#000000" points="1015.81,668,1021.81,672,1027.81,668,1021.81,664,1015.81,668"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="1023.8104" y="668.9537">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="93" x="1209.91"
+                  y="990.288">serDesService
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1252.41"
+                  y="1006.0873">1
+            </text>
+        </g><!--MD5=[4737211a10f41996219dc1858136cec6]
+link UDPInputTransportApplication to AbstractInputTransportApplication-->
+        <g id="link_UDPInputTransportApplication_AbstractInputTransportApplication">
+            <path codeLine="445" d="M2221.75,651.33 C2221.75,651.33 2221.75,954.3 2221.75,954.3 " fill="none"
+                  id="UDPInputTransportApplication-to-AbstractInputTransportApplication"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="none" points="2228.75,954.3,2221.75,974.3,2214.75,954.3,2228.75,954.3"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[256c331356ef16e95990fd329473cd46]
+link UDPInputTransportApplication to JSONSerDesService-->
+        <g id="link_UDPInputTransportApplication_JSONSerDesService">
+            <path codeLine="446"
+                  d="M1708.26,647 C1708.26,647 1578.25,647 1578.25,647 C1578.25,647 1578.25,1003.98 1578.25,1003.98 "
+                  fill="none" id="UDPInputTransportApplication-JSONSerDesService"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="1578.25,1016.98,1582.25,1007.98,1578.25,1011.98,1574.25,1007.98,1578.25,1016.98"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1578.25" x2="1578.25" y1="1011.98" y2="1003.98"/>
+            <polygon fill="#000000" points="1720.26,647,1714.26,643,1708.26,647,1714.26,651,1720.26,647"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="1704.8833" y="646.3086">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="93"
+                  x="1501.1055" y="990.2959">serDesService
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="1543.6055" y="1006.0952">1
+            </text>
+        </g><!--MD5=[bf916e83d74e8517e910e8da3a1a0e09]
+link UDPOutputTransportApplication to AbstractOutputTransportApplication-->
+        <g id="link_UDPOutputTransportApplication_AbstractOutputTransportApplication">
+            <path codeLine="447" d="M3349,642.65 C3349,642.65 3349,954.2 3349,954.2 " fill="none"
+                  id="UDPOutputTransportApplication-to-AbstractOutputTransportApplication"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="none" points="3356,954.2,3349,974.2,3342,954.2,3356,954.2"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[4b6b1fb47e1313cac190d7636129b73b]
+link UDPOutputTransportApplication to JSONSerDesService-->
+        <g id="link_UDPOutputTransportApplication_JSONSerDesService">
+            <path codeLine="448"
+                  d="M2997.5,654.68 C2997.5,654.68 2997.5,817 2997.5,817 C2997.5,817 1615.75,817 1615.75,817 C1615.75,817 1615.75,1003.96 1615.75,1003.96 "
+                  fill="none" id="UDPOutputTransportApplication-JSONSerDesService"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="1615.75,1016.96,1619.75,1007.96,1615.75,1011.96,1611.75,1007.96,1615.75,1016.96"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1615.75" x2="1615.75" y1="1011.96" y2="1003.96"/>
+            <polygon fill="#000000" points="2997.5,642.68,2993.5,648.68,2997.5,654.68,3001.5,648.68,2997.5,642.68"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="2970.6398" y="659.622">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="93"
+                  x="1568.4583" y="963.6628">serDesService
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="1610.9583" y="979.4621">1
+            </text>
+        </g><!--MD5=[0758bc58a729fe572bbd42eacf74dcf9]
+link UDPServerTransport to IMessageHandler-->
+        <g id="link_UDPServerTransport_IMessageHandler">
+            <path codeLine="449" d="M2894.25,799.22 C2894.25,799.22 2894.25,1013.1 2894.25,1013.1 " fill="none"
+                  id="UDPServerTransport-IMessageHandler" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="2894.25,1026.1,2898.25,1017.1,2894.25,1021.1,2890.25,1017.1,2894.25,1026.1"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2894.25" x2="2894.25" y1="1021.1" y2="1013.1"/>
+            <polygon fill="#000000" points="2894.25,787.22,2890.25,793.22,2894.25,799.22,2898.25,793.22,2894.25,787.22"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="2880.2117" y="1015.9085">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="48"
+                  x="2852.9785" y="808.7218">handler
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="2872.9785" y="824.5211">1
+            </text>
+        </g><!--MD5=[e6832db6b55e6319b52e799a69d3fadf]
+link UDPServerTransport to IServerTransport-->
+        <g id="link_UDPServerTransport_IServerTransport">
+            <path codeLine="450" d="M2824.25,787.02 C2824.25,787.02 2824.25,1456.76 2824.25,1456.76 " fill="none"
+                  id="UDPServerTransport-to-IServerTransport"
+                  style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="none" points="2831.25,1456.76,2824.25,1476.76,2817.25,1456.76,2831.25,1456.76"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+        </g><!--MD5=[9194b7f65adc1b136f28567c9fa2d8c0]
+link UDPServerTransport to JSONSerDesService-->
+        <g id="link_UDPServerTransport_JSONSerDesService">
+            <path codeLine="451" d="M2432.72,736 C2432.72,736 1597,736 1597,736 C1597,736 1597,1003.66 1597,1003.66 "
+                  fill="none" id="UDPServerTransport-JSONSerDesService" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="1597,1016.66,1601,1007.66,1597,1011.66,1593,1007.66,1597,1016.66"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="1597" x2="1597" y1="1011.66" y2="1003.66"/>
+            <polygon fill="#000000" points="2444.72,736,2438.72,732,2432.72,736,2438.72,740,2444.72,736"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="2429.082"
+                  y="738.2777">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="93"
+                  x="1569.2694" y="1001.3181">serDesService
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="1611.7694" y="1017.1174">1
+            </text>
+        </g><!--MD5=[9a6c37d71493b08caf89db756e9b6898]
+link UDPServerTransport to Pair-->
+        <g id="link_UDPServerTransport_Pair">
+            <path codeLine="452" d="M2698,799.22 C2698,799.22 2698,952.74 2698,952.74 " fill="none"
+                  id="UDPServerTransport-Pair" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="2698,965.74,2702,956.74,2698,960.74,2694,956.74,2698,965.74"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <line style="stroke:#000000;stroke-width:1.0;" x1="2698" x2="2698" y1="960.74" y2="952.74"/>
+            <polygon fill="#000000" points="2698,787.22,2694,793.22,2698,799.22,2702,793.22,2698,787.22"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8"
+                  x="2689.6813" y="955.4081">1
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="113"
+                  x="2582.793" y="808.7218">sendFrameQueue
+            </text>
+            <text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="9" x="2634.793"
+                  y="824.5211">*
+            </text>
+        </g><!--MD5=[903641276a4ed815af5e29af17d11f84]
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+hide circle
+
+<style>
+classDiagram {
+    class {
+        header {
+            FontStyle bold
+        }
+    }
+}
+</style>
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class APIApplication {
+  + APIApplication(): 
+  + filter(AppRequest): boolean
+}
+class APICommand {
+  + APICommand(): 
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + validate(): ValidationResponse
+  + getCmdIdentifier(): Class<APICommand>
+  + createResponse(): APICommandResponse
+}
+class APICommandResponse {
+  + APICommandResponse(): 
+  + APICommandResponse(Status, String): 
+  - status: Status
+  - textualResponse: String
+  + getStatus(): Status
+  + getTextualResponse(): String
+  + setStatus(Status): void
+  + setTextualResponse(String): void
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + clientError(String): APICommandResponse
+  + clientError(Exception): APICommandResponse
+  + serverError(Exception): APICommandResponse
+  + notFound(): APICommandResponse
+  + ok(): APICommandResponse
+  + isSuccess(): boolean
+  + serverError(String): APICommandResponse
+  + isResolved(): boolean
+}
+class AbstractAPIClient<T> {
+  + AbstractAPIClient(IClientTransport<T>): 
+  - transport: IClientTransport<T>
+  - currentMessageId: Long
+  - timeout: Duration
+  + request(APICommand): APICommandResponse
+  # serialize(APICommand): T
+  + setTimeout(Duration): void
+  # deserialize(T): APICommandResponse
+  - validateReply(T): boolean
+}
+class AbstractApplication {
+  + AbstractApplication(): 
+  - log: Logger
+  - processors: List<AbstractApplication>
+  - anyCommandHandler: IApplicationCommandHandler
+  - commandHandlers: Map<Class<APICommand>, IApplicationCommandHandler>
+  + use(AbstractApplication): void
+  # process(AppRequest): AppRequest
+  + on(Class<APICommand>, IApplicationCommandHandler): void
+  + on(IApplicationCommandHandler): void
+  + on(IApplicationCommandHandler, Class<APICommand>[]): void
+  + start(): void
+  - safeProcessCall(AppRequest, Consumer<AppRequest>): void
+}
+class AbstractInputTransportApplication<U, L> {
+  + AbstractInputTransportApplication(IServerTransport<U, L>): 
+  - log: Logger
+  - transport: IServerTransport<U, L>
+  + filter(AppRequest): boolean
+  # supplySession(U, L): Session<U>
+  # deserialize(L): APICommand
+  + start(): void
+  - handle(U, L): void
+}
+class AbstractOutputTransportApplication<U, L> {
+  + AbstractOutputTransportApplication(IServerTransport<U, L>): 
+  - log: Logger
+  - transport: IServerTransport<U, L>
+  # send(U, APICommandResponse): void
+  # supplyResponse(AppRequest): AppResponseController<U>
+  + filter(AppRequest): boolean
+  # process(AppRequest): AppRequest
+  # serialize(APICommandResponse): L
+}
+class AppRequest {
+  + AppRequest(ReqStatus, Long, Session<?>, AppResponseController<?>, APICommand): 
+  + AppRequest(): 
+  - id: Long
+  - payload: APICommand
+  - status: ReqStatus
+  - session: Session<?>
+  - response: AppResponseController<?>
+  + id(): Long
+  + response(): AppResponseController<?>
+  + setStatus(ReqStatus): void
+  + payload(): APICommand
+  + status(): ReqStatus
+  + setResponse(AppResponseController<?>): void
+  + toString(): String
+  + session(): Session<?>
+  + isTerminated(): boolean
+}
+class AppResponseController<U> {
+  + AppResponseController(AppRequest, IDestinationServerApplication<U>): 
+  - log: Logger
+  - id: Long
+  - response: APICommandResponse
+  - isTerminated: boolean
+  - destination: IDestinationServerApplication<U>
+  - recipient: U
+  + getStatus(): Status
+  + send(): void
+  + status(Status): AppResponseController<U>
+  + from(APICommandResponse): AppResponseController<U>
+  + isTerminated(): boolean
+  + terminate(): void
+  + getId(): Long
+  + message(String): AppResponseController<U>
+}
+class ApplicationBuildException {
+  + ApplicationBuildException(String): 
+}
+class ClientMain {
+  + ClientMain(): 
+  - client: UDPClientTransport
+  + main(String[]): void
+  + clientRun(SocketMessage): void
+}
+enum CommandType << enumeration >> {
+  - CommandType(): 
+  + HALT: 
+  + NACK: 
+  + DATA: 
+  + INIT: 
+  + ACK: 
+  + values(): CommandType[]
+  + valueOf(String): CommandType
+}
+class ErrorHandlingApplication {
+  + ErrorHandlingApplication(): 
+  # process(AppRequest): AppRequest
+  + filter(AppRequest): boolean
+}
+class Frame {
+  + Frame(long): 
+  + Frame(long, byte[]): 
+  - payload: byte[]
+  + PAYLOAD_SIZE: int
+  + MAX_SIZE: int
+  - currentPayloadSize: int
+  - id: long
+  + FIRST_ID: long
+  + HEADER_SIZE: int
+  + toBytes(): byte[]
+  + toString(): String
+  + fromChannel(ReadableByteChannel): Frame
+  # canEqual(Object): boolean
+  + getCurrentPayloadSize(): int
+  + getId(): long
+  + getPayload(): byte[]
+  + equals(Object): boolean
+  + hashCode(): int
+  + fromBytes(byte[]): Frame
+}
+interface IAPIMessage << interface >>
+interface IApplicationCommandHandler << interface >> {
+  + handle(AppRequest): void
+}
+interface IClientTransport<T> << interface >> {
+  + receive(Duration): T
+  + send(T): void
+}
+interface IDestinationServerApplication<U> << interface >> {
+  + send(U, APICommandResponse): void
+}
+interface IFilteredApplication << interface >> {
+  + filter(AppRequest): boolean
+}
+interface IIdentifiableCommand<K> << interface >> {
+  + getCmdIdentifier(): K
+}
+interface IIdentifiableMessage << interface >> {
+  + getId(): Long
+  + setId(Long): void
+}
+interface IMessageHandler<U, M> << interface >> {
+  + handle(U, M): void
+}
+interface IServerTransport<U, L> << interface >> {
+  + send(U, L): void
+  + subscribe(IMessageHandler<U, L>): void
+  + run(): void
+}
+class JSONSerDesService<T> {
+  + JSONSerDesService(Class<T>): 
+  # getPolymorphicValidator(): BasicPolymorphicTypeValidator
+  # getObjectMapper(): ObjectMapper
+}
+class Pair<T, K> {
+  + Pair(T, K): 
+  - first: T
+  - second: K
+  + toString(): String
+  + equals(Object): boolean
+  + getSecond(): K
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + getFirst(): T
+}
+enum ReqStatus << enumeration >> {
+  - ReqStatus(): 
+  + CREATED: 
+  + UNKNOWN: 
+  + INVALID: 
+  + NORMAL: 
+  + values(): ReqStatus[]
+  + valueOf(String): ReqStatus
+}
+class SerDesService<T> {
+  + SerDesService(Class<T>): 
+  - mapper: ObjectMapper
+  - baseClass: Class<T>
+  + serialize(T): byte[]
+  + deserialize(byte[]): T
+  # getObjectMapper(): ObjectMapper
+}
+class Session<K> {
+  + Session(K): 
+  - state: State
+  - address: K
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + getState(): State
+  + setState(State): void
+  + getAddress(): K
+  + equals(Object): boolean
+}
+class SizeLimitException {
+  + SizeLimitException(String): 
+}
+class SocketAPIClient {
+  + SocketAPIClient(IClientTransport<SocketMessage>): 
+  - serDesService: JSONSerDesService<IAPIMessage>
+  # deserialize(SocketMessage): APICommandResponse
+  # serialize(APICommand): SocketMessage
+}
+class SocketMessage {
+  + SocketMessage(byte[]): 
+  + SocketMessage(CommandType): 
+  + SocketMessage(CommandType, Long, Long): 
+  + SocketMessage(): 
+  + SocketMessage(CommandType, Long, Long, byte[]): 
+  - cmdType: CommandType
+  - replyId: Long
+  - id: Long
+  - payload: byte[]
+  + getId(): Long
+  + getCmdType(): CommandType
+  # canEqual(Object): boolean
+  + isRequest(): boolean
+  + setId(Long): void
+  + setCmdType(CommandType): void
+  + setReplyId(Long): void
+  + getPayload(): byte[]
+  + getReplyId(): Long
+  + hashCode(): int
+  + toString(): String
+  + equals(Object): boolean
+  + isResponse(): boolean
+  + setPayload(byte[]): void
+}
+enum State << enumeration >> {
+  - State(): 
+  + OPERATING: 
+  + DEAD: 
+  + CREATED: 
+  + valueOf(String): State
+  + values(): State[]
+}
+enum Status << enumeration >> {
+  - Status(): 
+  + NETWORK: 
+  + IDLE: 
+  + READINGFINISHED: 
+  + EXECUTING: 
+  + SENDING: 
+  + HALT: 
+  + READING: 
+  + values(): Status[]
+  + valueOf(String): Status
+}
+enum Status << enumeration >> {
+  + Status(): 
+  + UNPROCESSED: 
+  + CLIENT_ERROR: 
+  + SERVER_ERROR: 
+  + NOT_FOUND: 
+  + OK: 
+  + values(): Status[]
+  + isError(): boolean
+  + valueOf(String): Status
+}
+class TransportSession {
+  + TransportSession(SocketAddress, Status, Pipe): 
+  + TransportSession(SocketAddress, Status, Pipe, List<Frame>): 
+  - status: Status
+  - receiveFrameList: Frame[]
+  - consumerAddress: SocketAddress
+  - pipe: Pipe
+  - sendFrameList: List<Frame>
+  + checkFinishReading(): boolean
+  + hashCode(): int
+  + toString(): String
+  + getConsumerAddress(): SocketAddress
+  + getSendFrameList(): List<Frame>
+  + getPipe(): Pipe
+  # canEqual(Object): boolean
+  + getNetworkSession(): TransportSession
+  + setStatus(Status): void
+  + getStatus(): Status
+  + setConsumerAddress(SocketAddress): void
+  + addToList(Frame): boolean
+  + setReceiveFrameList(Frame[]): void
+  + setPipe(Pipe): void
+  + setSendFrameList(List<Frame>): void
+  + equals(Object): boolean
+  + getReceiveFrameList(): Frame[]
+}
+class TransportUtils {
+  + TransportUtils(): 
+  + joinFrames(List<Frame>): byte[]
+  - separate(byte[]): List<byte[]>
+  + IntToBytes(int): ByteBuffer
+  + separateBytes(byte[]): List<Frame>
+  - join(List<byte[]>): byte[]
+}
+class UDPClientTransport {
+  + UDPClientTransport(SocketAddress): 
+  - serverAddress: SocketAddress
+  - socket: DatagramSocket
+  - sendDurationTimeout: Duration
+  ~ serDesService: JSONSerDesService<SocketMessage>
+  - receiveFrame(Duration): Frame
+  + send(SocketMessage): void
+  + receive(Duration): SocketMessage
+  - sendFrame(Frame): void
+}
+class UDPInputTransportApplication {
+  + UDPInputTransportApplication(IServerTransport<SocketAddress, SocketMessage>): 
+  - log: Logger
+  - serDesService: JSONSerDesService<APICommand>
+  # supplySession(SocketAddress, SocketMessage): Session<SocketAddress>
+  # deserialize(SocketMessage): APICommand
+}
+class UDPOutputTransportApplication {
+  + UDPOutputTransportApplication(IServerTransport<SocketAddress, SocketMessage>): 
+  - serDesService: JSONSerDesService<APICommandResponse>
+  - log: Logger
+  # serialize(APICommandResponse): SocketMessage
+}
+class UDPServerFactory {
+  + UDPServerFactory(): 
+  + create(int): UDPServerTransport
+}
+class UDPServerTransport {
+  + UDPServerTransport(DatagramChannel): 
+  - sendFrameQueue: Queue<Pair<SocketAddress, Frame>>
+  - handler: IMessageHandler<SocketAddress, SocketMessage>
+  ~ serDesService: JSONSerDesService<SocketMessage>
+  - networkKey: SelectionKey
+  - TIMEOUT: int
+  - clientSinkMap: Map<SocketAddress, SinkChannel>
+  - selector: Selector
+  - datagramChannel: DatagramChannel
+  - log: Logger
+  + run(): void
+  - regSendClient(SocketAddress, Frame, List<Frame>): void
+  - regClient(SocketAddress, Frame, Status, List<Frame>): void
+  + subscribe(IMessageHandler<SocketAddress, SocketMessage>): void
+  - readNewFrame(SelectionKey, Frame): void
+  + send(SocketAddress, SocketMessage): void
+  - scheduleSend(Pair<SocketAddress, Frame>): void
+  - closeSessionByKey(SelectionKey): void
+  - headerFrame(TransportSession, Frame): void
+  - finishReading(SelectionKey): void
+  - regRecvClient(SocketAddress, Frame): void
+}
+
+APIApplication                      - -^  AbstractApplication                
+APICommand                          ..^  IAPIMessage                        
+APICommand                          ..^  IIdentifiableCommand               
+APICommandResponse                  ..^  IAPIMessage                        
+APICommandResponse                 "1" *- -> "status\n1" Status                             
+AbstractAPIClient                  "1" *- -> "transport\n1" IClientTransport                   
+AbstractAPIClient                   ..>  IIdentifiableMessage               
+AbstractApplication                "1" *- -> "commandHandlers\n*" IApplicationCommandHandler         
+AbstractApplication                 ..^  IFilteredApplication               
+AbstractInputTransportApplication   - -^  AbstractApplication                
+AbstractInputTransportApplication   ..>  IIdentifiableMessage               
+AbstractInputTransportApplication  "1" *- -> "transport\n1" IServerTransport                   
+AbstractOutputTransportApplication  - -^  AbstractApplication                
+AbstractOutputTransportApplication "1" *- -> "transport\n1" IServerTransport                   
+AppRequest                         "1" *- -> "payload\n1" APICommand                         
+AppRequest                         "1" *- -> "response\n1" AppResponseController              
+AppRequest                         "1" *- -> "status\n1" ReqStatus                          
+AppRequest                         "1" *- -> "session\n1" Session                            
+AppResponseController              "1" *- -> "response\n1" APICommandResponse                 
+AppResponseController              "1" *- -> "destination\n1" IDestinationServerApplication      
+ClientMain                         "1" *- -> "client\n1" UDPClientTransport                 
+CommandType                         +- -  SocketMessage                      
+ErrorHandlingApplication            - -^  APIApplication                     
+JSONSerDesService                   - -^  SerDesService                      
+ReqStatus                           +- -  AppRequest                         
+Session                            "1" *- -> "state\n1" State                              
+SocketAPIClient                     - -^  AbstractAPIClient                  
+SocketAPIClient                    "1" *- -> "serDesService\n1" JSONSerDesService                  
+SocketMessage                      "1" *- -> "cmdType\n1" CommandType                        
+SocketMessage                       ..^  IIdentifiableMessage               
+State                               +- -  Session                            
+Status                              +- -  APICommandResponse                 
+Status                              +- -  TransportSession                   
+TransportSession                   "1" *- -> "receiveFrameList\n*" Frame                              
+TransportSession                   "1" *- -> "status\n1" Status                             
+UDPClientTransport                  ..^  IClientTransport                   
+UDPClientTransport                 "1" *- -> "serDesService\n1" JSONSerDesService                  
+UDPInputTransportApplication        - -^  AbstractInputTransportApplication  
+UDPInputTransportApplication       "1" *- -> "serDesService\n1" JSONSerDesService                  
+UDPOutputTransportApplication       - -^  AbstractOutputTransportApplication 
+UDPOutputTransportApplication      "1" *- -> "serDesService\n1" JSONSerDesService                  
+UDPServerTransport                 "1" *- -> "handler\n1" IMessageHandler                    
+UDPServerTransport                  ..^  IServerTransport                   
+UDPServerTransport                 "1" *- -> "serDesService\n1" JSONSerDesService                  
+UDPServerTransport                 "1" *- -> "sendFrameQueue\n*" Pair                               
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+top to bottom direction
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+hide circle
+
+<style>
+classDiagram {
+    class {
+        header {
+            FontStyle bold
+        }
+    }
+}
+</style>
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+top to bottom direction
+skinparam linetype ortho
+
+class APIApplication {
+  + APIApplication(): 
+  + filter(AppRequest): boolean
+}
+class APICommand {
+  + APICommand(): 
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + validate(): ValidationResponse
+  + getCmdIdentifier(): Class<APICommand>
+  + createResponse(): APICommandResponse
+}
+class APICommandResponse {
+  + APICommandResponse(): 
+  + APICommandResponse(Status, String): 
+  - status: Status
+  - textualResponse: String
+  + getStatus(): Status
+  + getTextualResponse(): String
+  + setStatus(Status): void
+  + setTextualResponse(String): void
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + clientError(String): APICommandResponse
+  + clientError(Exception): APICommandResponse
+  + serverError(Exception): APICommandResponse
+  + notFound(): APICommandResponse
+  + ok(): APICommandResponse
+  + isSuccess(): boolean
+  + serverError(String): APICommandResponse
+  + isResolved(): boolean
+}
+class AbstractAPIClient<T> {
+  + AbstractAPIClient(IClientTransport<T>): 
+  - transport: IClientTransport<T>
+  - currentMessageId: Long
+  - timeout: Duration
+  + request(APICommand): APICommandResponse
+  # serialize(APICommand): T
+  + setTimeout(Duration): void
+  # deserialize(T): APICommandResponse
+  - validateReply(T): boolean
+}
+class AbstractApplication {
+  + AbstractApplication(): 
+  - log: Logger
+  - processors: List<AbstractApplication>
+  - anyCommandHandler: IApplicationCommandHandler
+  - commandHandlers: Map<Class<APICommand>, IApplicationCommandHandler>
+  + use(AbstractApplication): void
+  # process(AppRequest): AppRequest
+  + on(Class<APICommand>, IApplicationCommandHandler): void
+  + on(IApplicationCommandHandler): void
+  + on(IApplicationCommandHandler, Class<APICommand>[]): void
+  + start(): void
+  - safeProcessCall(AppRequest, Consumer<AppRequest>): void
+}
+class AbstractInputTransportApplication<U, L> {
+  + AbstractInputTransportApplication(IServerTransport<U, L>): 
+  - log: Logger
+  - transport: IServerTransport<U, L>
+  + filter(AppRequest): boolean
+  # supplySession(U, L): Session<U>
+  # deserialize(L): APICommand
+  + start(): void
+  - handle(U, L): void
+}
+class AbstractOutputTransportApplication<U, L> {
+  + AbstractOutputTransportApplication(IServerTransport<U, L>): 
+  - log: Logger
+  - transport: IServerTransport<U, L>
+  # send(U, APICommandResponse): void
+  # supplyResponse(AppRequest): AppResponseController<U>
+  + filter(AppRequest): boolean
+  # process(AppRequest): AppRequest
+  # serialize(APICommandResponse): L
+}
+class AppRequest {
+  + AppRequest(ReqStatus, Long, Session<?>, AppResponseController<?>, APICommand): 
+  + AppRequest(): 
+  - id: Long
+  - payload: APICommand
+  - status: ReqStatus
+  - session: Session<?>
+  - response: AppResponseController<?>
+  + id(): Long
+  + response(): AppResponseController<?>
+  + setStatus(ReqStatus): void
+  + payload(): APICommand
+  + status(): ReqStatus
+  + setResponse(AppResponseController<?>): void
+  + toString(): String
+  + session(): Session<?>
+  + isTerminated(): boolean
+}
+class AppResponseController<U> {
+  + AppResponseController(AppRequest, IDestinationServerApplication<U>): 
+  - log: Logger
+  - id: Long
+  - response: APICommandResponse
+  - isTerminated: boolean
+  - destination: IDestinationServerApplication<U>
+  - recipient: U
+  + getStatus(): Status
+  + send(): void
+  + status(Status): AppResponseController<U>
+  + from(APICommandResponse): AppResponseController<U>
+  + isTerminated(): boolean
+  + terminate(): void
+  + getId(): Long
+  + message(String): AppResponseController<U>
+}
+class ApplicationBuildException {
+  + ApplicationBuildException(String): 
+}
+class ClientMain {
+  + ClientMain(): 
+  - client: UDPClientTransport
+  + main(String[]): void
+  + clientRun(SocketMessage): void
+}
+enum CommandType << enumeration >> {
+  - CommandType(): 
+  + HALT: 
+  + NACK: 
+  + DATA: 
+  + INIT: 
+  + ACK: 
+  + values(): CommandType[]
+  + valueOf(String): CommandType
+}
+class ErrorHandlingApplication {
+  + ErrorHandlingApplication(): 
+  # process(AppRequest): AppRequest
+  + filter(AppRequest): boolean
+}
+class Frame {
+  + Frame(long): 
+  + Frame(long, byte[]): 
+  - payload: byte[]
+  + PAYLOAD_SIZE: int
+  + MAX_SIZE: int
+  - currentPayloadSize: int
+  - id: long
+  + FIRST_ID: long
+  + HEADER_SIZE: int
+  + toBytes(): byte[]
+  + toString(): String
+  + fromChannel(ReadableByteChannel): Frame
+  # canEqual(Object): boolean
+  + getCurrentPayloadSize(): int
+  + getId(): long
+  + getPayload(): byte[]
+  + equals(Object): boolean
+  + hashCode(): int
+  + fromBytes(byte[]): Frame
+}
+interface IAPIMessage << interface >>
+interface IApplicationCommandHandler << interface >> {
+  + handle(AppRequest): void
+}
+interface IClientTransport<T> << interface >> {
+  + receive(Duration): T
+  + send(T): void
+}
+interface IDestinationServerApplication<U> << interface >> {
+  + send(U, APICommandResponse): void
+}
+interface IFilteredApplication << interface >> {
+  + filter(AppRequest): boolean
+}
+interface IIdentifiableCommand<K> << interface >> {
+  + getCmdIdentifier(): K
+}
+interface IIdentifiableMessage << interface >> {
+  + getId(): Long
+  + setId(Long): void
+}
+interface IMessageHandler<U, M> << interface >> {
+  + handle(U, M): void
+}
+interface IServerTransport<U, L> << interface >> {
+  + send(U, L): void
+  + subscribe(IMessageHandler<U, L>): void
+  + run(): void
+}
+class JSONSerDesService<T> {
+  + JSONSerDesService(Class<T>): 
+  # getPolymorphicValidator(): BasicPolymorphicTypeValidator
+  # getObjectMapper(): ObjectMapper
+}
+class Pair<T, K> {
+  + Pair(T, K): 
+  - first: T
+  - second: K
+  + toString(): String
+  + equals(Object): boolean
+  + getSecond(): K
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + getFirst(): T
+}
+enum ReqStatus << enumeration >> {
+  - ReqStatus(): 
+  + CREATED: 
+  + UNKNOWN: 
+  + INVALID: 
+  + NORMAL: 
+  + values(): ReqStatus[]
+  + valueOf(String): ReqStatus
+}
+class SerDesService<T> {
+  + SerDesService(Class<T>): 
+  - mapper: ObjectMapper
+  - baseClass: Class<T>
+  + serialize(T): byte[]
+  + deserialize(byte[]): T
+  # getObjectMapper(): ObjectMapper
+}
+class Session<K> {
+  + Session(K): 
+  - state: State
+  - address: K
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + getState(): State
+  + setState(State): void
+  + getAddress(): K
+  + equals(Object): boolean
+}
+class SizeLimitException {
+  + SizeLimitException(String): 
+}
+class SocketAPIClient {
+  + SocketAPIClient(IClientTransport<SocketMessage>): 
+  - serDesService: JSONSerDesService<IAPIMessage>
+  # deserialize(SocketMessage): APICommandResponse
+  # serialize(APICommand): SocketMessage
+}
+class SocketMessage {
+  + SocketMessage(byte[]): 
+  + SocketMessage(CommandType): 
+  + SocketMessage(CommandType, Long, Long): 
+  + SocketMessage(): 
+  + SocketMessage(CommandType, Long, Long, byte[]): 
+  - cmdType: CommandType
+  - replyId: Long
+  - id: Long
+  - payload: byte[]
+  + getId(): Long
+  + getCmdType(): CommandType
+  # canEqual(Object): boolean
+  + isRequest(): boolean
+  + setId(Long): void
+  + setCmdType(CommandType): void
+  + setReplyId(Long): void
+  + getPayload(): byte[]
+  + getReplyId(): Long
+  + hashCode(): int
+  + toString(): String
+  + equals(Object): boolean
+  + isResponse(): boolean
+  + setPayload(byte[]): void
+}
+enum State << enumeration >> {
+  - State(): 
+  + OPERATING: 
+  + DEAD: 
+  + CREATED: 
+  + valueOf(String): State
+  + values(): State[]
+}
+enum Status << enumeration >> {
+  - Status(): 
+  + NETWORK: 
+  + IDLE: 
+  + READINGFINISHED: 
+  + EXECUTING: 
+  + SENDING: 
+  + HALT: 
+  + READING: 
+  + values(): Status[]
+  + valueOf(String): Status
+}
+enum Status << enumeration >> {
+  + Status(): 
+  + UNPROCESSED: 
+  + CLIENT_ERROR: 
+  + SERVER_ERROR: 
+  + NOT_FOUND: 
+  + OK: 
+  + values(): Status[]
+  + isError(): boolean
+  + valueOf(String): Status
+}
+class TransportSession {
+  + TransportSession(SocketAddress, Status, Pipe): 
+  + TransportSession(SocketAddress, Status, Pipe, List<Frame>): 
+  - status: Status
+  - receiveFrameList: Frame[]
+  - consumerAddress: SocketAddress
+  - pipe: Pipe
+  - sendFrameList: List<Frame>
+  + checkFinishReading(): boolean
+  + hashCode(): int
+  + toString(): String
+  + getConsumerAddress(): SocketAddress
+  + getSendFrameList(): List<Frame>
+  + getPipe(): Pipe
+  # canEqual(Object): boolean
+  + getNetworkSession(): TransportSession
+  + setStatus(Status): void
+  + getStatus(): Status
+  + setConsumerAddress(SocketAddress): void
+  + addToList(Frame): boolean
+  + setReceiveFrameList(Frame[]): void
+  + setPipe(Pipe): void
+  + setSendFrameList(List<Frame>): void
+  + equals(Object): boolean
+  + getReceiveFrameList(): Frame[]
+}
+class TransportUtils {
+  + TransportUtils(): 
+  + joinFrames(List<Frame>): byte[]
+  - separate(byte[]): List<byte[]>
+  + IntToBytes(int): ByteBuffer
+  + separateBytes(byte[]): List<Frame>
+  - join(List<byte[]>): byte[]
+}
+class UDPClientTransport {
+  + UDPClientTransport(SocketAddress): 
+  - serverAddress: SocketAddress
+  - socket: DatagramSocket
+  - sendDurationTimeout: Duration
+  ~ serDesService: JSONSerDesService<SocketMessage>
+  - receiveFrame(Duration): Frame
+  + send(SocketMessage): void
+  + receive(Duration): SocketMessage
+  - sendFrame(Frame): void
+}
+class UDPInputTransportApplication {
+  + UDPInputTransportApplication(IServerTransport<SocketAddress, SocketMessage>): 
+  - log: Logger
+  - serDesService: JSONSerDesService<APICommand>
+  # supplySession(SocketAddress, SocketMessage): Session<SocketAddress>
+  # deserialize(SocketMessage): APICommand
+}
+class UDPOutputTransportApplication {
+  + UDPOutputTransportApplication(IServerTransport<SocketAddress, SocketMessage>): 
+  - serDesService: JSONSerDesService<APICommandResponse>
+  - log: Logger
+  # serialize(APICommandResponse): SocketMessage
+}
+class UDPServerFactory {
+  + UDPServerFactory(): 
+  + create(int): UDPServerTransport
+}
+class UDPServerTransport {
+  + UDPServerTransport(DatagramChannel): 
+  - sendFrameQueue: Queue<Pair<SocketAddress, Frame>>
+  - handler: IMessageHandler<SocketAddress, SocketMessage>
+  ~ serDesService: JSONSerDesService<SocketMessage>
+  - networkKey: SelectionKey
+  - TIMEOUT: int
+  - clientSinkMap: Map<SocketAddress, SinkChannel>
+  - selector: Selector
+  - datagramChannel: DatagramChannel
+  - log: Logger
+  + run(): void
+  - regSendClient(SocketAddress, Frame, List<Frame>): void
+  - regClient(SocketAddress, Frame, Status, List<Frame>): void
+  + subscribe(IMessageHandler<SocketAddress, SocketMessage>): void
+  - readNewFrame(SelectionKey, Frame): void
+  + send(SocketAddress, SocketMessage): void
+  - scheduleSend(Pair<SocketAddress, Frame>): void
+  - closeSessionByKey(SelectionKey): void
+  - headerFrame(TransportSession, Frame): void
+  - finishReading(SelectionKey): void
+  - regRecvClient(SocketAddress, Frame): void
+}
+
+APIApplication                      - -^  AbstractApplication                
+APICommand                          ..^  IAPIMessage                        
+APICommand                          ..^  IIdentifiableCommand               
+APICommandResponse                  ..^  IAPIMessage                        
+APICommandResponse                 "1" *- -> "status\n1" Status                             
+AbstractAPIClient                  "1" *- -> "transport\n1" IClientTransport                   
+AbstractAPIClient                   ..>  IIdentifiableMessage               
+AbstractApplication                "1" *- -> "commandHandlers\n*" IApplicationCommandHandler         
+AbstractApplication                 ..^  IFilteredApplication               
+AbstractInputTransportApplication   - -^  AbstractApplication                
+AbstractInputTransportApplication   ..>  IIdentifiableMessage               
+AbstractInputTransportApplication  "1" *- -> "transport\n1" IServerTransport                   
+AbstractOutputTransportApplication  - -^  AbstractApplication                
+AbstractOutputTransportApplication "1" *- -> "transport\n1" IServerTransport                   
+AppRequest                         "1" *- -> "payload\n1" APICommand                         
+AppRequest                         "1" *- -> "response\n1" AppResponseController              
+AppRequest                         "1" *- -> "status\n1" ReqStatus                          
+AppRequest                         "1" *- -> "session\n1" Session                            
+AppResponseController              "1" *- -> "response\n1" APICommandResponse                 
+AppResponseController              "1" *- -> "destination\n1" IDestinationServerApplication      
+ClientMain                         "1" *- -> "client\n1" UDPClientTransport                 
+CommandType                         +- -  SocketMessage                      
+ErrorHandlingApplication            - -^  APIApplication                     
+JSONSerDesService                   - -^  SerDesService                      
+ReqStatus                           +- -  AppRequest                         
+Session                            "1" *- -> "state\n1" State                              
+SocketAPIClient                     - -^  AbstractAPIClient                  
+SocketAPIClient                    "1" *- -> "serDesService\n1" JSONSerDesService                  
+SocketMessage                      "1" *- -> "cmdType\n1" CommandType                        
+SocketMessage                       ..^  IIdentifiableMessage               
+State                               +- -  Session                            
+Status                              +- -  APICommandResponse                 
+Status                              +- -  TransportSession                   
+TransportSession                   "1" *- -> "receiveFrameList\n*" Frame                              
+TransportSession                   "1" *- -> "status\n1" Status                             
+UDPClientTransport                  ..^  IClientTransport                   
+UDPClientTransport                 "1" *- -> "serDesService\n1" JSONSerDesService                  
+UDPInputTransportApplication        - -^  AbstractInputTransportApplication  
+UDPInputTransportApplication       "1" *- -> "serDesService\n1" JSONSerDesService                  
+UDPOutputTransportApplication       - -^  AbstractOutputTransportApplication 
+UDPOutputTransportApplication      "1" *- -> "serDesService\n1" JSONSerDesService                  
+UDPServerTransport                 "1" *- -> "handler\n1" IMessageHandler                    
+UDPServerTransport                  ..^  IServerTransport                   
+UDPServerTransport                 "1" *- -> "serDesService\n1" JSONSerDesService                  
+UDPServerTransport                 "1" *- -> "sendFrameQueue\n*" Pair                               
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>

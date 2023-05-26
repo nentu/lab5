@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/petr/Desktop/itmo-programming-lab-5/server</OriginalElement>
+  <nodes>
+    <node x="618.0" y="2097.0">ru.bardinpetr.itmo.lab5.common.ui.AbstractConsoleArgumentsParser</node>
+    <node x="1472.0" y="2206.0">ru.bardinpetr.itmo.lab5.server.db.filedb.FileDBControllerFactory</node>
+    <node x="2858.0" y="2097.0">ru.bardinpetr.itmo.lab5.network.app.server.special.impl.UDPOutputTransportApplication</node>
+    <node x="2856.981111111112" y="973.0">ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand</node>
+    <node x="1705.5088888888895" y="268.0">ru.bardinpetr.itmo.lab5.server.dao.ICollectionCRUDDAO</node>
+    <node x="3343.0" y="2097.0">ru.bardinpetr.itmo.lab5.server.Main</node>
+    <node x="979.0" y="2097.0">ru.bardinpetr.itmo.lab5.server.FileUtils</node>
+    <node x="214.0" y="2097.0">ru.bardinpetr.itmo.lab5.models.data.collection.CollectionInfo</node>
+    <node x="812.4811111111119" y="-292.5">ru.bardinpetr.itmo.lab5.models.data.collection.IKeyedEntity</node>
+    <node x="1766.0088888888895" y="1058.0">ru.bardinpetr.itmo.lab5.server.dao.ICollectionDAO</node>
+    <node x="1497.0" y="2097.0">ru.bardinpetr.itmo.lab5.server.db.DBControllerFactory</node>
+    <node x="478.7588888888896" y="957.0">ru.bardinpetr.itmo.lab5.server.db.filedb.FileDBController</node>
+    <node x="723.4850000000001" y="1320.0">ru.bardinpetr.itmo.lab5.server.dao.filedb.FileDBDAO</node>
+    <node x="593.4583333333333" y="354.5">ru.bardinpetr.itmo.lab5.server.db.filedb.FileStorageController</node>
+    <node x="199.45833333333326" y="-8.0">ru.bardinpetr.itmo.lab5.models.data.Worker</node>
+    <node x="-194.16666666666652" y="1495.0">ru.bardinpetr.itmo.lab5.network.app.server.special.impl.APIApplication</node>
+    <node x="1857.092222222223" y="1522.5">ru.bardinpetr.itmo.lab5.server.dao.workers.IWorkerCollectionDAO</node>
+    <node x="1483.5088888888895" y="432.0">ru.bardinpetr.itmo.lab5.models.data.collection.ISetCollection</node>
+    <node x="2022.0" y="2097.0">ru.bardinpetr.itmo.lab5.network.app.server.special.impl.UDPInputTransportApplication</node>
+    <node x="81.95833333333337" y="-456.0">ru.bardinpetr.itmo.lab5.models.data.Organization</node>
+    <node x="2418.981111111112" y="922.0">ru.bardinpetr.itmo.lab5.network.app.server.requests.AppRequest</node>
+    <node x="-283.0" y="2097.0">ru.bardinpetr.itmo.lab5.network.transport.server.UDPServerTransport</node>
+    <node x="623.0" y="2383.0">ru.bardinpetr.itmo.lab5.server.ui.ServerConsoleArgumentsParser</node>
+    <node x="1812.0" y="2097.0">ru.bardinpetr.itmo.lab5.server.utils.WorkerFactory</node>
+    <node x="2982.981111111112" y="1476.0">ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand.ExecuteScriptCommandResponse</node>
+    <node x="2843.231111111112" y="-456.0">ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse.Status</node>
+    <node x="29.458333333333258" y="432.0">ru.bardinpetr.itmo.lab5.server.db.DBController</node>
+    <node x="301.0" y="1878.5">ru.bardinpetr.itmo.lab5.server.executor.ScriptExecutor</node>
+    <node x="1007.4811111111119" y="-406.0">ru.bardinpetr.itmo.lab5.models.data.Position</node>
+    <node x="2549.0" y="2097.0">ru.bardinpetr.itmo.lab5.server.db.filedb.FileDBInfo</node>
+    <node x="308.0" y="2703.0">ru.bardinpetr.itmo.lab5.network.transport.server.UDPServerFactory</node>
+    <node x="-6.0" y="1866.0">ru.bardinpetr.itmo.lab5.server.api.ExecutorAdapterApplication</node>
+    <node x="2527.981111111112" y="1412.0">ru.bardinpetr.itmo.lab5.network.app.server.requests.AppRequest.ReqStatus</node>
+    <node x="600.0" y="2703.0">ru.bardinpetr.itmo.lab5.server.db.errors.DBCreateException</node>
+    <node x="38.833333333333485" y="1508.5">ru.bardinpetr.itmo.lab5.network.app.server.interfaces.handlers.IApplicationCommandHandler</node>
+    <node x="-283.0" y="1879.0">ru.bardinpetr.itmo.lab5.network.app.server.special.impl.ErrorHandlingApplication</node>
+    <node x="1452.0088888888895" y="1057.5">ru.bardinpetr.itmo.lab5.models.data.collection.WorkerCollection</node>
+    <node x="1102.4850000000001" y="1381.5">ru.bardinpetr.itmo.lab5.common.executor.Executor</node>
+    <node x="1440.4811111111119" y="1904.5">ru.bardinpetr.itmo.lab5.server.executor.WorkersCRUDExecutor</node>
+    <node x="-283.0" y="2703.0">ru.bardinpetr.itmo.lab5.server.dao.workers.WorkerCollectionDAOFactory</node>
+    <node x="2887.981111111112" y="534.5">ru.bardinpetr.itmo.lab5.models.commands.requests.APICommand</node>
+    <node x="2762.231111111112" y="-143.0">ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse</node>
+    <node x="1798.481111111112" y="1816.0">ru.bardinpetr.itmo.lab5.server.executor.WorkersSpecialExecutor</node>
+    <node x="2408.481111111112" y="447.0">ru.bardinpetr.itmo.lab5.network.app.server.requests.AppResponseController</node>
+    <node x="1258.4811111111119" y="1891.5">ru.bardinpetr.itmo.lab5.server.executor.DBExecutor</node>
+    <node x="753.0" y="1866.5">ru.bardinpetr.itmo.lab5.server.dao.workers.FileDBWorkersDAO</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.bardinpetr.itmo.lab5.network.app.server.special.impl.ErrorHandlingApplication" target="ru.bardinpetr.itmo.lab5.network.app.server.special.impl.APIApplication" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="-154.5" y="1796.0" />
+      <point x="-87.66666666666652" y="1796.0" />
+      <point x="0.0" y="43.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.dao.ICollectionDAO" target="ru.bardinpetr.itmo.lab5.server.dao.ICollectionCRUDDAO" relationship="INTERFACE_GENERALIZATION">
+      <point x="-69.5" y="-54.5" />
+      <point x="0.0" y="179.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.dao.filedb.FileDBDAO" target="ru.bardinpetr.itmo.lab5.server.db.filedb.FileDBController" relationship="TO_ONE">
+      <point x="-172.0" y="-218.0" />
+      <point x="94.72611111111053" y="155.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.network.app.server.requests.AppRequest.ReqStatus" target="ru.bardinpetr.itmo.lab5.network.app.server.requests.AppRequest" relationship="INNER_CLASS">
+      <point x="50.0" y="-106.5" />
+      <point x="2677.981111111112" y="1386.0" />
+      <point x="2732.481111111112" y="1386.0" />
+      <point x="104.5" y="219.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.network.app.server.requests.AppResponseController" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" relationship="TO_ONE">
+      <point x="212.0" y="-205.5" />
+      <point x="-91.25" y="269.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.dao.filedb.FileDBDAO" target="ru.bardinpetr.itmo.lab5.models.data.collection.IKeyedEntity" relationship="DEPENDENCY">
+      <point x="0.0" y="-218.0" />
+      <point x="902.9850000000001" y="1294.0" />
+      <point x="1001.9583333333333" y="1294.0" />
+      <point x="1001.9583333333333" y="-29.0" />
+      <point x="1771.3977777777786" y="-29.0" />
+      <point x="1771.3977777777786" y="-49.0" />
+      <point x="943.7311111111119" y="-49.0" />
+      <point x="43.75" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse.Status" relationship="TO_ONE">
+      <point x="-0.0" y="-269.0" />
+      <point x="-0.0" y="131.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.executor.ScriptExecutor" target="ru.bardinpetr.itmo.lab5.common.executor.Executor" relationship="GENERALIZATION">
+      <point x="108.0" y="-55.5" />
+      <point x="625.0" y="1796.0" />
+      <point x="1655.125" y="1796.0" />
+      <point x="1655.125" y="1776.0" />
+      <point x="1568.2350000000001" y="1776.0" />
+      <point x="155.25" y="156.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.db.filedb.FileDBController" target="ru.bardinpetr.itmo.lab5.server.db.filedb.FileStorageController" relationship="TO_ONE">
+      <point x="-0.0" y="-155.5" />
+      <point x="-156.19944444444366" y="93.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.executor.WorkersSpecialExecutor" target="ru.bardinpetr.itmo.lab5.common.executor.Executor" relationship="GENERALIZATION">
+      <point x="-141.25" y="-118.0" />
+      <point x="1939.731111111112" y="1796.0" />
+      <point x="1655.125" y="1796.0" />
+      <point x="1655.125" y="1776.0" />
+      <point x="1568.2350000000001" y="1776.0" />
+      <point x="155.25" y="156.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.collection.ISetCollection" target="ru.bardinpetr.itmo.lab5.models.data.collection.IKeyedEntity" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="1584.5088888888895" y="-29.0" />
+      <point x="1771.3977777777786" y="-29.0" />
+      <point x="1771.3977777777786" y="-49.0" />
+      <point x="943.7311111111119" y="-49.0" />
+      <point x="43.75" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.ui.ServerConsoleArgumentsParser" target="ru.bardinpetr.itmo.lab5.common.ui.AbstractConsoleArgumentsParser" relationship="GENERALIZATION">
+      <point x="0.0" y="-67.5" />
+      <point x="0.0" y="118.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.network.app.server.requests.AppRequest" target="ru.bardinpetr.itmo.lab5.models.commands.requests.APICommand" relationship="TO_ONE">
+      <point x="208.9998888888881" y="-190.5" />
+      <point x="2867.0" y="950.5" />
+      <point x="2867.0" y="652.5" />
+      <point x="-152.5001111111119" y="-0.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.collection.WorkerCollection" target="ru.bardinpetr.itmo.lab5.models.data.collection.ISetCollection" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.Worker" target="ru.bardinpetr.itmo.lab5.models.data.Position" relationship="TO_ONE">
+      <point x="36.000000000000114" y="-455.5" />
+      <point x="422.45833333333337" y="-310.0" />
+      <point x="-96.5" y="-47.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.network.app.server.requests.AppRequest" target="ru.bardinpetr.itmo.lab5.network.app.server.requests.AppRequest.ReqStatus" relationship="TO_ONE">
+      <point x="-0.0" y="219.0" />
+      <point x="-0.0" y="-106.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.Worker" target="ru.bardinpetr.itmo.lab5.models.data.collection.IKeyedEntity" relationship="REALIZATION">
+      <point x="-93.5" y="-455.5" />
+      <point x="292.95833333333326" y="-29.0" />
+      <point x="856.2311111111119" y="-29.0" />
+      <point x="-43.75" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand.ExecuteScriptCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" relationship="GENERALIZATION">
+      <point x="77.25" y="-42.5" />
+      <point x="3214.731111111112" y="1386.0" />
+      <point x="3234.481111111112" y="1386.0" />
+      <point x="3234.481111111112" y="421.0" />
+      <point x="3015.731111111112" y="421.0" />
+      <point x="84.5" y="269.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.api.ExecutorAdapterApplication" target="ru.bardinpetr.itmo.lab5.network.app.server.interfaces.handlers.IApplicationCommandHandler" relationship="REALIZATION">
+      <point x="0.0" y="-68.0" />
+      <point x="137.5" y="1796.0" />
+      <point x="180.33333333333348" y="1796.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.executor.WorkersCRUDExecutor" target="ru.bardinpetr.itmo.lab5.common.executor.Executor" relationship="GENERALIZATION">
+      <point x="0.0" y="-29.5" />
+      <point x="1609.4811111111119" y="1796.0" />
+      <point x="1655.125" y="1796.0" />
+      <point x="1655.125" y="1776.0" />
+      <point x="1568.2350000000001" y="1776.0" />
+      <point x="155.25" y="156.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.APICommand" relationship="TO_MANY">
+      <point x="-1.1111111189165968E-4" y="-168.0" />
+      <point x="3040.481" y="900.0" />
+      <point x="2867.0" y="900.0" />
+      <point x="2867.0" y="652.5" />
+      <point x="-152.5001111111119" y="-0.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.api.ExecutorAdapterApplication" target="ru.bardinpetr.itmo.lab5.network.app.server.special.impl.APIApplication" relationship="GENERALIZATION">
+      <point x="-95.66666666666674" y="-68.0" />
+      <point x="41.83333333333326" y="1796.0" />
+      <point x="-87.66666666666652" y="1796.0" />
+      <point x="0.0" y="43.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.dao.workers.FileDBWorkersDAO" target="ru.bardinpetr.itmo.lab5.server.dao.workers.IWorkerCollectionDAO" relationship="REALIZATION">
+      <point x="99.0" y="-67.5" />
+      <point x="1050.0" y="1786.0" />
+      <point x="1912.842222222223" y="1786.0" />
+      <point x="-55.75" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.dao.workers.IWorkerCollectionDAO" target="ru.bardinpetr.itmo.lab5.server.dao.ICollectionDAO" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1968.592222222223" y="1294.0" />
+      <point x="1974.5088888888895" y="1294.0" />
+      <point x="69.5" y="54.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.api.ExecutorAdapterApplication" target="ru.bardinpetr.itmo.lab5.common.executor.Executor" relationship="TO_ONE">
+      <point x="15.0" y="-68.0" />
+      <point x="152.5" y="1831.0" />
+      <point x="1412.985" y="1831.0" />
+      <point x="-2.2737367544323206E-13" y="156.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse.Status" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" relationship="INNER_CLASS">
+      <point x="-44.0" y="131.5" />
+      <point x="2887.231111111112" y="-168.0" />
+      <point x="2846.731111111112" y="-168.0" />
+      <point x="-84.5" y="-269.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.executor.DBExecutor" target="ru.bardinpetr.itmo.lab5.common.executor.Executor" relationship="GENERALIZATION">
+      <point x="0.0" y="-42.5" />
+      <point x="1339.4811111111119" y="1796.0" />
+      <point x="1655.125" y="1796.0" />
+      <point x="1655.125" y="1776.0" />
+      <point x="1568.2350000000001" y="1776.0" />
+      <point x="155.25" y="156.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.executor.WorkersSpecialExecutor" target="ru.bardinpetr.itmo.lab5.server.dao.workers.IWorkerCollectionDAO" relationship="TO_ONE">
+      <point x="-112.38888888888914" y="-118.0" />
+      <point x="-0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.dao.ICollectionDAO" target="ru.bardinpetr.itmo.lab5.models.data.collection.IKeyedEntity" relationship="DEPENDENCY">
+      <point x="69.5" y="-54.5" />
+      <point x="1975.0088888888895" y="-29.0" />
+      <point x="1771.3977777777786" y="-29.0" />
+      <point x="1771.3977777777786" y="-49.0" />
+      <point x="943.7311111111119" y="-49.0" />
+      <point x="43.75" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.executor.ScriptExecutor" target="ru.bardinpetr.itmo.lab5.common.executor.Executor" relationship="TO_ONE">
+      <point x="-0.0" y="-55.5" />
+      <point x="517.0" y="1831.0" />
+      <point x="1412.985" y="1831.0" />
+      <point x="-2.2737367544323206E-13" y="156.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.db.filedb.FileDBController" target="ru.bardinpetr.itmo.lab5.server.db.DBController" relationship="REALIZATION">
+      <point x="-78.75" y="-155.5" />
+      <point x="557.5088888888896" y="930.0" />
+      <point x="104.45833333333326" y="930.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.dao.filedb.FileDBDAO" target="ru.bardinpetr.itmo.lab5.server.dao.ICollectionDAO" relationship="REALIZATION">
+      <point x="119.66666666666663" y="-218.0" />
+      <point x="1022.6516666666666" y="1294.0" />
+      <point x="1835.5088888888895" y="1294.0" />
+      <point x="-69.5" y="54.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.network.app.server.requests.AppRequest" target="ru.bardinpetr.itmo.lab5.network.app.server.requests.AppResponseController" relationship="TO_ONE">
+      <point x="-0.0" y="-219.0" />
+      <point x="-0.0" y="205.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.db.filedb.FileDBControllerFactory" target="ru.bardinpetr.itmo.lab5.server.db.DBControllerFactory" relationship="REALIZATION">
+      <point x="0.0" y="-68.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.Worker" target="ru.bardinpetr.itmo.lab5.models.data.Organization" relationship="TO_ONE">
+      <point x="-142.9999999999999" y="-455.5" />
+      <point x="-0.0" y="193.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.APICommand" relationship="GENERALIZATION">
+      <point x="91.75" y="-168.0" />
+      <point x="3132.231111111112" y="900.0" />
+      <point x="3116.731111111112" y="900.0" />
+      <point x="76.25" y="118.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand.ExecuteScriptCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand" relationship="INNER_CLASS">
+      <point x="-77.25" y="-42.5" />
+      <point x="3060.231111111112" y="1386.0" />
+      <point x="3040.481111111112" y="1386.0" />
+      <point x="0.0" y="168.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.dao.ICollectionCRUDDAO" target="ru.bardinpetr.itmo.lab5.models.data.collection.IKeyedEntity" relationship="DEPENDENCY">
+      <point x="0.0" y="-179.5" />
+      <point x="1835.0088888888895" y="-29.0" />
+      <point x="1771.3977777777786" y="-29.0" />
+      <point x="1771.3977777777786" y="-49.0" />
+      <point x="943.7311111111119" y="-49.0" />
+      <point x="43.75" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.server.dao.workers.FileDBWorkersDAO" target="ru.bardinpetr.itmo.lab5.server.dao.filedb.FileDBDAO" relationship="GENERALIZATION">
+      <point x="-99.0" y="-67.5" />
+      <point x="852.0" y="1786.0" />
+      <point x="902.9850000000001" y="1786.0" />
+      <point x="0.0" y="218.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.39321600000000007" showDependencies="true" x="740.061116536458" y="442.68074544270803" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

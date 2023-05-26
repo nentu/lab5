@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css"
+     height="987px" preserveAspectRatio="none" style="width:1231px;height:987px;background:#FFFFFF;" version="1.1"
+     viewBox="0 0 1231 987" width="1231px" zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <rect fill="none" height="61.412" style="stroke:#000000;stroke-width:1.5;" width="477.5" x="397.5" y="270.01"/>
+        <rect fill="none" height="61.412" style="stroke:#000000;stroke-width:1.5;" width="477.5" x="397.5"
+              y="655.0702"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="81.5" x2="81.5" y1="39.0679"
+              y2="948.7183"/>
+        <rect fill="#FFFFFF" height="896.6504" style="stroke:#181818;stroke-width:1.0;" width="10" x="76.5"
+              y="47.0679"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="256.5" x2="256.5" y1="39.0679"
+              y2="948.7183"/>
+        <rect fill="#FFFFFF" height="187.2361" style="stroke:#181818;stroke-width:1.0;" width="10" x="251.5"
+              y="70.7739"/>
+        <rect fill="#FFFFFF" height="176.5301" style="stroke:#181818;stroke-width:1.0;" width="10" x="251.5"
+              y="754.1882"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="413.5" x2="413.5" y1="39.0679"
+              y2="948.7183"/>
+        <rect fill="#FFFFFF" height="116.118" style="stroke:#181818;stroke-width:1.0;" width="10" x="408.5"
+              y="234.304"/>
+        <rect fill="#FFFFFF" height="116.118" style="stroke:#181818;stroke-width:1.0;" width="10" x="408.5"
+              y="651.0702"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="550" x2="550" y1="39.0679"
+              y2="948.7183"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="703.5" x2="703.5" y1="39.0679"
+              y2="948.7183"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="859" x2="859" y1="39.0679"
+              y2="948.7183"/>
+        <rect fill="#FFFFFF" height="116.118" style="stroke:#181818;stroke-width:1.0;" width="10" x="854" y="266.01"/>
+        <rect fill="#FFFFFF" height="92.412" style="stroke:#181818;stroke-width:1.0;" width="10" x="854" y="643.0702"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="995" x2="995" y1="39.0679"
+              y2="948.7183"/>
+        <rect fill="#FFFFFF" height="286.9421" style="stroke:#181818;stroke-width:1.0;" width="10" x="990"
+              y="369.1281"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1165" x2="1165" y1="39.0679"
+              y2="948.7183"/>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="102"
+              x="30.5" y="5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="37.5"
+              y="26.9659">InitiatorMain
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="95"
+              x="209" y="5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="216"
+              y="26.9659">InitiatorApp
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="119"
+              x="354" y="5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="361"
+              y="26.9659">InitiatorSession
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="134"
+              x="483" y="5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="490"
+              y="26.9659">InitiatorTransport
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="153"
+              x="627" y="5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="634"
+              y="26.9659">ResponderTransport
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="138"
+              x="790" y="5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="797"
+              y="26.9659">ResponderSession
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="114"
+              x="938" y="5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="945"
+              y="26.9659">ResponderApp
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="121"
+              x="1104.5" y="5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="1111.5"
+              y="26.9659">ResponderMain
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="102"
+              x="30.5" y="948.7183"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="37.5"
+              y="970.6843">InitiatorMain
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="95"
+              x="209" y="948.7183"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="216"
+              y="970.6843">InitiatorApp
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="119"
+              x="354" y="948.7183"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="361"
+              y="970.6843">InitiatorSession
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="134"
+              x="483" y="948.7183"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="490"
+              y="970.6843">InitiatorTransport
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="153"
+              x="627" y="948.7183"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="634"
+              y="970.6843">ResponderTransport
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="138"
+              x="790" y="948.7183"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="797"
+              y="970.6843">ResponderSession
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="114"
+              x="938" y="948.7183"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="945"
+              y="970.6843">ResponderApp
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="121"
+              x="1104.5" y="948.7183"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="1111.5"
+              y="970.6843">ResponderMain
+        </text>
+        <polygon fill="#181818" points="239.5,66.7739,249.5,70.7739,239.5,74.7739,243.5,70.7739"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="86.5" x2="245.5" y1="70.7739" y2="70.7739"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83" x="93.5"
+              y="64.9649">APICommand
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="261.5" x2="303.5" y1="120.186" y2="120.186"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="303.5" x2="303.5" y1="120.186" y2="133.186"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="262.5" x2="303.5" y1="133.186" y2="133.186"/>
+        <polygon fill="#181818" points="272.5,129.186,262.5,133.186,272.5,137.186,268.5,133.186"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="268.5"
+              y="96.6709">convert to AppRequest
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="102" x="271.5"
+              y="114.377">with local marker
+        </text>
+        <path d="M182,146.186 L182,191.186 L331,191.186 L331,156.186 L321,146.186 L182,146.186 " fill="#FEFFDD"
+              style="stroke:#181818;stroke-width:0.5;"/>
+        <path d="M321,146.186 L321,156.186 L331,156.186 L321,146.186 " fill="#FEFFDD"
+              style="stroke:#181818;stroke-width:0.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="188"
+              y="165.083">search for application
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="112" x="191"
+              y="182.789">capable of sending
+        </text>
+        <path d="M138.5,201.598 L138.5,228.598 L374.5,228.598 L374.5,211.598 L364.5,201.598 L138.5,201.598 "
+              fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/>
+        <path d="M364.5,201.598 L364.5,211.598 L374.5,211.598 L364.5,201.598 " fill="#FEFFDD"
+              style="stroke:#181818;stroke-width:0.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="215" x="144.5"
+              y="220.495">send via pushing to response.send()
+        </text>
+        <polygon fill="#181818" points="396.5,254.01,406.5,258.01,396.5,262.01,400.5,258.01"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="261.5" x2="402.5" y1="258.01" y2="258.01"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="268.5"
+              y="252.201">SocketMessage
+        </text>
+        <path d="M397.5,270.01 L470.5,270.01 L470.5,279.716 L460.5,289.716 L397.5,289.716 L397.5,270.01 " fill="#EEEEEE"
+              style="stroke:#000000;stroke-width:1.5;"/>
+        <rect fill="none" height="61.412" style="stroke:#000000;stroke-width:1.5;" width="477.5" x="397.5" y="270.01"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing"
+              textLength="28" x="412.5" y="284.907">loop
+        </text>
+        <polygon fill="#181818" points="538,319.4221,548,323.4221,538,327.4221,542,323.4221"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="418.5" x2="544" y1="323.4221" y2="323.4221"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="425.5"
+              y="317.6131">Frame[]
+        </text>
+        <polygon fill="#181818" points="691.5,319.4221,701.5,323.4221,691.5,327.4221,695.5,323.4221"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="550" x2="697.5" y1="323.4221" y2="323.4221"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="557"
+              y="317.6131">Datagram[]
+        </text>
+        <polygon fill="#181818" points="842,319.4221,852,323.4221,842,327.4221,846,323.4221"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="703.5" x2="848" y1="323.4221" y2="323.4221"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="710.5"
+              y="317.6131">Frame[]
+        </text>
+        <polygon fill="#181818" points="978,365.1281,988,369.1281,978,373.1281,982,369.1281"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="864" x2="984" y1="369.1281" y2="369.1281"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="871"
+              y="363.3191">SocketMessage
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1000" x2="1042" y1="400.8341" y2="400.8341"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1042" x2="1042" y1="400.8341" y2="413.8341"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1001" x2="1042" y1="413.8341" y2="413.8341"/>
+        <polygon fill="#181818" points="1011,409.8341,1001,413.8341,1011,417.8341,1007,413.8341"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="1007"
+              y="395.0251">convert to AppRequest
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1000" x2="1042" y1="445.5401" y2="445.5401"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1042" x2="1042" y1="445.5401" y2="458.5401"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1001" x2="1042" y1="458.5401" y2="458.5401"/>
+        <polygon fill="#181818" points="1011,454.5401,1001,458.5401,1011,462.5401,1007,458.5401"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="1007"
+              y="439.7311">extract APICommand
+        </text>
+        <polygon fill="#181818" points="1153,486.2461,1163,490.2461,1153,494.2461,1157,490.2461"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1000" x2="1159" y1="490.2461" y2="490.2461"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83" x="1007"
+              y="484.4371">APICommand
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1165" x2="1207" y1="521.9521" y2="521.9521"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1207" x2="1207" y1="521.9521" y2="534.9521"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1166" x2="1207" y1="534.9521" y2="534.9521"/>
+        <polygon fill="#181818" points="1176,530.9521,1166,534.9521,1176,538.9521,1172,534.9521"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="1172"
+              y="516.1431">Process
+        </text>
+        <polygon fill="#181818" points="1011,562.6582,1001,566.6582,1011,570.6582,1007,566.6582"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="1005" x2="1164" y1="566.6582"
+              y2="566.6582"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="1017"
+              y="560.8492">APICommandResponse
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1000" x2="1042" y1="598.3642" y2="598.3642"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1042" x2="1042" y1="598.3642" y2="611.3642"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="1001" x2="1042" y1="611.3642" y2="611.3642"/>
+        <polygon fill="#181818" points="1011,607.3642,1001,611.3642,1011,615.3642,1007,611.3642"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98" x="1007"
+              y="592.5552">as AppResponse
+        </text>
+        <polygon fill="#181818" points="875,639.0702,865,643.0702,875,647.0702,871,643.0702"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="869" x2="989" y1="643.0702" y2="643.0702"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="881"
+              y="637.2612">SocketMessage
+        </text>
+        <path d="M397.5,655.0702 L470.5,655.0702 L470.5,664.7762 L460.5,674.7762 L397.5,674.7762 L397.5,655.0702 "
+              fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/>
+        <rect fill="none" height="61.412" style="stroke:#000000;stroke-width:1.5;" width="477.5" x="397.5"
+              y="655.0702"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing"
+              textLength="28" x="412.5" y="669.9672">loop
+        </text>
+        <polygon fill="#181818" points="429.5,704.4822,419.5,708.4822,429.5,712.4822,425.5,708.4822"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="423.5" x2="549" y1="708.4822" y2="708.4822"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="435.5"
+              y="702.6732">Frame[]
+        </text>
+        <polygon fill="#181818" points="561,704.4822,551,708.4822,561,712.4822,557,708.4822"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="555" x2="702.5" y1="708.4822" y2="708.4822"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="567"
+              y="702.6732">Datagram[]
+        </text>
+        <polygon fill="#181818" points="714.5,704.4822,704.5,708.4822,714.5,712.4822,710.5,708.4822"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="708.5" x2="853" y1="708.4822" y2="708.4822"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="720.5"
+              y="702.6732">Frame[]
+        </text>
+        <polygon fill="#181818" points="272.5,750.1882,262.5,754.1882,272.5,758.1882,268.5,754.1882"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="266.5" x2="407.5" y1="754.1882"
+              y2="754.1882"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="278.5"
+              y="748.3792">SocketMessage
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="261.5" x2="303.5" y1="785.8943" y2="785.8943"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="303.5" x2="303.5" y1="785.8943" y2="798.8943"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="262.5" x2="303.5" y1="798.8943" y2="798.8943"/>
+        <polygon fill="#181818" points="272.5,794.8943,262.5,798.8943,272.5,802.8943,268.5,798.8943"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="268.5"
+              y="780.0853">convert to AppRequest
+        </text>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="261.5" x2="303.5" y1="830.6003" y2="830.6003"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="303.5" x2="303.5" y1="830.6003" y2="843.6003"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="262.5" x2="303.5" y1="843.6003" y2="843.6003"/>
+        <polygon fill="#181818" points="272.5,839.6003,262.5,843.6003,272.5,847.6003,268.5,843.6003"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="268.5"
+              y="824.7913">extract APICR
+        </text>
+        <path d="M10,856.6003 L10,901.6003 L153,901.6003 L153,866.6003 L143,856.6003 L10,856.6003 " fill="#FEFFDD"
+              style="stroke:#181818;stroke-width:0.5;"/>
+        <path d="M143,856.6003 L143,866.6003 L153,866.6003 L143,856.6003 " fill="#FEFFDD"
+              style="stroke:#181818;stroke-width:0.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="122" x="16"
+              y="875.4973">probably callback???
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="19"
+              y="893.2033">or future???
+        </text>
+        <polygon fill="#181818" points="97.5,926.7183,87.5,930.7183,97.5,934.7183,93.5,930.7183"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="91.5" x2="250.5" y1="930.7183"
+              y2="930.7183"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="103.5"
+              y="924.9093">APICommandResponse
+        </text><!--MD5=[7ec276c90e8385309c0a448ee3a7c9d5]
+@startuml
+!pragma teoz true
+
+participant InitiatorMain as CM
+participant InitiatorApp as CC
+participant InitiatorSession as CS
+participant InitiatorTransport as CT
+
+participant ResponderTransport as ST
+participant ResponderSession as SS
+participant ResponderApp as SC
+participant ResponderMain as SM
+
+
+activate CM
+CM -> CC: APICommand
+activate CC
+CC -> CC: convert to AppRequest\n with local marker
+
+'note over CC: passthrough??\n or separate controller??
+note over CC: search for application\n capable of sending
+note over CC: send via pushing to response.send()
+
+activate CS
+CC -> CS: SocketMessage
+deactivate CC
+
+activate SS
+loop
+    CS -> CT: Frame[]
+    & CT -> ST: Datagram[]
+    & ST -> SS: Frame[]
+end loop
+deactivate CS
+
+SS -> SC: SocketMessage
+activate SC
+deactivate SS
+SC -> SC: convert to AppRequest
+SC -> SC: extract APICommand
+SC -> SM: APICommand
+
+SM -> SM: Process
+
+SM - -> SC: APICommandResponse
+SC -> SC: as AppResponse
+
+SC -> SS: SocketMessage
+activate SS
+deactivate SC
+
+activate CS
+loop
+    CS <- CT: Frame[]
+    & CT <- ST: Datagram[]
+    & ST <- SS: Frame[]
+end loop
+deactivate SS
+
+
+CS - -> CC: SocketMessage
+activate CC
+deactivate CS
+
+CC -> CC: convert to AppRequest
+CC -> CC: extract APICR
+
+note over CM: probably callback???\n or future???
+CC - -> CM: APICommandResponse
+deactivate CC
+deactivate CM
+
+@enduml
+
+@startuml
+!pragma teoz true
+
+participant InitiatorMain as CM
+participant InitiatorApp as CC
+participant InitiatorSession as CS
+participant InitiatorTransport as CT
+
+participant ResponderTransport as ST
+participant ResponderSession as SS
+participant ResponderApp as SC
+participant ResponderMain as SM
+
+
+activate CM
+CM -> CC: APICommand
+activate CC
+CC -> CC: convert to AppRequest\n with local marker
+
+note over CC: search for application\n capable of sending
+note over CC: send via pushing to response.send()
+
+activate CS
+CC -> CS: SocketMessage
+deactivate CC
+
+activate SS
+loop
+    CS -> CT: Frame[]
+    & CT -> ST: Datagram[]
+    & ST -> SS: Frame[]
+end loop
+deactivate CS
+
+SS -> SC: SocketMessage
+activate SC
+deactivate SS
+SC -> SC: convert to AppRequest
+SC -> SC: extract APICommand
+SC -> SM: APICommand
+
+SM -> SM: Process
+
+SM - -> SC: APICommandResponse
+SC -> SC: as AppResponse
+
+SC -> SS: SocketMessage
+activate SS
+deactivate SC
+
+activate CS
+loop
+    CS <- CT: Frame[]
+    & CT <- ST: Datagram[]
+    & ST <- SS: Frame[]
+end loop
+deactivate SS
+
+
+CS - -> CC: SocketMessage
+activate CC
+deactivate CS
+
+CC -> CC: convert to AppRequest
+CC -> CC: extract APICR
+
+note over CM: probably callback???\n or future???
+CC - -> CM: APICommandResponse
+deactivate CC
+deactivate CM
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>

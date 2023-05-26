@@ -1,0 +1,160 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class APIClientException {
+  + APIClientException(String): 
+  + APIClientException(Throwable): 
+}
+class AbstractConsoleArgumentsParser {
+  + AbstractConsoleArgumentsParser(String[]): 
+  - log: Logger
+  - formatter: HelpFormatter
+  - parsedOptions: CommandLine
+  - parser: CommandLineParser
+  - parse(Options, String[]): CommandLine
+  + getOptions(): CommandLine
+  # createOptions(): Options
+}
+class Executor {
+  + Executor(): 
+  - operationMap: Map<Class<APICommand>, Operation<APICommand, APICommandResponse>>
+  - log: Logger
+  + MAX_RECURSION_DEPTH: int
+  - childExecutors: List<Executor>
+  + execute(APICommand): APICommandResponse
+  + executeBatch(List<APICommand>): List<APICommandResponse>
+  + registerVoidOperation(Class<T>, NoReturnOperation<T>): void
+  + registerOperation(Class<T>, Operation<T, APICommandResponse>): void
+  # execute(APICommand, int): APICommandResponse
+  + registerExecutor(Executor): void
+}
+class FileAccessException {
+  + FileAccessException(Exception, String, OperationType): 
+  + FileAccessException(String, OperationType): 
+  + FileAccessException(Exception, File, OperationType): 
+  + FileAccessException(File, OperationType): 
+  - path: String
+  - type: OperationType
+  + getPath(): String
+  + getType(): OperationType
+}
+class FileController {
+  + FileController(String): 
+  + FileController(String, boolean): 
+  # file: File
+  + creationDate(): ZonedDateTime
+  # checkReadAccess(): void
+  + getPath(): String
+  # ensureExistence(boolean): boolean
+  - loadPath(String): File
+  - checkExistence(): boolean
+  # checkWriteAccess(): void
+  - checkAccess(): void
+  + check(): boolean
+}
+class FileIOController {
+  + FileIOController(String): 
+  + FileIOController(String, boolean): 
+  + write(byte[]): void
+  + clear(): void
+  + openReadStream(): FileInputStream
+  + openWriteStream(): FileOutputStream
+  + read(): byte[]
+}
+class FileUtils {
+  + FileUtils(): 
+  + read(File): String
+  + deleteDir(Path): void
+  + delete(File): void
+  + createDir(String): Path
+  + write(File, String): void
+  + checkParentDirectoryPermissions(File): boolean
+  + exists(File): boolean
+  + createFile(Path, String): File
+  + getParentDir(File): File
+  + parsePermissions(String): FileAttribute<Set<PosixFilePermission>>
+}
+class InvalidDataFileException {
+  + InvalidDataFileException(String, byte[], SerDesException): 
+  - path: String
+  - contents: byte[]
+  + getMessage(): String
+  + getContents(): byte[]
+  + getPath(): String
+}
+class JSONSerDesService<T> {
+  + JSONSerDesService(Class<T>): 
+  # getObjectMapper(): ObjectMapper
+  # getPolymorphicValidator(): BasicPolymorphicTypeValidator
+}
+interface NoReturnOperation<T> << interface >> {
+  + apply(T): void
+}
+class ObjectMapperFactory {
+  + ObjectMapperFactory(): 
+  + createMapper(): ObjectMapper
+}
+interface Operation<T, V> << interface >> {
+  + apply(T): V
+}
+enum OperationType << enumeration >> {
+  - OperationType(): 
+  - OperationType(String): 
+  + PERM_WRITE: 
+  + WRITE: 
+  + CREATE: 
+  + SET_PERMISSION: 
+  + OPEN: 
+  + READ: 
+  + PERM_READ: 
+  - description: String
+  + getDescription(): String
+  + valueOf(String): OperationType
+  + values(): OperationType[]
+}
+class SerDesException {
+  + SerDesException(Type, Exception): 
+  - internalException: Exception
+  - direction: Type
+  + getInternalException(): Exception
+  + toString(): String
+  + getDirection(): Type
+}
+class SerDesService<T> {
+  + SerDesService(Class<T>): 
+  - mapper: ObjectMapper
+  - baseClass: Class<T>
+  + serialize(T): byte[]
+  + deserialize(byte[]): T
+  # getObjectMapper(): ObjectMapper
+}
+class SetupJUL {
+  + SetupJUL(): 
+  + loadProperties(Class<?>): void
+}
+enum Type << enumeration >> {
+  - Type(): 
+  + DESERIALIZE: 
+  + SERIALIZE: 
+  + values(): Type[]
+  + valueOf(String): Type
+}
+class ValueDeserializer {
+  + ValueDeserializer(): 
+  - mapper: ObjectMapper
+  + deserialize(Class<K>, String): K
+}
+class XMLSerDesService<T> {
+  + XMLSerDesService(Class<T>): 
+  # getObjectMapper(): ObjectMapper
+}
+
+FileIOController                -[#000082,plain]-^  FileController                 
+JSONSerDesService               -[#000082,plain]-^  SerDesService                  
+OperationType                   +-[#820000,plain]-  FileAccessException            
+Type                            +-[#820000,plain]-  SerDesException                
+XMLSerDesService                -[#000082,plain]-^  SerDesService                  
+@enduml

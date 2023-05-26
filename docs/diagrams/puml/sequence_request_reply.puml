@@ -1,0 +1,73 @@
+@startuml
+!pragma teoz true
+
+participant InitiatorMain as CM
+participant InitiatorApp as CC
+participant InitiatorSession as CS
+participant InitiatorTransport as CT
+
+participant ResponderTransport as ST
+participant ResponderSession as SS
+participant ResponderApp as SC
+participant ResponderMain as SM
+
+
+activate CM
+CM -> CC: APICommand
+activate CC
+CC -> CC: convert to AppRequest\n with local marker
+
+'note over CC: passthrough??\n or separate controller??
+note over CC: search for application\n capable of sending
+note over CC: send via pushing to response.send()
+
+activate CS
+CC -> CS: SocketMessage
+deactivate CC
+
+activate SS
+loop
+    CS -> CT: Frame[]
+    & CT -> ST: Datagram[]
+    & ST -> SS: Frame[]
+end loop
+deactivate CS
+
+SS -> SC: SocketMessage
+activate SC
+deactivate SS
+SC -> SC: convert to AppRequest
+SC -> SC: extract APICommand
+SC -> SM: APICommand
+
+SM -> SM: Process
+
+SM --> SC: APICommandResponse
+SC -> SC: as AppResponse
+
+SC -> SS: SocketMessage
+activate SS
+deactivate SC
+
+activate CS
+loop
+    CS <- CT: Frame[]
+    & CT <- ST: Datagram[]
+    & ST <- SS: Frame[]
+end loop
+deactivate SS
+
+
+CS --> CC: SocketMessage
+activate CC
+deactivate CS
+
+CC -> CC: convert to AppRequest
+CC -> CC: extract APICR
+
+note over CM: probably callback???\n or future???
+CC --> CM: APICommandResponse
+deactivate CC
+deactivate CM
+
+@enduml

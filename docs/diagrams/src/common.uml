@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/petr/Desktop/itmo-programming-lab-5/common</OriginalElement>
+  <nodes>
+    <node x="419.0" y="511.0">ru.bardinpetr.itmo.lab5.common.executor.Executor</node>
+    <node x="-134.75" y="511.0">ru.bardinpetr.itmo.lab5.common.serdes.SerDesService</node>
+    <node x="245.0" y="1257.0">ru.bardinpetr.itmo.lab5.common.error.APIClientException</node>
+    <node x="-311.0" y="902.0">ru.bardinpetr.itmo.lab5.common.tests.utils.FileUtils</node>
+    <node x="984.0" y="902.0">ru.bardinpetr.itmo.lab5.common.serdes.ValueDeserializer</node>
+    <node x="441.0" y="-181.0">ru.bardinpetr.itmo.lab5.common.serdes.exceptions.SerDesException</node>
+    <node x="-236.0" y="105.0">ru.bardinpetr.itmo.lab5.common.io.exceptions.FileAccessException.OperationType</node>
+    <node x="487.0" y="55.0">ru.bardinpetr.itmo.lab5.common.serdes.exceptions.SerDesException.Type</node>
+    <node x="125.0" y="-181.0">ru.bardinpetr.itmo.lab5.common.io.FileController</node>
+    <node x="-28.0" y="1257.0">ru.bardinpetr.itmo.lab5.common.log.SetupJUL</node>
+    <node x="-32.0" y="747.0">ru.bardinpetr.itmo.lab5.common.serdes.JSONSerDesService</node>
+    <node x="-311.0" y="1257.0">ru.bardinpetr.itmo.lab5.common.serdes.ObjectMapperFactory</node>
+    <node x="-311.0" y="-181.0">ru.bardinpetr.itmo.lab5.common.io.exceptions.FileAccessException</node>
+    <node x="806.0" y="1257.0">ru.bardinpetr.itmo.lab5.common.executor.operations.Operation</node>
+    <node x="-311.0" y="759.5">ru.bardinpetr.itmo.lab5.common.serdes.XMLSerDesService</node>
+    <node x="115.0" y="205.0">ru.bardinpetr.itmo.lab5.common.io.FileIOController</node>
+    <node x="543.0" y="902.0">ru.bardinpetr.itmo.lab5.common.io.exceptions.InvalidDataFileException</node>
+    <node x="182.0" y="902.0">ru.bardinpetr.itmo.lab5.common.ui.AbstractConsoleArgumentsParser</node>
+    <node x="530.0" y="1257.0">ru.bardinpetr.itmo.lab5.common.executor.operations.NoReturnOperation</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.bardinpetr.itmo.lab5.common.serdes.exceptions.SerDesException.Type" target="ru.bardinpetr.itmo.lab5.common.serdes.exceptions.SerDesException" relationship="INNER_CLASS">
+      <point x="0.0" y="-80.5" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.common.io.exceptions.FileAccessException.OperationType" target="ru.bardinpetr.itmo.lab5.common.io.exceptions.FileAccessException" relationship="INNER_CLASS">
+      <point x="0.0" y="-180.5" />
+      <point x="0.0" y="118.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.common.serdes.JSONSerDesService" target="ru.bardinpetr.itmo.lab5.common.serdes.SerDesService" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="171.0" y="722.0" />
+      <point x="-5.25" y="722.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.common.serdes.XMLSerDesService" target="ru.bardinpetr.itmo.lab5.common.serdes.SerDesService" relationship="GENERALIZATION">
+      <point x="0.0" y="-42.5" />
+      <point x="-181.5" y="722.0" />
+      <point x="-5.25" y="722.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.common.io.FileIOController" target="ru.bardinpetr.itmo.lab5.common.io.FileController" relationship="GENERALIZATION">
+      <point x="0.0" y="-105.0" />
+      <point x="0.0" y="168.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5385534967124925" showDependencies="false" x="475.0" y="645.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

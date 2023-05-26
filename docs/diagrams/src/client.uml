@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/petr/Desktop/itmo-programming-lab-5/client</OriginalElement>
+  <nodes>
+    <node x="2161.0476190476193" y="1461.0">ru.bardinpetr.itmo.lab5.common.ui.AbstractConsoleArgumentsParser</node>
+    <node x="2537.0" y="1007.0">ru.bardinpetr.itmo.lab5.mainclient.local.controller.commands.HelpLocalCommand</node>
+    <node x="944.1666666666667" y="1883.0">ru.bardinpetr.itmo.lab5.adminclient.local.ui.texts.AdminTexts</node>
+    <node x="3682.0" y="994.0">ru.bardinpetr.itmo.lab5.mainclient.local.controller.registry.MainClientCommandRegistry</node>
+    <node x="3143.0476190476193" y="1593.0">ru.bardinpetr.itmo.lab5.models.data.validation.WorkerValidator</node>
+    <node x="1221.047619047619" y="1461.0">ru.bardinpetr.itmo.lab5.models.fields.Field</node>
+    <node x="-8.0" y="2417.0">ru.bardinpetr.itmo.lab5.client.LocalScriptExecutorTests</node>
+    <node x="5908.785227272728" y="1032.5">ru.bardinpetr.itmo.lab5.adminclient.api.commands.AdminAPICommandRegistry</node>
+    <node x="-336.0" y="1461.0">ru.bardinpetr.itmo.lab5.models.data.Worker</node>
+    <node x="2421.0" y="2417.0">ru.bardinpetr.itmo.lab5.models.data.annotation.InputNullable</node>
+    <node x="281.0" y="2417.0">ru.bardinpetr.itmo.lab5.client.ui.cli.utils.errors.NotRepeatableException</node>
+    <node x="5620.125" y="132.0">ru.bardinpetr.itmo.lab5.client.api.APIClientReceiver</node>
+    <node x="2235.0" y="2417.0">ru.bardinpetr.itmo.lab5.client.IFileCreator</node>
+    <node x="1331.0" y="2417.0">ru.bardinpetr.itmo.lab5.client.ObjectScannerTest</node>
+    <node x="702.1666666666667" y="2044.0">ru.bardinpetr.itmo.lab5.mainclient.local.ui.texts.MainTexts.TextKeys</node>
+    <node x="107.66666666666663" y="1461.0">ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse.Status</node>
+    <node x="5382.590151515151" y="511.0">ru.bardinpetr.itmo.lab5.network.transport.client.UDPClientTransport</node>
+    <node x="4684.047619047619" y="1596.0">ru.bardinpetr.itmo.lab5.client.api.connectors.UDPAPIClientFactory</node>
+    <node x="1392.0" y="994.0">ru.bardinpetr.itmo.lab5.client.controller.commands.RepeatLocalCommand</node>
+    <node x="6307.047619047619" y="1461.0">ru.bardinpetr.itmo.lab5.client.utils.ClassUtils</node>
+    <node x="2044.0" y="2417.0">ru.bardinpetr.itmo.lab5.models.data.annotation.InteractText</node>
+    <node x="147.67992424242357" y="548.5">ru.bardinpetr.itmo.lab5.client.ui.cli.utils.ScriptRecursionController</node>
+    <node x="416.67992424242357" y="498.5">ru.bardinpetr.itmo.lab5.client.api.description.APICommandsDescriptionHolder</node>
+    <node x="1572.0" y="2417.0">ru.bardinpetr.itmo.lab5.client.ui.cli.utils.errors.ScriptException</node>
+    <node x="-326.32007575757643" y="586.0">ru.bardinpetr.itmo.lab5.client.controller.common.AbstractCommandDecorator</node>
+    <node x="566.0" y="2417.0">ru.bardinpetr.itmo.lab5.client.api.error.APIUIException</node>
+    <node x="3539.0476190476193" y="1630.5">ru.bardinpetr.itmo.lab5.models.data.validation.CoordinatesValidator</node>
+    <node x="2864.0476190476193" y="1542.0">ru.bardinpetr.itmo.lab5.models.data.validation.ValidationResponse</node>
+    <node x="6605.875" y="511.0">ru.bardinpetr.itmo.lab5.client.ui.cli.utils.ObjectScanner.ScannerRespond</node>
+    <node x="5463.785227272728" y="1006.5">ru.bardinpetr.itmo.lab5.adminclient.local.controller.registry.AdminClientCommandRegistry</node>
+    <node x="5916.875" y="561.0">ru.bardinpetr.itmo.lab5.client.api.commands.APICommandRegistry</node>
+    <node x="1759.1185606060608" y="548.5">ru.bardinpetr.itmo.lab5.client.ui.cli.UICommandInvoker</node>
+    <node x="5033.047619047619" y="1461.0">ru.bardinpetr.itmo.lab5.models.commands.requests.APICommand</node>
+    <node x="4178.304924242424" y="461.0">ru.bardinpetr.itmo.lab5.client.ui.cli.CLIController</node>
+    <node x="-336.0" y="2417.0">ru.bardinpetr.itmo.lab5.client.ui.cli.utils.errors.ScriptRecursionRootException</node>
+    <node x="6779.047619047619" y="1461.0">ru.bardinpetr.itmo.lab5.common.error.APIClientException</node>
+    <node x="4223.090151515151" y="93.5">ru.bardinpetr.itmo.lab5.network.app.client.impl.SocketAPIClient</node>
+    <node x="2522.0476190476193" y="1643.0">ru.bardinpetr.itmo.lab5.models.data.validation.OrganizationValidator</node>
+    <node x="2348.840151515151" y="511.0">ru.bardinpetr.itmo.lab5.client.controller.common.UILocalCommand</node>
+    <node x="4314.047619047619" y="1461.0">ru.bardinpetr.itmo.lab5.client.controller.common.handlers.ClientCommandResponse</node>
+    <node x="402.33333333333303" y="119.0">ru.bardinpetr.itmo.lab5.client.controller.common.AbstractLocalCommand</node>
+    <node x="1574.148106060606" y="82.0">ru.bardinpetr.itmo.lab5.client.ui.interfaces.UIReceiver</node>
+    <node x="693.8015873015872" y="1697.0">ru.bardinpetr.itmo.lab5.client.ui.texts.Texts</node>
+    <node x="3320.090151515151" y="106.0">ru.bardinpetr.itmo.lab5.common.serdes.ValueDeserializer</node>
+    <node x="5268.625" y="-181.0">ru.bardinpetr.itmo.lab5.client.ui.cli.utils.ConsolePrinter</node>
+    <node x="6278.875" y="586.0">ru.bardinpetr.itmo.lab5.client.api.connectors.LocalExecutorAPIConnector</node>
+    <node x="2769.090151515151" y="81.0">ru.bardinpetr.itmo.lab5.client.ui.cli.utils.InvocationHistoryItem</node>
+    <node x="3102.7976190476193" y="1461.0">ru.bardinpetr.itmo.lab5.models.data.validation.Validator</node>
+    <node x="831.0" y="2417.0">ru.bardinpetr.itmo.lab5.client.CommandParserTest</node>
+    <node x="5158.535227272728" y="1255.5">ru.bardinpetr.itmo.lab5.mainclient.local.controller.commands.UpdateLocalCommand</node>
+    <node x="5383.047619047619" y="1461.0">ru.bardinpetr.itmo.lab5.common.io.FileIOController</node>
+    <node x="926.0" y="981.5">ru.bardinpetr.itmo.lab5.client.ui.cli.Interpreter</node>
+    <node x="1735.0476190476193" y="1872.0">ru.bardinpetr.itmo.lab5.common.io.exceptions.FileAccessException</node>
+    <node x="711.3015873015872" y="1461.0">ru.bardinpetr.itmo.lab5.client.ui.texts.Texts.TextKeys</node>
+    <node x="4683.047619047619" y="1461.0">ru.bardinpetr.itmo.lab5.client.api.connectors.AbstractAPIClientReceiverFactory</node>
+    <node x="684.6666666666667" y="1883.0">ru.bardinpetr.itmo.lab5.mainclient.local.ui.texts.MainTexts</node>
+    <node x="6545.047619047619" y="1461.0">ru.bardinpetr.itmo.lab5.client.utils.StringUtils</node>
+    <node x="4965.785227272728" y="586.0">ru.bardinpetr.itmo.lab5.client.api.connectors.NetworkServerConnector</node>
+    <node x="1582.148106060606" y="-180.5">ru.bardinpetr.itmo.lab5.client.ui.interfaces.UIInputReceiver</node>
+    <node x="2601.340151515151" y="1230.0">ru.bardinpetr.itmo.lab5.mainclient.local.controller.commands.ScriptLocalCommand</node>
+    <node x="1455.047619047619" y="1599.5">ru.bardinpetr.itmo.lab5.models.validation.IValidator</node>
+    <node x="25.0" y="1032.5">ru.bardinpetr.itmo.lab5.adminclient.api.commands.AdminAPICommandsDescriptionHolder</node>
+    <node x="1810.0476190476193" y="1461.0">ru.bardinpetr.itmo.lab5.common.io.exceptions.FileAccessException.OperationType</node>
+    <node x="2169.5476190476193" y="1747.0">ru.bardinpetr.itmo.lab5.client.ui.ClientConsoleArgumentsParser</node>
+    <node x="2991.0" y="1007.0">ru.bardinpetr.itmo.lab5.client.controller.commands.ExitLocalCommand</node>
+    <node x="6024.047619047619" y="1461.0">ru.bardinpetr.itmo.lab5.common.serdes.ObjectMapperFactory</node>
+    <node x="5947.125" y="31.0">ru.bardinpetr.itmo.lab5.client.ui.cli.utils.ObjectScanner</node>
+    <node x="3570.090151515151" y="132.0">ru.bardinpetr.itmo.lab5.client.controller.common.handlers.UICallableCommand</node>
+    <node x="6408.125" y="6.0">ru.bardinpetr.itmo.lab5.common.executor.Executor</node>
+    <node x="5709.047619047619" y="1461.0">ru.bardinpetr.itmo.lab5.models.commands.requests.UserPromptedAPICommand</node>
+    <node x="1808.0" y="2417.0">ru.bardinpetr.itmo.lab5.models.data.annotation.FieldValidator</node>
+    <node x="-336.0" y="1032.5">ru.bardinpetr.itmo.lab5.mainclient.api.commands.UserAPICommandsDescriptionHolder</node>
+    <node x="82.99999999999994" y="1774.0">ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse</node>
+    <node x="4694.535227272728" y="1280.5">ru.bardinpetr.itmo.lab5.client.controller.common.GeneralAPIUILocalCommand</node>
+    <node x="303.66666666666663" y="1563.0">ru.bardinpetr.itmo.lab5.models.commands.responses.UserPrintableAPICommandResponse</node>
+    <node x="946.547619047619" y="1672.0">ru.bardinpetr.itmo.lab5.adminclient.local.ui.texts.AdminTexts.TextKeys</node>
+    <node x="3672.304924242424" y="498.5">ru.bardinpetr.itmo.lab5.client.controller.registry.CommandRegistry</node>
+    <node x="2083.0" y="1007.0">ru.bardinpetr.itmo.lab5.adminclient.local.controller.commands.HelpLocalCommand</node>
+    <node x="1089.0" y="2417.0">ru.bardinpetr.itmo.lab5.client.ui.cli.utils.errors.ParserException</node>
+    <node x="435.0" y="956.5">ru.bardinpetr.itmo.lab5.client.ui.cli.ScriptExecutor</node>
+    <node x="1247.297619047619" y="1847.0">ru.bardinpetr.itmo.lab5.models.fields.FieldWithDesc</node>
+    <node x="4854.785227272728" y="944.0">ru.bardinpetr.itmo.lab5.client.controller.common.APIUILocalCommand</node>
+    <node x="6196.785227272728" y="1032.5">ru.bardinpetr.itmo.lab5.mainclient.api.commands.UserAPICommandRegistry</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.validation.WorkerValidator" target="ru.bardinpetr.itmo.lab5.models.data.validation.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-105.5" />
+      <point x="3331.0476190476193" y="1517.0" />
+      <point x="3162.2976190476193" y="1517.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.commands.RepeatLocalCommand" target="ru.bardinpetr.itmo.lab5.client.ui.cli.UICommandInvoker" relationship="TO_ONE">
+      <point x="-167.75" y="-68.0" />
+      <point x="1559.7500000000002" y="903.0" />
+      <point x="1998.6185606060608" y="903.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.common.io.exceptions.FileAccessException" target="ru.bardinpetr.itmo.lab5.common.io.exceptions.FileAccessException.OperationType" relationship="TO_ONE">
+      <point x="95.25" y="-118.0" />
+      <point x="2020.7976190476193" y="1847.0" />
+      <point x="1983.2976190476193" y="1847.0" />
+      <point x="57.75" y="180.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.registry.CommandRegistry" target="ru.bardinpetr.itmo.lab5.client.controller.common.AbstractLocalCommand" relationship="TO_MANY">
+      <point x="0.0" y="-143.0" />
+      <point x="3915.304924242424" y="439.0" />
+      <point x="3571.9003787878783" y="439.0" />
+      <point x="3571.9003787878783" y="369.0" />
+      <point x="44.75" y="369.0" />
+      <point x="44.75" y="359.0" />
+      <point x="515.833333333333" y="359.0" />
+      <point x="-113.5" y="42.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.local.ui.texts.MainTexts.TextKeys" target="ru.bardinpetr.itmo.lab5.mainclient.local.ui.texts.MainTexts" relationship="INNER_CLASS">
+      <point x="48.5" y="-80.5" />
+      <point x="847.6666666666667" y="2019.0" />
+      <point x="856.4166666666667" y="2019.0" />
+      <point x="57.25" y="55.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.common.APIUILocalCommand" target="ru.bardinpetr.itmo.lab5.client.api.commands.APICommandRegistry" relationship="TO_ONE">
+      <point x="147.25" y="-118.0" />
+      <point x="5296.535227272728" y="893.0" />
+      <point x="5613.525378787878" y="893.0" />
+      <point x="5613.525378787878" y="863.0" />
+      <point x="5539.535227272728" y="863.0" />
+      <point x="5539.535227272728" y="843.0" />
+      <point x="6002.375" y="843.0" />
+      <point x="-85.5" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse.Status" relationship="TO_ONE">
+      <point x="0.0" y="-269.0" />
+      <point x="252.0" y="1749.0" />
+      <point x="239.66666666666663" y="1749.0" />
+      <point x="44.0" y="131.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.adminclient.local.controller.registry.AdminClientCommandRegistry" target="ru.bardinpetr.itmo.lab5.client.api.commands.APICommandRegistry" relationship="TO_ONE">
+      <point x="106.25" y="-55.5" />
+      <point x="5782.535227272728" y="853.0" />
+      <point x="5539.535227272728" y="853.0" />
+      <point x="5539.535227272728" y="843.0" />
+      <point x="6002.375" y="843.0" />
+      <point x="-85.5" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.local.controller.commands.HelpLocalCommand" target="ru.bardinpetr.itmo.lab5.client.controller.common.UILocalCommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="2754.0" y="913.0" />
+      <point x="2684.340151515151" y="913.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.ScriptExecutor" target="ru.bardinpetr.itmo.lab5.client.api.description.APICommandsDescriptionHolder" relationship="TO_ONE">
+      <point x="0.0" y="-105.5" />
+      <point x="666.5" y="863.0" />
+      <point x="752.6799242424236" y="863.0" />
+      <point x="112.0" y="143.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.texts.Texts.TextKeys" target="ru.bardinpetr.itmo.lab5.client.ui.texts.Texts" relationship="INNER_CLASS">
+      <point x="-48.5" y="80.5" />
+      <point x="759.8015873015872" y="1647.0" />
+      <point x="751.0515873015872" y="1647.0" />
+      <point x="-57.25" y="-55.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.common.UILocalCommand" target="ru.bardinpetr.itmo.lab5.client.controller.common.AbstractLocalCommand" relationship="GENERALIZATION">
+      <point x="-223.66666666666652" y="-130.5" />
+      <point x="2460.6734848484843" y="439.0" />
+      <point x="634.333333333333" y="439.0" />
+      <point x="634.333333333333" y="359.0" />
+      <point x="742.833333333333" y="359.0" />
+      <point x="113.5" y="42.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.UserPrintableAPICommandResponse" relationship="REALIZATION">
+      <point x="112.66666666666667" y="-269.0" />
+      <point x="364.66666666666663" y="1749.0" />
+      <point x="471.66666666666663" y="1749.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.common.AbstractCommandDecorator" target="ru.bardinpetr.itmo.lab5.client.controller.common.AbstractLocalCommand" relationship="TO_ONE">
+      <point x="-113.5" y="-55.5" />
+      <point x="-212.82007575757643" y="429.0" />
+      <point x="44.75" y="429.0" />
+      <point x="44.75" y="359.0" />
+      <point x="515.833333333333" y="359.0" />
+      <point x="-113.5" y="42.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.api.connectors.UDPAPIClientFactory" target="ru.bardinpetr.itmo.lab5.client.api.connectors.AbstractAPIClientReceiverFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.5" />
+      <point x="0.0" y="42.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.utils.ObjectScanner" target="ru.bardinpetr.itmo.lab5.client.ui.cli.utils.ConsolePrinter" relationship="TO_ONE">
+      <point x="0.0" y="-130.5" />
+      <point x="6167.625" y="-20.0" />
+      <point x="5370.125" y="-20.0" />
+      <point x="0.0" y="67.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.validation.CoordinatesValidator" target="ru.bardinpetr.itmo.lab5.models.data.validation.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-68.0" />
+      <point x="3697.0476190476193" y="1517.0" />
+      <point x="3162.2976190476193" y="1517.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.Interpreter" target="ru.bardinpetr.itmo.lab5.client.ui.interfaces.UIReceiver" relationship="TO_ONE">
+      <point x="0.0" y="-80.5" />
+      <point x="1149.0" y="873.0" />
+      <point x="1205.25" y="873.0" />
+      <point x="1205.25" y="429.0" />
+      <point x="1670.648106060606" y="429.0" />
+      <point x="1670.648106060606" y="359.0" />
+      <point x="1624.898106060606" y="359.0" />
+      <point x="-50.75" y="79.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.validation.OrganizationValidator" target="ru.bardinpetr.itmo.lab5.models.data.validation.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-55.5" />
+      <point x="2683.0476190476193" y="1517.0" />
+      <point x="3162.2976190476193" y="1517.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.adminclient.local.ui.texts.AdminTexts" target="ru.bardinpetr.itmo.lab5.adminclient.local.ui.texts.AdminTexts.TextKeys" relationship="TO_MANY">
+      <point x="76.33333333333337" y="-55.5" />
+      <point x="1135.0" y="1858.0" />
+      <point x="1092.047619047619" y="1858.0" />
+      <point x="48.5" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.ClientConsoleArgumentsParser" target="ru.bardinpetr.itmo.lab5.common.ui.AbstractConsoleArgumentsParser" relationship="GENERALIZATION">
+      <point x="0.0" y="-80.0" />
+      <point x="0.0" y="118.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.api.commands.UserAPICommandsDescriptionHolder" target="ru.bardinpetr.itmo.lab5.client.api.description.APICommandsDescriptionHolder" relationship="GENERALIZATION">
+      <point x="0.0" y="-29.5" />
+      <point x="-165.5" y="923.0" />
+      <point x="2.429924242423567" y="923.0" />
+      <point x="2.429924242423567" y="913.0" />
+      <point x="528.6799242424236" y="913.0" />
+      <point x="-112.0" y="143.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.api.connectors.LocalExecutorAPIConnector" target="ru.bardinpetr.itmo.lab5.common.executor.Executor" relationship="TO_ONE">
+      <point x="76.75" y="-55.5" />
+      <point x="6509.125" y="439.0" />
+      <point x="6718.625" y="439.0" />
+      <point x="0.0" y="155.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.ScriptExecutor" target="ru.bardinpetr.itmo.lab5.client.ui.cli.UICommandInvoker" relationship="TO_ONE">
+      <point x="0.0" y="-105.5" />
+      <point x="666.5" y="883.0" />
+      <point x="1998.6185606060608" y="883.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.CLIController" target="ru.bardinpetr.itmo.lab5.client.ui.cli.utils.ObjectScanner" relationship="TO_ONE">
+      <point x="106.75" y="-180.5" />
+      <point x="4498.554924242424" y="439.0" />
+      <point x="4530.054924242424" y="439.0" />
+      <point x="4530.054924242424" y="349.0" />
+      <point x="6057.375" y="349.0" />
+      <point x="-110.25" y="130.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.adminclient.local.ui.texts.AdminTexts.TextKeys" target="ru.bardinpetr.itmo.lab5.adminclient.local.ui.texts.AdminTexts" relationship="INNER_CLASS">
+      <point x="-48.5" y="80.5" />
+      <point x="995.047619047619" y="1858.0" />
+      <point x="1058.6666666666667" y="1858.0" />
+      <point x="0.0" y="-55.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse.Status" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" relationship="INNER_CLASS">
+      <point x="-44.0" y="131.5" />
+      <point x="151.66666666666663" y="1749.0" />
+      <point x="139.33333333333326" y="1749.0" />
+      <point x="-112.66666666666669" y="-269.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.validation.ValidationResponse" target="ru.bardinpetr.itmo.lab5.models.data.validation.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-156.5" />
+      <point x="2993.5476190476193" y="1517.0" />
+      <point x="3162.2976190476193" y="1517.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.UICommandInvoker" target="ru.bardinpetr.itmo.lab5.client.ui.interfaces.UIReceiver" relationship="TO_ONE">
+      <point x="0.0" y="-93.0" />
+      <point x="1998.6185606060608" y="389.0" />
+      <point x="1670.648106060606" y="389.0" />
+      <point x="1670.648106060606" y="359.0" />
+      <point x="1624.898106060606" y="359.0" />
+      <point x="-50.75" y="79.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.common.APIUILocalCommand" target="ru.bardinpetr.itmo.lab5.client.controller.common.UILocalCommand" relationship="GENERALIZATION">
+      <point x="-147.25" y="-118.0" />
+      <point x="5002.035227272728" y="913.0" />
+      <point x="2684.340151515151" y="913.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.Interpreter" target="ru.bardinpetr.itmo.lab5.client.ui.cli.UICommandInvoker" relationship="TO_ONE">
+      <point x="0.0" y="-80.5" />
+      <point x="1149.0" y="893.0" />
+      <point x="1998.6185606060608" y="893.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.local.controller.commands.UpdateLocalCommand" target="ru.bardinpetr.itmo.lab5.client.controller.common.APIUILocalCommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-67.5" />
+      <point x="5382.035227272728" y="1205.0" />
+      <point x="5149.285227272728" y="1205.0" />
+      <point x="0.0" y="118.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.common.APIUILocalCommand" target="ru.bardinpetr.itmo.lab5.client.api.APIClientReceiver" relationship="TO_ONE">
+      <point x="147.25" y="-118.0" />
+      <point x="5296.535227272728" y="893.0" />
+      <point x="5613.525378787878" y="893.0" />
+      <point x="5613.525378787878" y="873.0" />
+      <point x="5291.285227272728" y="873.0" />
+      <point x="5291.285227272728" y="409.0" />
+      <point x="4667.840151515151" y="409.0" />
+      <point x="4667.840151515151" y="339.0" />
+      <point x="5696.875" y="339.0" />
+      <point x="-76.75" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.commands.RepeatLocalCommand" target="ru.bardinpetr.itmo.lab5.client.controller.common.UILocalCommand" relationship="GENERALIZATION">
+      <point x="167.75" y="-68.0" />
+      <point x="1895.25" y="913.0" />
+      <point x="2684.340151515151" y="913.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.api.commands.UserAPICommandRegistry" target="ru.bardinpetr.itmo.lab5.client.api.commands.APICommandRegistry" relationship="GENERALIZATION">
+      <point x="0.0" y="-29.5" />
+      <point x="6324.285227272728" y="913.0" />
+      <point x="6173.375" y="913.0" />
+      <point x="85.5" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.local.controller.commands.ScriptLocalCommand" target="ru.bardinpetr.itmo.lab5.client.controller.common.APIUILocalCommand" relationship="GENERALIZATION">
+      <point x="109.75" y="-93.0" />
+      <point x="2930.590151515151" y="1205.0" />
+      <point x="5149.285227272728" y="1205.0" />
+      <point x="0.0" y="118.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.registry.CommandRegistry" target="ru.bardinpetr.itmo.lab5.client.ui.cli.ScriptExecutor" relationship="TO_ONE">
+      <point x="-121.5" y="143.0" />
+      <point x="3793.804924242424" y="853.0" />
+      <point x="911.75" y="853.0" />
+      <point x="911.75" y="873.0" />
+      <point x="666.5" y="873.0" />
+      <point x="0.0" y="-105.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.ScriptExecutor" target="ru.bardinpetr.itmo.lab5.client.controller.registry.CommandRegistry" relationship="TO_ONE">
+      <point x="0.0" y="-105.5" />
+      <point x="666.5" y="873.0" />
+      <point x="911.75" y="873.0" />
+      <point x="911.75" y="853.0" />
+      <point x="3793.804924242424" y="853.0" />
+      <point x="-121.5" y="143.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.local.ui.texts.MainTexts" target="ru.bardinpetr.itmo.lab5.mainclient.local.ui.texts.MainTexts.TextKeys" relationship="TO_MANY">
+      <point x="-57.25" y="55.5" />
+      <point x="741.9166666666667" y="2019.0" />
+      <point x="750.6666666666667" y="2019.0" />
+      <point x="-48.5" y="-80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.common.UILocalCommand" target="ru.bardinpetr.itmo.lab5.client.ui.interfaces.UIReceiver" relationship="TO_ONE">
+      <point x="0.0" y="-130.5" />
+      <point x="2684.340151515151" y="439.0" />
+      <point x="2568.2753787878783" y="439.0" />
+      <point x="2568.2753787878783" y="379.0" />
+      <point x="1670.648106060606" y="379.0" />
+      <point x="1670.648106060606" y="359.0" />
+      <point x="1624.898106060606" y="359.0" />
+      <point x="-50.75" y="79.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.local.ui.texts.MainTexts" target="ru.bardinpetr.itmo.lab5.client.ui.texts.Texts" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.5" />
+      <point x="799.1666666666667" y="1858.0" />
+      <point x="808.3015873015872" y="1858.0" />
+      <point x="0.0" y="55.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.api.connectors.NetworkServerConnector" target="ru.bardinpetr.itmo.lab5.network.app.client.impl.SocketAPIClient" relationship="TO_ONE">
+      <point x="-78.75" y="-55.5" />
+      <point x="5044.535227272728" y="419.0" />
+      <point x="4405.090151515151" y="419.0" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.CLIController" target="ru.bardinpetr.itmo.lab5.client.ui.cli.utils.ConsolePrinter" relationship="TO_ONE">
+      <point x="106.75" y="-180.5" />
+      <point x="4498.554924242424" y="439.0" />
+      <point x="4530.054924242424" y="439.0" />
+      <point x="4530.054924242424" y="349.0" />
+      <point x="3559.590151515151" y="349.0" />
+      <point x="3559.590151515151" y="-20.0" />
+      <point x="5370.125" y="-20.0" />
+      <point x="0.0" y="67.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.utils.ObjectScanner.ScannerRespond" target="ru.bardinpetr.itmo.lab5.client.ui.cli.utils.ObjectScanner" relationship="INNER_CLASS">
+      <point x="0.0" y="-130.5" />
+      <point x="6709.875" y="429.0" />
+      <point x="6277.875" y="429.0" />
+      <point x="110.25" y="130.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.commands.ExitLocalCommand" target="ru.bardinpetr.itmo.lab5.client.controller.common.UILocalCommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="3326.5" y="913.0" />
+      <point x="2684.340151515151" y="913.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.adminclient.api.commands.AdminAPICommandRegistry" target="ru.bardinpetr.itmo.lab5.client.api.commands.APICommandRegistry" relationship="GENERALIZATION">
+      <point x="0.0" y="-29.5" />
+      <point x="6042.785227272728" y="923.0" />
+      <point x="6324.285227272728" y="923.0" />
+      <point x="6324.285227272728" y="913.0" />
+      <point x="6173.375" y="913.0" />
+      <point x="85.5" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.api.connectors.LocalExecutorAPIConnector" target="ru.bardinpetr.itmo.lab5.client.api.APIClientReceiver" relationship="REALIZATION">
+      <point x="-76.75" y="-55.5" />
+      <point x="6355.625" y="439.0" />
+      <point x="5958.875" y="439.0" />
+      <point x="5958.875" y="339.0" />
+      <point x="5850.375" y="339.0" />
+      <point x="76.75" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.local.controller.registry.MainClientCommandRegistry" target="ru.bardinpetr.itmo.lab5.client.controller.registry.CommandRegistry" relationship="GENERALIZATION">
+      <point x="106.25" y="-68.0" />
+      <point x="4000.75" y="903.0" />
+      <point x="4036.804924242424" y="903.0" />
+      <point x="121.5" y="143.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.common.UILocalCommand" target="ru.bardinpetr.itmo.lab5.common.serdes.ValueDeserializer" relationship="TO_ONE">
+      <point x="0.0" y="-130.5" />
+      <point x="2684.340151515151" y="439.0" />
+      <point x="2568.2753787878783" y="439.0" />
+      <point x="2568.2753787878783" y="409.0" />
+      <point x="3434.590151515151" y="409.0" />
+      <point x="0.0" y="55.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.texts.Texts" target="ru.bardinpetr.itmo.lab5.client.ui.texts.Texts.TextKeys" relationship="TO_MANY">
+      <point x="57.25" y="-55.5" />
+      <point x="865.5515873015872" y="1647.0" />
+      <point x="856.8015873015872" y="1647.0" />
+      <point x="48.5" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.api.connectors.NetworkServerConnector" target="ru.bardinpetr.itmo.lab5.client.api.APIClientReceiver" relationship="REALIZATION">
+      <point x="78.75" y="-55.5" />
+      <point x="5202.035227272728" y="439.0" />
+      <point x="5958.875" y="439.0" />
+      <point x="5958.875" y="339.0" />
+      <point x="5850.375" y="339.0" />
+      <point x="76.75" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.ScriptExecutor" target="ru.bardinpetr.itmo.lab5.client.ui.cli.utils.ScriptRecursionController" relationship="TO_ONE">
+      <point x="0.0" y="-105.5" />
+      <point x="666.5" y="863.0" />
+      <point x="272.17992424242357" y="863.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.common.GeneralAPIUILocalCommand" target="ru.bardinpetr.itmo.lab5.client.controller.common.APIUILocalCommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-42.5" />
+      <point x="4916.535227272728" y="1205.0" />
+      <point x="5149.285227272728" y="1205.0" />
+      <point x="0.0" y="118.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.common.io.exceptions.FileAccessException.OperationType" target="ru.bardinpetr.itmo.lab5.common.io.exceptions.FileAccessException" relationship="INNER_CLASS">
+      <point x="-57.75" y="180.5" />
+      <point x="1867.7976190476193" y="1847.0" />
+      <point x="1830.2976190476193" y="1847.0" />
+      <point x="-95.25" y="-118.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.Interpreter" target="ru.bardinpetr.itmo.lab5.client.controller.registry.CommandRegistry" relationship="TO_ONE">
+      <point x="0.0" y="-80.5" />
+      <point x="1149.0" y="863.0" />
+      <point x="911.75" y="863.0" />
+      <point x="911.75" y="853.0" />
+      <point x="3793.804924242424" y="853.0" />
+      <point x="-121.5" y="143.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.local.controller.registry.MainClientCommandRegistry" target="ru.bardinpetr.itmo.lab5.client.ui.cli.UICommandInvoker" relationship="TO_ONE">
+      <point x="-106.25" y="-68.0" />
+      <point x="3788.25" y="923.0" />
+      <point x="3884.5" y="923.0" />
+      <point x="3884.5" y="873.0" />
+      <point x="1998.6185606060608" y="873.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.fields.FieldWithDesc" target="ru.bardinpetr.itmo.lab5.models.validation.IValidator" relationship="TO_ONE">
+      <point x="101.5" y="-155.5" />
+      <point x="1551.797619047619" y="1822.0" />
+      <point x="1572.547619047619" y="1822.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.local.controller.commands.ScriptLocalCommand" target="ru.bardinpetr.itmo.lab5.client.ui.cli.ScriptExecutor" relationship="TO_ONE">
+      <point x="-109.75" y="-93.0" />
+      <point x="2711.090151515151" y="1205.0" />
+      <point x="666.5" y="1205.0" />
+      <point x="0.0" y="105.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.fields.FieldWithDesc" target="ru.bardinpetr.itmo.lab5.models.fields.Field" relationship="GENERALIZATION">
+      <point x="-101.5" y="-155.5" />
+      <point x="1348.797619047619" y="1822.0" />
+      <point x="1328.047619047619" y="1822.0" />
+      <point x="0.0" y="168.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.adminclient.local.controller.registry.AdminClientCommandRegistry" target="ru.bardinpetr.itmo.lab5.client.controller.registry.CommandRegistry" relationship="GENERALIZATION">
+      <point x="-106.25" y="-55.5" />
+      <point x="5570.035227272728" y="903.0" />
+      <point x="4036.804924242424" y="903.0" />
+      <point x="121.5" y="143.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.common.UILocalCommand" target="ru.bardinpetr.itmo.lab5.client.controller.common.handlers.UICallableCommand" relationship="REALIZATION">
+      <point x="223.66666666666652" y="-130.5" />
+      <point x="2908.0068181818174" y="419.0" />
+      <point x="3886.590151515151" y="419.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.common.AbstractCommandDecorator" target="ru.bardinpetr.itmo.lab5.client.controller.common.AbstractLocalCommand" relationship="GENERALIZATION">
+      <point x="113.5" y="-55.5" />
+      <point x="14.179924242423567" y="439.0" />
+      <point x="634.333333333333" y="439.0" />
+      <point x="634.333333333333" y="359.0" />
+      <point x="742.833333333333" y="359.0" />
+      <point x="113.5" y="42.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.controller.registry.CommandRegistry" target="ru.bardinpetr.itmo.lab5.client.api.APIClientReceiver" relationship="TO_ONE">
+      <point x="0.0" y="-143.0" />
+      <point x="3915.304924242424" y="439.0" />
+      <point x="3571.9003787878783" y="439.0" />
+      <point x="3571.9003787878783" y="429.0" />
+      <point x="4667.840151515151" y="429.0" />
+      <point x="4667.840151515151" y="339.0" />
+      <point x="5696.875" y="339.0" />
+      <point x="-76.75" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.adminclient.local.controller.commands.HelpLocalCommand" target="ru.bardinpetr.itmo.lab5.client.controller.common.UILocalCommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="2300.0" y="913.0" />
+      <point x="2684.340151515151" y="913.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.mainclient.local.controller.registry.MainClientCommandRegistry" target="ru.bardinpetr.itmo.lab5.client.api.commands.APICommandRegistry" relationship="TO_ONE">
+      <point x="-106.25" y="-68.0" />
+      <point x="3788.25" y="923.0" />
+      <point x="3884.5" y="923.0" />
+      <point x="3884.5" y="883.0" />
+      <point x="5539.535227272728" y="883.0" />
+      <point x="5539.535227272728" y="843.0" />
+      <point x="6002.375" y="843.0" />
+      <point x="-85.5" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.interfaces.UIReceiver" target="ru.bardinpetr.itmo.lab5.client.ui.interfaces.UIInputReceiver" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-79.5" />
+      <point x="0.0" y="67.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.CLIController" target="ru.bardinpetr.itmo.lab5.client.ui.interfaces.UIReceiver" relationship="REALIZATION">
+      <point x="-106.75" y="-180.5" />
+      <point x="4285.054924242424" y="359.0" />
+      <point x="1726.398106060606" y="359.0" />
+      <point x="50.75" y="79.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.adminclient.api.commands.AdminAPICommandsDescriptionHolder" target="ru.bardinpetr.itmo.lab5.client.api.description.APICommandsDescriptionHolder" relationship="GENERALIZATION">
+      <point x="0.0" y="-29.5" />
+      <point x="202.0" y="923.0" />
+      <point x="2.429924242423567" y="923.0" />
+      <point x="2.429924242423567" y="913.0" />
+      <point x="528.6799242424236" y="913.0" />
+      <point x="-112.0" y="143.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.client.ui.cli.UICommandInvoker" target="ru.bardinpetr.itmo.lab5.client.ui.cli.utils.InvocationHistoryItem" relationship="TO_MANY">
+      <point x="0.0" y="-93.0" />
+      <point x="1998.6185606060608" y="399.0" />
+      <point x="2969.590151515151" y="399.0" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.adminclient.local.ui.texts.AdminTexts" target="ru.bardinpetr.itmo.lab5.client.ui.texts.Texts" relationship="GENERALIZATION">
+      <point x="-76.33333333333331" y="-55.5" />
+      <point x="982.3333333333335" y="1858.0" />
+      <point x="808.3015873015872" y="1858.0" />
+      <point x="0.0" y="55.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3501803658170915" showDependencies="true" x="6050.686472609121" y="937.5439194187973" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

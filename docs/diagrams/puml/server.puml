@@ -1,0 +1,487 @@
+
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+hide circle
+
+<style>
+classDiagram {
+    class {
+        header {
+            FontStyle bold
+        }
+    }
+}
+</style>
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class APIApplication {
+  + APIApplication(): 
+  + filter(AppRequest): boolean
+}
+class APICommand {
+  + APICommand(): 
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + validate(): ValidationResponse
+  + getCmdIdentifier(): Class<APICommand>
+  + createResponse(): APICommandResponse
+}
+class APICommandResponse {
+  + APICommandResponse(Status, String): 
+  + APICommandResponse(): 
+  - status: Status
+  - textualResponse: String
+  + setTextualResponse(String): void
+  + getStatus(): Status
+  + getTextualResponse(): String
+  + setStatus(Status): void
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + clientError(String): APICommandResponse
+  + clientError(Exception): APICommandResponse
+  + serverError(Exception): APICommandResponse
+  + notFound(): APICommandResponse
+  + ok(): APICommandResponse
+  + isSuccess(): boolean
+  + serverError(String): APICommandResponse
+  + isResolved(): boolean
+}
+class AbstractConsoleArgumentsParser {
+  + AbstractConsoleArgumentsParser(String[]): 
+  - parser: CommandLineParser
+  - parsedOptions: CommandLine
+  - formatter: HelpFormatter
+  - log: Logger
+  - parse(Options, String[]): CommandLine
+  # createOptions(): Options
+  + getOptions(): CommandLine
+}
+class AppRequest {
+  + AppRequest(ReqStatus, Long, Session<?>, AppResponseController<?>, APICommand): 
+  + AppRequest(): 
+  - status: ReqStatus
+  - response: AppResponseController<?>
+  - id: Long
+  - session: Session<?>
+  - payload: APICommand
+  + response(): AppResponseController<?>
+  + toString(): String
+  + id(): Long
+  + setResponse(AppResponseController<?>): void
+  + isTerminated(): boolean
+  + session(): Session<?>
+  + payload(): APICommand
+  + status(): ReqStatus
+  + setStatus(ReqStatus): void
+}
+class AppResponseController<U> {
+  + AppResponseController(AppRequest, IDestinationServerApplication<U>): 
+  - id: Long
+  - recipient: U
+  - destination: IDestinationServerApplication<U>
+  - response: APICommandResponse
+  - isTerminated: boolean
+  - log: Logger
+  + status(Status): AppResponseController<U>
+  + from(APICommandResponse): AppResponseController<U>
+  + terminate(): void
+  + getId(): Long
+  + isTerminated(): boolean
+  + getStatus(): Status
+  + message(String): AppResponseController<U>
+  + send(): void
+}
+class CollectionInfo {
+  + CollectionInfo(String, String, ZonedDateTime, Integer): 
+  + CollectionInfo(): 
+  - initializationDate: ZonedDateTime
+  - type: String
+  - itemsCount: Integer
+  - name: String
+  + getName(): String
+  + getType(): String
+  + getInitializationDate(): ZonedDateTime
+  + toString(): String
+  + getItemsCount(): Integer
+  + setName(String): void
+  + setType(String): void
+  + setInitializationDate(ZonedDateTime): void
+  + hashCode(): int
+  + setItemsCount(Integer): void
+  # canEqual(Object): boolean
+  + equals(Object): boolean
+}
+interface DBController << interface >>
+interface DBControllerFactory << interface >> {
+  + createController(): DBController
+}
+class DBCreateException {
+  + DBCreateException(Exception): 
+}
+class DBExecutor {
+  + DBExecutor(Path): 
+  - log: Logger
+}
+class ErrorHandlingApplication {
+  + ErrorHandlingApplication(): 
+  + filter(AppRequest): boolean
+  # process(AppRequest): AppRequest
+}
+class ExecuteScriptCommand {
+  + ExecuteScriptCommand(): 
+  + ExecuteScriptCommand(List<APICommand>): 
+  - commands: List<APICommand>
+  + getCommands(): List<APICommand>
+  + setCommands(List<APICommand>): void
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + getInlineArgs(): Field<?>[]
+  + createResponse(): ExecuteScriptCommandResponse
+  + getType(): String
+}
+class ExecuteScriptCommandResponse {
+  + ExecuteScriptCommandResponse(): 
+  + getUserMessage(): String
+}
+class Executor {
+  + Executor(): 
+  - log: Logger
+  + MAX_RECURSION_DEPTH: int
+  - operationMap: Map<Class<APICommand>, Operation<APICommand, APICommandResponse>>
+  - childExecutors: List<Executor>
+  + registerOperation(Class<T>, Operation<T, APICommandResponse>): void
+  + executeBatch(List<APICommand>): List<APICommandResponse>
+  + registerVoidOperation(Class<T>, NoReturnOperation<T>): void
+  + execute(APICommand): APICommandResponse
+  + registerExecutor(Executor): void
+  # execute(APICommand, int): APICommandResponse
+}
+class ExecutorAdapterApplication {
+  + ExecutorAdapterApplication(Executor): 
+  - log: Logger
+  - target: Executor
+  + handle(AppRequest): void
+}
+class FileDBController<T> {
+  + FileDBController(FileIOController, Class<T>): 
+  - baseCollectionClass: Class<T>
+  - collection: T
+  - log: Logger
+  - storage: FileStorageController<T>
+  - fileIO: FileIOController
+  + clear(): boolean
+  + data(): T
+  + load(): void
+  + store(): boolean
+  + info(): FileDBInfo
+}
+class FileDBControllerFactory<T> {
+  + FileDBControllerFactory(Path, Class<T>): 
+  - baseObjectType: Class<T>
+  - filePath: String
+  + createController(): FileDBController<T>
+}
+class FileDBDAO<K, V> {
+  + FileDBDAO(FileDBController<ISetCollection<K, V>>): 
+  - controller: FileDBController<ISetCollection<K, V>>
+  + update(K, V): void
+  + read(K): V
+  + clear(): void
+  + readAll(Comparator<V>): List<V>
+  + nextPrimaryKey(): K
+  - asStream(): Stream<V>
+  + save(): void
+  + readAll(): List<V>
+  + has(K): boolean
+  + getCollectionInfo(): CollectionInfo
+  + getMax(): V
+  + remove(K): boolean
+  + add(V): K
+  + getMin(): V
+}
+entity FileDBInfo << record >> {
+  + FileDBInfo(String, ZonedDateTime): 
+  - creationDate: ZonedDateTime
+  - filePath: String
+  + filePath(): String
+  + creationDate(): ZonedDateTime
+}
+class FileDBWorkersDAO {
+  + FileDBWorkersDAO(FileDBController<WorkerCollection>): 
+  + update(Integer, Worker): void
+  + nextPrimaryKey(): Integer
+  + add(Worker): Integer
+}
+class FileStorageController<T> {
+  + FileStorageController(FileIOController, SerDesService<T>): 
+  - file: FileIOController
+  - serDesService: SerDesService<T>
+  + storeObject(T): void
+  + loadObject(): T
+  + clear(): void
+}
+class FileUtils {
+  + FileUtils(): 
+  + delete(File): void
+  + checkParentDirectoryPermissions(File): boolean
+  + read(File): String
+  + deleteDir(Path): void
+  + parsePermissions(String): FileAttribute<Set<PosixFilePermission>>
+  + createDir(String): Path
+  + write(File, String): void
+  + getParentDir(File): File
+  + createFile(Path, String): File
+  + exists(File): boolean
+}
+interface IApplicationCommandHandler << interface >> {
+  + handle(AppRequest): void
+}
+interface ICollectionCRUDDAO<K, V> << interface >> {
+  + update(K, V): void
+  + nextPrimaryKey(): K
+  + readAll(): List<V>
+  + getCollectionInfo(): CollectionInfo
+  + read(K): V
+  + add(V): K
+  + getMin(): V
+  + has(K): boolean
+  + remove(K): boolean
+  + readAll(Comparator<V>): List<V>
+  + getMax(): V
+  + save(): void
+  + clear(): void
+}
+interface ICollectionDAO<K, V> << interface >> {
+  + filter(Predicate<V>): List<V>
+  + getAllMapped(Function<V, T>): List<T>
+  + remove(Predicate<V>): void
+}
+interface IKeyedEntity<K> << interface >> {
+  + getPrimaryKey(): K
+}
+interface ISetCollection<K, V> << interface >>
+interface IWorkerCollectionDAO << interface >>
+class Main {
+  + Main(): 
+  - log: Logger
+  + main(String[]): void
+}
+class Organization {
+  + Organization(String, OrganizationType): 
+  + Organization(): 
+  ~ fullName: String
+  ~ type: OrganizationType
+  + getFullName(): String
+  + getType(): OrganizationType
+  + setFullName(String): void
+  + setType(OrganizationType): void
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + getComparator(): Comparator<Organization>
+  + compareTo(Organization): int
+}
+enum Position << enumeration >> {
+  - Position(int): 
+  + MANAGER_OF_CLEANING: 
+  + CLEANER: 
+  + LEAD_DEVELOPER: 
+  + HEAD_OF_DEPARTMENT: 
+  + value: int
+  + ENGINEER: 
+  + getValue(): int
+  + valueOf(String): Position
+  + values(): Position[]
+}
+enum ReqStatus << enumeration >> {
+  + ReqStatus(): 
+  + INVALID: 
+  + NORMAL: 
+  + CREATED: 
+  + UNKNOWN: 
+  + values(): ReqStatus[]
+  + valueOf(String): ReqStatus
+}
+class ScriptExecutor {
+  + ScriptExecutor(Executor): 
+  - targetExecutor: Executor
+  - processScript(ExecuteScriptCommand): APICommandResponse
+}
+class ServerConsoleArgumentsParser {
+  + ServerConsoleArgumentsParser(String[]): 
+  + getPort(): Integer
+  # createOptions(): Options
+  + getDatabasePath(): Path
+}
+enum Status << enumeration >> {
+  + Status(): 
+  + UNPROCESSED: 
+  + CLIENT_ERROR: 
+  + SERVER_ERROR: 
+  + NOT_FOUND: 
+  + OK: 
+  + values(): Status[]
+  + isError(): boolean
+  + valueOf(String): Status
+}
+class UDPInputTransportApplication {
+  + UDPInputTransportApplication(IServerTransport<SocketAddress, SocketMessage>): 
+  - log: Logger
+  - serDesService: JSONSerDesService<APICommand>
+  # deserialize(SocketMessage): APICommand
+  # supplySession(SocketAddress, SocketMessage): Session<SocketAddress>
+}
+class UDPOutputTransportApplication {
+  + UDPOutputTransportApplication(IServerTransport<SocketAddress, SocketMessage>): 
+  - serDesService: JSONSerDesService<APICommandResponse>
+  - log: Logger
+  # serialize(APICommandResponse): SocketMessage
+}
+class UDPServerFactory {
+  + UDPServerFactory(): 
+  + create(int): UDPServerTransport
+}
+class UDPServerTransport {
+  + UDPServerTransport(DatagramChannel): 
+  - datagramChannel: DatagramChannel
+  - TIMEOUT: int
+  ~ serDesService: JSONSerDesService<SocketMessage>
+  - networkKey: SelectionKey
+  - log: Logger
+  - handler: IMessageHandler<SocketAddress, SocketMessage>
+  - sendFrameQueue: Queue<Pair<SocketAddress, Frame>>
+  - clientSinkMap: Map<SocketAddress, SinkChannel>
+  - selector: Selector
+  + subscribe(IMessageHandler<SocketAddress, SocketMessage>): void
+  - regClient(SocketAddress, Frame, Status, List<Frame>): void
+  - regRecvClient(SocketAddress, Frame): void
+  - headerFrame(TransportSession, Frame): void
+  - finishReading(SelectionKey): void
+  - readNewFrame(SelectionKey, Frame): void
+  - regSendClient(SocketAddress, Frame, List<Frame>): void
+  - scheduleSend(Pair<SocketAddress, Frame>): void
+  + run(): void
+  - closeSessionByKey(SelectionKey): void
+  + send(SocketAddress, SocketMessage): void
+}
+class Worker {
+  + Worker(Integer, ZonedDateTime, String, float, Date, LocalDate, Coordinates, Organization, Position): 
+  + Worker(): 
+  - salary: float
+  - name: String
+  - endDate: LocalDate
+  - creationDate: ZonedDateTime
+  - organization: Organization
+  - position: Position
+  - startDate: Date
+  - id: Integer
+  - coordinates: Coordinates
+  + getSalary(): float
+  + withCreationDate(ZonedDateTime): Worker
+  + withId(Integer): Worker
+  + getId(): Integer
+  + getCreationDate(): ZonedDateTime
+  + getName(): String
+  + getStartDate(): Date
+  + setPosition(Position): void
+  + setStartDate(Date): void
+  + setOrganization(Organization): void
+  + getEndDate(): LocalDate
+  + setEndDate(LocalDate): void
+  + getCoordinates(): Coordinates
+  + setCoordinates(Coordinates): void
+  + getOrganization(): Organization
+  + setSalary(float): void
+  + getPosition(): Position
+  + toString(): String
+  + setName(String): void
+  + nicePrintFormat(List<Worker>): String
+  + equals(Object): boolean
+  + getComparator(): Comparator<Worker>
+  + getPrimaryKey(): Integer
+  + compareTo(Worker): int
+}
+class WorkerCollection {
+  + WorkerCollection(): 
+  + add(Worker): boolean
+  + addAll(Collection<Worker>): boolean
+}
+class WorkerCollectionDAOFactory {
+  + WorkerCollectionDAOFactory(): 
+  + createDAO(FileDBController<WorkerCollection>): ICollectionDAO<Integer, Worker>
+}
+class WorkerFactory {
+  + WorkerFactory(): 
+  - salary: int
+  - y: int
+  - x: int
+  - id: int
+  + create(): Worker
+}
+class WorkersCRUDExecutor {
+  + WorkersCRUDExecutor(IWorkerCollectionDAO): 
+}
+class WorkersSpecialExecutor {
+  + WorkersSpecialExecutor(IWorkerCollectionDAO): 
+  - dao: IWorkerCollectionDAO
+  - filterLess(FilterLessPosCommand): FilterLessPosCommandResponse
+  - printDescending(PrintDescendingCommand): PrintDescendingCommandResponse
+  - addIfMax(AddIfMaxCommand): void
+  - addIfMin(AddIfMinCommand): void
+  - uniqueOrgs(UniqueOrganisationCommand): UniqueOrganisationCommandResponse
+  - removeIfGreater(RemoveGreaterCommand): void
+}
+
+APICommandResponse             "1" *--> "status\n1" Status                         
+AppRequest                     "1" *--> "payload\n1" APICommand                     
+AppRequest                     "1" *--> "response\n1" AppResponseController          
+AppRequest                     "1" *--> "status\n1" ReqStatus                      
+AppResponseController          "1" *--> "response\n1" APICommandResponse             
+DBExecutor                      --^  Executor                       
+ErrorHandlingApplication        --^  APIApplication                 
+ExecuteScriptCommand            --^  APICommand                     
+ExecuteScriptCommand           "1" *--> "commands\n*" APICommand                     
+ExecuteScriptCommandResponse    --^  APICommandResponse             
+ExecuteScriptCommandResponse    +--  ExecuteScriptCommand           
+ExecutorAdapterApplication      --^  APIApplication                 
+ExecutorAdapterApplication     "1" *--> "target\n1" Executor                       
+ExecutorAdapterApplication      ..^  IApplicationCommandHandler     
+FileDBController                ..^  DBController                   
+FileDBController               "1" *--> "storage\n1" FileStorageController          
+FileDBControllerFactory         ..^  DBControllerFactory            
+FileDBDAO                      "1" *--> "controller\n1" FileDBController               
+FileDBDAO                       ..^  ICollectionDAO                 
+FileDBDAO                       ..>  IKeyedEntity                   
+FileDBWorkersDAO                --^  FileDBDAO                      
+FileDBWorkersDAO                ..^  IWorkerCollectionDAO           
+ICollectionCRUDDAO              ..>  IKeyedEntity                   
+ICollectionDAO                  --^  ICollectionCRUDDAO             
+ICollectionDAO                  ..>  IKeyedEntity                   
+ISetCollection                  ..>  IKeyedEntity                   
+IWorkerCollectionDAO            --^  ICollectionDAO                 
+ReqStatus                       +--  AppRequest                     
+ScriptExecutor                  --^  Executor                       
+ScriptExecutor                 "1" *--> "targetExecutor\n1" Executor                       
+ServerConsoleArgumentsParser    --^  AbstractConsoleArgumentsParser 
+Status                          +--  APICommandResponse             
+Worker                          ..^  IKeyedEntity                   
+Worker                         "1" *--> "organization\n1" Organization                   
+Worker                         "1" *--> "position\n1" Position                       
+WorkerCollection                ..^  ISetCollection                 
+WorkersCRUDExecutor             --^  Executor                       
+WorkersSpecialExecutor          --^  Executor                       
+WorkersSpecialExecutor         "1" *--> "dao\n1" IWorkerCollectionDAO           
+@enduml

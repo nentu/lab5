@@ -1,0 +1,95 @@
+@startuml
+
+actor Client2 as C2
+actor Client1 as U
+participant "ClientApp\nController" as CA
+participant UDPClient as C
+participant UDPServer as S
+participant "ServerApp\nController" as SA
+participant Executor as E
+
+U -> CA: APICommand
+activate CA
+CA -> CA: prepare APIRequest
+
+CA -> C: send(SocketMessage)
+
+activate C
+
+activate S
+loop until InitFrame
+S -> S: wait for message
+end loop
+
+C -> S: InitFrame
+activate S #BBB
+
+alt other client tried to connect
+C2 -> S: InitFrame
+note over S : put Client2 to queue
+end alt
+
+S --> C: ACK
+loop until all frames sent
+C -> S: FRAME[i]
+S --> C: ACK
+end loop
+C --> CA: send ended
+deactivate C
+
+CA -> C: receive()
+activate C
+
+
+S -> SA: SocketMessage
+'deactivate S
+
+activate SA
+SA -> SA: convert to AppRequest
+SA -> E: APICommand
+
+activate E
+E -> E: execute
+E --> SA: APICommandResponse
+deactivate E
+
+SA -> SA: convert to AppResponse
+SA --> S: send(SocketMessage)
+deactivate SA
+
+'activate S #BBB
+
+loop until InitFrame
+C -> C: wait for message
+end loop
+
+S -> C: InitFrame
+activate C #BBB
+
+C --> S: ACK
+loop until all frames sent
+S -> C: FRAME[i]
+C --> S: ACK
+end loop
+deactivate S
+
+C --> CA: SocketMessage
+CA -> CA: process as AppResponse
+deactivate C
+deactivate C
+
+CA --> U: APICommandResponse
+deactivate CA
+
+note over S : return to Client2 \nfrom queue
+
+alt Start messaging with client 2
+S --> C2: ACK
+activate S #BBB
+note over S: process client 2
+deactivate S
+end alt
+
+deactivate S
+
+@enduml

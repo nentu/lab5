@@ -1,0 +1,94 @@
+name: Java CI
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "java"
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Validate Gradle wrapper
+        uses: gradle/wrapper-validation-action@v1
+
+      - name: Build
+        run: ./gradlew build
+
+      - name: Run tests
+        run: ./gradlew test
+
+  #      - uses: dorny/test-reporter@v1
+  #        with:
+  #          name: Java Tests
+  #          path: './**/build/test-results/test/*.xml'
+  #          reporter: java-junit
+
+  build:
+    needs: [ test ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Validate Gradle wrapper
+        uses: gradle/wrapper-validation-action@v1
+
+      - name: Generate fatjars
+        run: ./gradlew fatJar
+
+      - name: Assemble dist
+        run: ./gradlew assembleDist
+
+      - name: Generate fatjars
+        run: ./gradlew fatJar
+
+      - name: Build docs
+        run: ./gradlew aggregateJavadoc
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './build/docs/aggregateJavadoc/'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+      - name: Archive jars
+        uses: actions/upload-artifact@v3
+        with:
+          name: fatjars
+          path: |
+            ./client/build/libs/client-fat.jar
+            ./server/build/libs/server-fat.jar
+
+      - name: Archive distributions
+        uses: actions/upload-artifact@v3
+        with:
+          name: distributions
+          path: |
+            ./client/build/distributions/client.tar
+            ./server/build/distributions/server.tar

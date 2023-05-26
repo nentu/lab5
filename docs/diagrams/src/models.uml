@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/petr/Desktop/itmo-programming-lab-5/models</OriginalElement>
+  <nodes>
+    <node x="1943.0" y="2196.0">ru.bardinpetr.itmo.lab5.models.data.annotation.InteractText</node>
+    <node x="980.0" y="2196.0">ru.bardinpetr.itmo.lab5.models.data.validation.Validator</node>
+    <node x="5216.73490990991" y="1407.0">ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand</node>
+    <node x="1952.3265765765736" y="1890.0">ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerCommand.GetWorkerCommandResponse</node>
+    <node x="316.0" y="2327.5">ru.bardinpetr.itmo.lab5.models.data.validation.WorkerValidator</node>
+    <node x="2125.73490990991" y="347.0">ru.bardinpetr.itmo.lab5.models.data.Worker</node>
+    <node x="2853.8125" y="1419.5">ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerCommand</node>
+    <node x="3785.8125" y="1470.0">ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerIdsCommand</node>
+    <node x="36.0" y="2334.5">ru.bardinpetr.itmo.lab5.models.validation.IValidator</node>
+    <node x="-109.5" y="1470.0">ru.bardinpetr.itmo.lab5.models.commands.api.UniqueOrganisationCommand</node>
+    <node x="6008.3882882882845" y="1978.0">ru.bardinpetr.itmo.lab5.models.commands.api.FilterLessPosCommand.FilterLessPosCommandResponse</node>
+    <node x="4726.73490990991" y="1482.5">ru.bardinpetr.itmo.lab5.models.commands.api.ClearCommand</node>
+    <node x="643.0474099099099" y="1940.0">ru.bardinpetr.itmo.lab5.models.commands.api.InfoCommand.InfoCommandResponse</node>
+    <node x="1952.8125" y="1394.5">ru.bardinpetr.itmo.lab5.models.commands.api.AddCommand</node>
+    <node x="2280.8125" y="1357.0">ru.bardinpetr.itmo.lab5.models.commands.api.UpdateCommand</node>
+    <node x="1289.4515765765734" y="-143.0">ru.bardinpetr.itmo.lab5.models.data.Organization</node>
+    <node x="2134.0" y="2196.0">ru.bardinpetr.itmo.lab5.models.data.annotation.NotPromptRequired</node>
+    <node x="631.8257882882849" y="534.5">ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse</node>
+    <node x="2565.8125" y="1407.0">ru.bardinpetr.itmo.lab5.models.commands.api.RemoveGreaterCommand</node>
+    <node x="6094.7632882882845" y="1407.0">ru.bardinpetr.itmo.lab5.models.commands.api.FilterLessPosCommand</node>
+    <node x="4350.0625" y="-67.5">ru.bardinpetr.itmo.lab5.models.commands.requests.APICommand</node>
+    <node x="-204.0" y="1940.0">ru.bardinpetr.itmo.lab5.models.commands.api.UniqueOrganisationCommand.UniqueOrganisationCommandResponse</node>
+    <node x="1611.8124999999998" y="1470.0">ru.bardinpetr.itmo.lab5.models.commands.api.InfoCommand</node>
+    <node x="213.91666666666697" y="1940.0">ru.bardinpetr.itmo.lab5.models.commands.api.AddCommand.AddCommandResponse</node>
+    <node x="928.8124999999998" y="1520.0">ru.bardinpetr.itmo.lab5.models.data.collection.WorkerCollection</node>
+    <node x="3428.0625" y="773.0">ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand</node>
+    <node x="5688.7632882882845" y="1470.0">ru.bardinpetr.itmo.lab5.models.commands.api.PrintDescendingCommand</node>
+    <node x="704.6099099099099" y="-80.5">ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse.Status</node>
+    <node x="2418.6541666666635" y="-130.5">ru.bardinpetr.itmo.lab5.models.data.Coordinates</node>
+    <node x="3384.5625" y="-4.5">ru.bardinpetr.itmo.lab5.models.commands.requests.UserPromptedAPICommand</node>
+    <node x="-173.25" y="2582.0">ru.bardinpetr.itmo.lab5.models.fields.FieldWithDesc</node>
+    <node x="-204.0" y="2196.0">ru.bardinpetr.itmo.lab5.models.fields.Field</node>
+    <node x="712.0" y="2365.0">ru.bardinpetr.itmo.lab5.models.data.validation.CoordinatesValidator</node>
+    <node x="4592.10990990991" y="1978.0">ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand.ExecuteScriptCommandResponse</node>
+    <node x="1048.0" y="2377.5">ru.bardinpetr.itmo.lab5.models.data.validation.OrganizationValidator</node>
+    <node x="4487.0625" y="-355.0">ru.bardinpetr.itmo.lab5.models.commands.requests.IIdentifiableCommand</node>
+    <node x="1390.0" y="2277.0">ru.bardinpetr.itmo.lab5.models.data.validation.ValidationResponse</node>
+    <node x="1044.013288288285" y="787.0">ru.bardinpetr.itmo.lab5.models.data.collection.ISetCollection</node>
+    <node x="3978.5625" y="1991.0">ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerIdsCommand.GetWorkerIdsCommandResponse</node>
+    <node x="2055.98490990991" y="-341.0">ru.bardinpetr.itmo.lab5.models.commands.IAPIMessage</node>
+    <node x="2384.0" y="2196.0">ru.bardinpetr.itmo.lab5.models.data.annotation.InputNullable</node>
+    <node x="1707.0" y="2196.0">ru.bardinpetr.itmo.lab5.models.data.annotation.FieldValidator</node>
+    <node x="5308.73490990991" y="1928.0">ru.bardinpetr.itmo.lab5.models.commands.api.AddIfMinCommand</node>
+    <node x="4421.73490990991" y="1494.5">ru.bardinpetr.itmo.lab5.models.commands.responses.ListAPICommandResponse</node>
+    <node x="4311.5625" y="1928.0">ru.bardinpetr.itmo.lab5.models.commands.api.AddIfMaxCommand</node>
+    <node x="2223.6541666666635" y="20.5">ru.bardinpetr.itmo.lab5.models.data.collection.IKeyedEntity</node>
+    <node x="5531.73490990991" y="1978.0">ru.bardinpetr.itmo.lab5.models.commands.api.PrintDescendingCommand.PrintDescendingCommandResponse</node>
+    <node x="291.39583333333303" y="20.5">ru.bardinpetr.itmo.lab5.models.commands.responses.UserPrintableAPICommandResponse</node>
+    <node x="1213.8124999999998" y="1332.0">ru.bardinpetr.itmo.lab5.models.data.collection.CollectionInfo</node>
+    <node x="6185.2632882882845" y="-93.0">ru.bardinpetr.itmo.lab5.models.data.Position</node>
+    <node x="4949.73490990991" y="1419.5">ru.bardinpetr.itmo.lab5.models.commands.api.RemoveByIdCommand</node>
+    <node x="1034.2015765765734" y="-456.0">ru.bardinpetr.itmo.lab5.models.data.OrganizationType</node>
+    <node x="3472.0765765765736" y="1978.0">ru.bardinpetr.itmo.lab5.models.commands.api.ShowCommand.ShowCommandResponse</node>
+    <node x="3226.8125" y="1470.0">ru.bardinpetr.itmo.lab5.models.commands.api.ShowCommand</node>
+    <node x="3562.8125" y="1482.5">ru.bardinpetr.itmo.lab5.models.commands.api.SaveCommand</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.validation.WorkerValidator" target="ru.bardinpetr.itmo.lab5.models.data.validation.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-105.0" />
+      <point x="504.0" y="2252.0" />
+      <point x="1039.5" y="2252.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerCommand.GetWorkerCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerCommand" relationship="INNER_CLASS">
+      <point x="108.375" y="-130.5" />
+      <point x="2205.2015765765736" y="1869.0" />
+      <point x="3030.3125" y="1869.0" />
+      <point x="0.0" y="155.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.UpdateCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="66.0" y="-218.0" />
+      <point x="2478.8125" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.PrintDescendingCommand.PrintDescendingCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.ListAPICommandResponse" relationship="GENERALIZATION">
+      <point x="-83.0" y="-42.5" />
+      <point x="5614.73490990991" y="1869.0" />
+      <point x="4564.23490990991" y="1869.0" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.InfoCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-105.0" />
+      <point x="1766.3124999999998" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.RemoveGreaterCommand" target="ru.bardinpetr.itmo.lab5.models.data.Worker" relationship="TO_ONE">
+      <point x="-67.0" y="-168.0" />
+      <point x="2632.8125" y="1310.0" />
+      <point x="2323.73490990991" y="1310.0" />
+      <point x="0.0" y="455.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ShowCommand.ShowCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.ListAPICommandResponse" relationship="GENERALIZATION">
+      <point x="61.75" y="-42.5" />
+      <point x="3657.3265765765736" y="1869.0" />
+      <point x="4564.23490990991" y="1869.0" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse.Status" relationship="TO_ONE">
+      <point x="0.0" y="-268.0" />
+      <point x="800.8257882882849" y="265.0" />
+      <point x="748.6099099099099" y="265.0" />
+      <point x="-44.0" y="130.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.UpdateCommand" target="ru.bardinpetr.itmo.lab5.models.data.Worker" relationship="TO_ONE">
+      <point x="-66.0" y="-218.0" />
+      <point x="2346.8125" y="1310.0" />
+      <point x="2323.73490990991" y="1310.0" />
+      <point x="0.0" y="455.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.AddCommand.AddCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.UserPrintableAPICommandResponse" relationship="REALIZATION">
+      <point x="-78.33333333333348" y="-80.5" />
+      <point x="253.08333333333348" y="1869.0" />
+      <point x="320.66666666666697" y="1869.0" />
+      <point x="320.66666666666697" y="315.0" />
+      <point x="459.39583333333326" y="315.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ClearCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-92.5" />
+      <point x="4828.23490990991" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.AddIfMinCommand" target="ru.bardinpetr.itmo.lab5.models.commands.api.AddCommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-92.5" />
+      <point x="5410.23490990991" y="1849.0" />
+      <point x="4414.5625" y="1849.0" />
+      <point x="4414.5625" y="1839.0" />
+      <point x="2183.8125" y="1839.0" />
+      <point x="77.0" y="180.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.FilterLessPosCommand.FilterLessPosCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.api.FilterLessPosCommand" relationship="INNER_CLASS">
+      <point x="76.25" y="-42.5" />
+      <point x="6237.1382882882845" y="1869.0" />
+      <point x="6276.7632882882845" y="1869.0" />
+      <point x="0.0" y="168.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.FilterLessPosCommand.FilterLessPosCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.ListAPICommandResponse" relationship="GENERALIZATION">
+      <point x="-76.25" y="-42.5" />
+      <point x="6084.6382882882845" y="1869.0" />
+      <point x="4564.23490990991" y="1869.0" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerIdsCommand.GetWorkerIdsCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.ListAPICommandResponse" relationship="GENERALIZATION">
+      <point x="78.25" y="-29.5" />
+      <point x="4213.3125" y="1869.0" />
+      <point x="4564.23490990991" y="1869.0" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.collection.WorkerCollection" target="ru.bardinpetr.itmo.lab5.models.data.collection.ISetCollection" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="1061.3124999999998" y="1280.0" />
+      <point x="1145.013288288285" y="1280.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.Worker" target="ru.bardinpetr.itmo.lab5.models.data.Coordinates" relationship="TO_ONE">
+      <point x="99.0" y="-455.5" />
+      <point x="2422.73490990991" y="325.0" />
+      <point x="2321.1257882882883" y="325.0" />
+      <point x="2321.1257882882883" y="305.0" />
+      <point x="2528.1541666666635" y="305.0" />
+      <point x="0.0" y="180.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.AddCommand.AddCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.api.AddCommand" relationship="INNER_CLASS">
+      <point x="78.33333333333348" y="-80.5" />
+      <point x="409.75000000000045" y="1869.0" />
+      <point x="2029.8125" y="1869.0" />
+      <point x="-77.0" y="180.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.UserPrintableAPICommandResponse" relationship="REALIZATION">
+      <point x="-112.66666666666669" y="-268.0" />
+      <point x="688.1591216216182" y="325.0" />
+      <point x="694.1099099099099" y="325.0" />
+      <point x="694.1099099099099" y="265.0" />
+      <point x="459.39583333333326" y="265.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.UniqueOrganisationCommand.UniqueOrganisationCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.api.UniqueOrganisationCommand" relationship="INNER_CLASS">
+      <point x="135.0" y="-80.5" />
+      <point x="111.0" y="1869.0" />
+      <point x="94.0" y="1869.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.RemoveGreaterCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="67.0" y="-168.0" />
+      <point x="2766.8125" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.validation.CoordinatesValidator" target="ru.bardinpetr.itmo.lab5.models.data.validation.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-67.5" />
+      <point x="870.0" y="2252.0" />
+      <point x="1039.5" y="2252.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.PrintDescendingCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-105.0" />
+      <point x="5881.7632882882845" y="1290.0" />
+      <point x="3524.5624999999995" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.validation.OrganizationValidator" target="ru.bardinpetr.itmo.lab5.models.data.validation.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="1209.0" y="2252.0" />
+      <point x="1039.5" y="2252.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.responses.ListAPICommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" relationship="GENERALIZATION">
+      <point x="0.0" y="-80.5" />
+      <point x="4564.23490990991" y="1300.0" />
+      <point x="800.8257882882849" y="1300.0" />
+      <point x="0.0" y="268.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.AddCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="77.0" y="-180.5" />
+      <point x="2183.8125" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.PrintDescendingCommand.PrintDescendingCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.api.PrintDescendingCommand" relationship="INNER_CLASS">
+      <point x="83.0" y="-42.5" />
+      <point x="5780.73490990991" y="1859.0" />
+      <point x="5881.7632882882845" y="1859.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.APICommand" relationship="TO_MANY">
+      <point x="91.75" y="-168.0" />
+      <point x="5491.98490990991" y="1280.0" />
+      <point x="5403.8882882882845" y="1280.0" />
+      <point x="5403.8882882882845" y="305.0" />
+      <point x="4578.8125" y="305.0" />
+      <point x="76.25" y="117.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.requests.APICommand" target="ru.bardinpetr.itmo.lab5.models.commands.IAPIMessage" relationship="REALIZATION">
+      <point x="0.0" y="-117.5" />
+      <point x="4502.5625" y="-174.0" />
+      <point x="2130.98490990991" y="-174.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.UniqueOrganisationCommand.UniqueOrganisationCommandResponse" target="ru.bardinpetr.itmo.lab5.models.data.Organization" relationship="TO_MANY">
+      <point x="-45.0" y="-80.5" />
+      <point x="-69.0" y="1869.0" />
+      <point x="-131.0" y="1869.0" />
+      <point x="-131.0" y="275.0" />
+      <point x="1450.9515765765734" y="275.0" />
+      <point x="0.0" y="193.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse.Status" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" relationship="INNER_CLASS">
+      <point x="44.0" y="130.5" />
+      <point x="836.6099099099099" y="265.0" />
+      <point x="913.4924549549514" y="265.0" />
+      <point x="112.66666666666652" y="-268.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.UniqueOrganisationCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-105.0" />
+      <point x="94.0" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.validation.ValidationResponse" target="ru.bardinpetr.itmo.lab5.models.data.validation.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-155.5" />
+      <point x="1526.0" y="2252.0" />
+      <point x="1039.5" y="2252.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.Organization" target="ru.bardinpetr.itmo.lab5.models.data.OrganizationType" relationship="TO_ONE">
+      <point x="0.0" y="-193.0" />
+      <point x="1450.9515765765734" y="-174.0" />
+      <point x="1157.7015765765734" y="-174.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerIdsCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-105.0" />
+      <point x="3971.8125" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.APICommand" relationship="GENERALIZATION">
+      <point x="48.25" y="-29.5" />
+      <point x="3572.8125" y="305.0" />
+      <point x="4426.3125" y="305.0" />
+      <point x="-76.25" y="117.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand.ExecuteScriptCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand" relationship="INNER_CLASS">
+      <point x="77.25" y="-42.5" />
+      <point x="4823.85990990991" y="1859.0" />
+      <point x="5400.23490990991" y="1859.0" />
+      <point x="0.0" y="168.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.InfoCommand.InfoCommandResponse" target="ru.bardinpetr.itmo.lab5.models.data.collection.CollectionInfo" relationship="TO_ONE">
+      <point x="29.625" y="-80.5" />
+      <point x="791.1724099099099" y="1849.0" />
+      <point x="1402.8124999999998" y="1849.0" />
+      <point x="0.0" y="243.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.InfoCommand.InfoCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" relationship="GENERALIZATION">
+      <point x="-29.625" y="-80.5" />
+      <point x="731.9224099099099" y="1859.0" />
+      <point x="771.3124999999998" y="1859.0" />
+      <point x="771.3124999999998" y="1300.0" />
+      <point x="800.8257882882849" y="1300.0" />
+      <point x="0.0" y="268.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.RemoveByIdCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-155.5" />
+      <point x="5073.23490990991" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.FilterLessPosCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="-91.0" y="-168.0" />
+      <point x="6185.7632882882845" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.InfoCommand.InfoCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.api.InfoCommand" relationship="INNER_CLASS">
+      <point x="88.875" y="-80.5" />
+      <point x="850.4224099099099" y="1859.0" />
+      <point x="1766.3124999999998" y="1859.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.collection.ISetCollection" target="ru.bardinpetr.itmo.lab5.models.data.collection.IKeyedEntity" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="1145.013288288285" y="285.0" />
+      <point x="2267.4041666666635" y="285.0" />
+      <point x="-43.75" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerCommand.GetWorkerCommandResponse" target="ru.bardinpetr.itmo.lab5.models.data.Worker" relationship="TO_ONE">
+      <point x="36.125" y="-130.5" />
+      <point x="2132.9515765765736" y="1859.0" />
+      <point x="2555.3125" y="1859.0" />
+      <point x="2555.3125" y="1310.0" />
+      <point x="2323.73490990991" y="1310.0" />
+      <point x="0.0" y="455.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.IAPIMessage" relationship="REALIZATION">
+      <point x="-112.66666666666669" y="-268.0" />
+      <point x="688.1591216216182" y="325.0" />
+      <point x="694.1099099099099" y="325.0" />
+      <point x="694.1099099099099" y="-164.0" />
+      <point x="2130.98490990991" y="-164.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.AddCommand" target="ru.bardinpetr.itmo.lab5.models.data.Worker" relationship="TO_ONE">
+      <point x="-77.0" y="-180.5" />
+      <point x="2029.8125" y="1310.0" />
+      <point x="2323.73490990991" y="1310.0" />
+      <point x="0.0" y="455.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.Worker" target="ru.bardinpetr.itmo.lab5.models.data.Position" relationship="TO_ONE">
+      <point x="99.0" y="-455.5" />
+      <point x="2422.73490990991" y="325.0" />
+      <point x="2321.1257882882883" y="325.0" />
+      <point x="2321.1257882882883" y="315.0" />
+      <point x="6281.7632882882845" y="315.0" />
+      <point x="0.0" y="143.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.fields.FieldWithDesc" target="ru.bardinpetr.itmo.lab5.models.validation.IValidator" relationship="TO_ONE">
+      <point x="101.5" y="-155.5" />
+      <point x="131.25" y="2557.0" />
+      <point x="153.5" y="2557.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.fields.FieldWithDesc" target="ru.bardinpetr.itmo.lab5.models.fields.Field" relationship="GENERALIZATION">
+      <point x="-101.5" y="-155.5" />
+      <point x="-71.75" y="2557.0" />
+      <point x="-94.0" y="2557.0" />
+      <point x="0.0" y="168.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.AddCommand.AddCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" relationship="GENERALIZATION">
+      <point x="0.0" y="-80.5" />
+      <point x="331.66666666666697" y="1300.0" />
+      <point x="800.8257882882849" y="1300.0" />
+      <point x="0.0" y="268.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.SaveCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-92.5" />
+      <point x="3664.3125" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.Worker" target="ru.bardinpetr.itmo.lab5.models.data.collection.IKeyedEntity" relationship="REALIZATION">
+      <point x="-99.0" y="-455.5" />
+      <point x="2224.73490990991" y="295.0" />
+      <point x="2354.9041666666635" y="295.0" />
+      <point x="43.75" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand.ExecuteScriptCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.ListAPICommandResponse" relationship="GENERALIZATION">
+      <point x="-77.25" y="-42.5" />
+      <point x="4669.35990990991" y="1869.0" />
+      <point x="4564.23490990991" y="1869.0" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerCommand.GetWorkerCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" relationship="GENERALIZATION">
+      <point x="-108.375" y="-130.5" />
+      <point x="1988.4515765765736" y="1859.0" />
+      <point x="1931.3125" y="1859.0" />
+      <point x="1931.3125" y="1300.0" />
+      <point x="800.8257882882849" y="1300.0" />
+      <point x="0.0" y="268.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.UniqueOrganisationCommand.UniqueOrganisationCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.UserPrintableAPICommandResponse" relationship="REALIZATION">
+      <point x="-135.0" y="-80.5" />
+      <point x="-159.0" y="1869.0" />
+      <point x="-142.0" y="1869.0" />
+      <point x="-142.0" y="315.0" />
+      <point x="459.39583333333326" y="315.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerIdsCommand.GetWorkerIdsCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerIdsCommand" relationship="INNER_CLASS">
+      <point x="-78.25" y="-29.5" />
+      <point x="4056.8125" y="1859.0" />
+      <point x="3971.8125" y="1859.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-155.5" />
+      <point x="3030.3125" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ShowCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-105.0" />
+      <point x="3384.8125" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ShowCommand.ShowCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.api.ShowCommand" relationship="INNER_CLASS">
+      <point x="-61.75" y="-42.5" />
+      <point x="3533.8265765765736" y="1869.0" />
+      <point x="3384.8125" y="1869.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.InfoCommand.InfoCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.UserPrintableAPICommandResponse" relationship="REALIZATION">
+      <point x="-88.875" y="-80.5" />
+      <point x="672.6724099099099" y="1859.0" />
+      <point x="459.39583333333326" y="1859.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.FilterLessPosCommand" target="ru.bardinpetr.itmo.lab5.models.data.Position" relationship="TO_ONE">
+      <point x="91.0" y="-168.0" />
+      <point x="6367.7632882882845" y="1310.0" />
+      <point x="6281.7632882882845" y="1310.0" />
+      <point x="0.0" y="143.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.GetWorkerCommand.GetWorkerCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.UserPrintableAPICommandResponse" relationship="REALIZATION">
+      <point x="-36.125" y="-130.5" />
+      <point x="2060.7015765765736" y="1849.0" />
+      <point x="1942.3125" y="1849.0" />
+      <point x="1942.3125" y="315.0" />
+      <point x="459.39583333333326" y="315.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.UniqueOrganisationCommand.UniqueOrganisationCommandResponse" target="ru.bardinpetr.itmo.lab5.models.commands.responses.APICommandResponse" relationship="GENERALIZATION">
+      <point x="45.0" y="-80.5" />
+      <point x="21.0" y="1859.0" />
+      <point x="-120.0" y="1859.0" />
+      <point x="-120.0" y="1300.0" />
+      <point x="800.8257882882849" y="1300.0" />
+      <point x="0.0" y="268.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserPromptedAPICommand" relationship="REALIZATION">
+      <point x="-48.25" y="-29.5" />
+      <point x="3476.3125" y="305.0" />
+      <point x="3519.5625" y="305.0" />
+      <point x="0.0" y="54.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.data.Worker" target="ru.bardinpetr.itmo.lab5.models.data.Organization" relationship="TO_ONE">
+      <point x="99.0" y="-455.5" />
+      <point x="2422.73490990991" y="325.0" />
+      <point x="2321.1257882882883" y="325.0" />
+      <point x="2321.1257882882883" y="265.0" />
+      <point x="1450.9515765765734" y="265.0" />
+      <point x="0.0" y="193.0" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.ExecuteScriptCommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.UserAPICommand" relationship="GENERALIZATION">
+      <point x="-91.75" y="-168.0" />
+      <point x="5308.48490990991" y="1290.0" />
+      <point x="3524.5625" y="1290.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.requests.APICommand" target="ru.bardinpetr.itmo.lab5.models.commands.requests.IIdentifiableCommand" relationship="REALIZATION">
+      <point x="0.0" y="-117.5" />
+      <point x="4502.5625" y="-164.0" />
+      <point x="4613.0625" y="-164.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="ru.bardinpetr.itmo.lab5.models.commands.api.AddIfMaxCommand" target="ru.bardinpetr.itmo.lab5.models.commands.api.AddCommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-92.5" />
+      <point x="4414.5625" y="1839.0" />
+      <point x="2183.8125" y="1839.0" />
+      <point x="77.0" y="180.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.35399608401566396" showDependencies="true" x="3746.2" y="1739.6129478315524" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

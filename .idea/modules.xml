@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/itmo-programming-lab-5.client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/client/itmo-programming-lab-5.client.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/itmo-programming-lab-5.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/itmo-programming-lab-5.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/db/itmo-programming-lab-5.db.main.iml" filepath="$PROJECT_DIR$/.idea/modules/db/itmo-programming-lab-5.db.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/models/itmo-programming-lab-5.models.main.iml" filepath="$PROJECT_DIR$/.idea/modules/models/itmo-programming-lab-5.models.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/itmo-programming-lab-5.network.main.iml" filepath="$PROJECT_DIR$/.idea/modules/network/itmo-programming-lab-5.network.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/itmo-programming-lab-5.server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/itmo-programming-lab-5.server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/clientMain/ru.bardinpetr.itmo.lab5.mainclient.itmo-programming-lab-5.client.clientMain.main.iml" filepath="$PROJECT_DIR$/.idea/modules/client/clientMain/ru.bardinpetr.itmo.lab5.mainclient.itmo-programming-lab-5.client.clientMain.main.iml" />
+    </modules>
+  </component>
+</project>

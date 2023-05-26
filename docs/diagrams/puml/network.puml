@@ -1,0 +1,454 @@
+
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+hide circle
+
+<style>
+classDiagram {
+    class {
+        header {
+            FontStyle bold
+        }
+    }
+}
+</style>
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class APIApplication {
+  + APIApplication(): 
+  + filter(AppRequest): boolean
+}
+class APICommand {
+  + APICommand(): 
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + validate(): ValidationResponse
+  + getCmdIdentifier(): Class<APICommand>
+  + createResponse(): APICommandResponse
+}
+class APICommandResponse {
+  + APICommandResponse(): 
+  + APICommandResponse(Status, String): 
+  - status: Status
+  - textualResponse: String
+  + getStatus(): Status
+  + getTextualResponse(): String
+  + setStatus(Status): void
+  + setTextualResponse(String): void
+  + equals(Object): boolean
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + clientError(String): APICommandResponse
+  + clientError(Exception): APICommandResponse
+  + serverError(Exception): APICommandResponse
+  + notFound(): APICommandResponse
+  + ok(): APICommandResponse
+  + isSuccess(): boolean
+  + serverError(String): APICommandResponse
+  + isResolved(): boolean
+}
+class AbstractAPIClient<T> {
+  + AbstractAPIClient(IClientTransport<T>): 
+  - transport: IClientTransport<T>
+  - currentMessageId: Long
+  - timeout: Duration
+  + request(APICommand): APICommandResponse
+  # serialize(APICommand): T
+  + setTimeout(Duration): void
+  # deserialize(T): APICommandResponse
+  - validateReply(T): boolean
+}
+class AbstractApplication {
+  + AbstractApplication(): 
+  - log: Logger
+  - processors: List<AbstractApplication>
+  - anyCommandHandler: IApplicationCommandHandler
+  - commandHandlers: Map<Class<APICommand>, IApplicationCommandHandler>
+  + use(AbstractApplication): void
+  # process(AppRequest): AppRequest
+  + on(Class<APICommand>, IApplicationCommandHandler): void
+  + on(IApplicationCommandHandler): void
+  + on(IApplicationCommandHandler, Class<APICommand>[]): void
+  + start(): void
+  - safeProcessCall(AppRequest, Consumer<AppRequest>): void
+}
+class AbstractInputTransportApplication<U, L> {
+  + AbstractInputTransportApplication(IServerTransport<U, L>): 
+  - log: Logger
+  - transport: IServerTransport<U, L>
+  + filter(AppRequest): boolean
+  # supplySession(U, L): Session<U>
+  # deserialize(L): APICommand
+  + start(): void
+  - handle(U, L): void
+}
+class AbstractOutputTransportApplication<U, L> {
+  + AbstractOutputTransportApplication(IServerTransport<U, L>): 
+  - log: Logger
+  - transport: IServerTransport<U, L>
+  # send(U, APICommandResponse): void
+  # supplyResponse(AppRequest): AppResponseController<U>
+  + filter(AppRequest): boolean
+  # process(AppRequest): AppRequest
+  # serialize(APICommandResponse): L
+}
+class AppRequest {
+  + AppRequest(ReqStatus, Long, Session<?>, AppResponseController<?>, APICommand): 
+  + AppRequest(): 
+  - id: Long
+  - payload: APICommand
+  - status: ReqStatus
+  - session: Session<?>
+  - response: AppResponseController<?>
+  + id(): Long
+  + response(): AppResponseController<?>
+  + setStatus(ReqStatus): void
+  + payload(): APICommand
+  + status(): ReqStatus
+  + setResponse(AppResponseController<?>): void
+  + toString(): String
+  + session(): Session<?>
+  + isTerminated(): boolean
+}
+class AppResponseController<U> {
+  + AppResponseController(AppRequest, IDestinationServerApplication<U>): 
+  - log: Logger
+  - id: Long
+  - response: APICommandResponse
+  - isTerminated: boolean
+  - destination: IDestinationServerApplication<U>
+  - recipient: U
+  + getStatus(): Status
+  + send(): void
+  + status(Status): AppResponseController<U>
+  + from(APICommandResponse): AppResponseController<U>
+  + isTerminated(): boolean
+  + terminate(): void
+  + getId(): Long
+  + message(String): AppResponseController<U>
+}
+class ApplicationBuildException {
+  + ApplicationBuildException(String): 
+}
+class ClientMain {
+  + ClientMain(): 
+  - client: UDPClientTransport
+  + main(String[]): void
+  + clientRun(SocketMessage): void
+}
+enum CommandType << enumeration >> {
+  - CommandType(): 
+  + HALT: 
+  + NACK: 
+  + DATA: 
+  + INIT: 
+  + ACK: 
+  + values(): CommandType[]
+  + valueOf(String): CommandType
+}
+class ErrorHandlingApplication {
+  + ErrorHandlingApplication(): 
+  # process(AppRequest): AppRequest
+  + filter(AppRequest): boolean
+}
+class Frame {
+  + Frame(long): 
+  + Frame(long, byte[]): 
+  - payload: byte[]
+  + PAYLOAD_SIZE: int
+  + MAX_SIZE: int
+  - currentPayloadSize: int
+  - id: long
+  + FIRST_ID: long
+  + HEADER_SIZE: int
+  + toBytes(): byte[]
+  + toString(): String
+  + fromChannel(ReadableByteChannel): Frame
+  # canEqual(Object): boolean
+  + getCurrentPayloadSize(): int
+  + getId(): long
+  + getPayload(): byte[]
+  + equals(Object): boolean
+  + hashCode(): int
+  + fromBytes(byte[]): Frame
+}
+interface IAPIMessage << interface >>
+interface IApplicationCommandHandler << interface >> {
+  + handle(AppRequest): void
+}
+interface IClientTransport<T> << interface >> {
+  + receive(Duration): T
+  + send(T): void
+}
+interface IDestinationServerApplication<U> << interface >> {
+  + send(U, APICommandResponse): void
+}
+interface IFilteredApplication << interface >> {
+  + filter(AppRequest): boolean
+}
+interface IIdentifiableCommand<K> << interface >> {
+  + getCmdIdentifier(): K
+}
+interface IIdentifiableMessage << interface >> {
+  + getId(): Long
+  + setId(Long): void
+}
+interface IMessageHandler<U, M> << interface >> {
+  + handle(U, M): void
+}
+interface IServerTransport<U, L> << interface >> {
+  + send(U, L): void
+  + subscribe(IMessageHandler<U, L>): void
+  + run(): void
+}
+class JSONSerDesService<T> {
+  + JSONSerDesService(Class<T>): 
+  # getPolymorphicValidator(): BasicPolymorphicTypeValidator
+  # getObjectMapper(): ObjectMapper
+}
+class Pair<T, K> {
+  + Pair(T, K): 
+  - first: T
+  - second: K
+  + toString(): String
+  + equals(Object): boolean
+  + getSecond(): K
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + getFirst(): T
+}
+enum ReqStatus << enumeration >> {
+  - ReqStatus(): 
+  + CREATED: 
+  + UNKNOWN: 
+  + INVALID: 
+  + NORMAL: 
+  + values(): ReqStatus[]
+  + valueOf(String): ReqStatus
+}
+class SerDesService<T> {
+  + SerDesService(Class<T>): 
+  - mapper: ObjectMapper
+  - baseClass: Class<T>
+  + serialize(T): byte[]
+  + deserialize(byte[]): T
+  # getObjectMapper(): ObjectMapper
+}
+class Session<K> {
+  + Session(K): 
+  - state: State
+  - address: K
+  # canEqual(Object): boolean
+  + hashCode(): int
+  + toString(): String
+  + getState(): State
+  + setState(State): void
+  + getAddress(): K
+  + equals(Object): boolean
+}
+class SizeLimitException {
+  + SizeLimitException(String): 
+}
+class SocketAPIClient {
+  + SocketAPIClient(IClientTransport<SocketMessage>): 
+  - serDesService: JSONSerDesService<IAPIMessage>
+  # deserialize(SocketMessage): APICommandResponse
+  # serialize(APICommand): SocketMessage
+}
+class SocketMessage {
+  + SocketMessage(byte[]): 
+  + SocketMessage(CommandType): 
+  + SocketMessage(CommandType, Long, Long): 
+  + SocketMessage(): 
+  + SocketMessage(CommandType, Long, Long, byte[]): 
+  - cmdType: CommandType
+  - replyId: Long
+  - id: Long
+  - payload: byte[]
+  + getId(): Long
+  + getCmdType(): CommandType
+  # canEqual(Object): boolean
+  + isRequest(): boolean
+  + setId(Long): void
+  + setCmdType(CommandType): void
+  + setReplyId(Long): void
+  + getPayload(): byte[]
+  + getReplyId(): Long
+  + hashCode(): int
+  + toString(): String
+  + equals(Object): boolean
+  + isResponse(): boolean
+  + setPayload(byte[]): void
+}
+enum State << enumeration >> {
+  - State(): 
+  + OPERATING: 
+  + DEAD: 
+  + CREATED: 
+  + valueOf(String): State
+  + values(): State[]
+}
+enum Status << enumeration >> {
+  - Status(): 
+  + NETWORK: 
+  + IDLE: 
+  + READINGFINISHED: 
+  + EXECUTING: 
+  + SENDING: 
+  + HALT: 
+  + READING: 
+  + values(): Status[]
+  + valueOf(String): Status
+}
+enum Status << enumeration >> {
+  + Status(): 
+  + UNPROCESSED: 
+  + CLIENT_ERROR: 
+  + SERVER_ERROR: 
+  + NOT_FOUND: 
+  + OK: 
+  + values(): Status[]
+  + isError(): boolean
+  + valueOf(String): Status
+}
+class TransportSession {
+  + TransportSession(SocketAddress, Status, Pipe): 
+  + TransportSession(SocketAddress, Status, Pipe, List<Frame>): 
+  - status: Status
+  - receiveFrameList: Frame[]
+  - consumerAddress: SocketAddress
+  - pipe: Pipe
+  - sendFrameList: List<Frame>
+  + checkFinishReading(): boolean
+  + hashCode(): int
+  + toString(): String
+  + getConsumerAddress(): SocketAddress
+  + getSendFrameList(): List<Frame>
+  + getPipe(): Pipe
+  # canEqual(Object): boolean
+  + getNetworkSession(): TransportSession
+  + setStatus(Status): void
+  + getStatus(): Status
+  + setConsumerAddress(SocketAddress): void
+  + addToList(Frame): boolean
+  + setReceiveFrameList(Frame[]): void
+  + setPipe(Pipe): void
+  + setSendFrameList(List<Frame>): void
+  + equals(Object): boolean
+  + getReceiveFrameList(): Frame[]
+}
+class TransportUtils {
+  + TransportUtils(): 
+  + joinFrames(List<Frame>): byte[]
+  - separate(byte[]): List<byte[]>
+  + IntToBytes(int): ByteBuffer
+  + separateBytes(byte[]): List<Frame>
+  - join(List<byte[]>): byte[]
+}
+class UDPClientTransport {
+  + UDPClientTransport(SocketAddress): 
+  - serverAddress: SocketAddress
+  - socket: DatagramSocket
+  - sendDurationTimeout: Duration
+  ~ serDesService: JSONSerDesService<SocketMessage>
+  - receiveFrame(Duration): Frame
+  + send(SocketMessage): void
+  + receive(Duration): SocketMessage
+  - sendFrame(Frame): void
+}
+class UDPInputTransportApplication {
+  + UDPInputTransportApplication(IServerTransport<SocketAddress, SocketMessage>): 
+  - log: Logger
+  - serDesService: JSONSerDesService<APICommand>
+  # supplySession(SocketAddress, SocketMessage): Session<SocketAddress>
+  # deserialize(SocketMessage): APICommand
+}
+class UDPOutputTransportApplication {
+  + UDPOutputTransportApplication(IServerTransport<SocketAddress, SocketMessage>): 
+  - serDesService: JSONSerDesService<APICommandResponse>
+  - log: Logger
+  # serialize(APICommandResponse): SocketMessage
+}
+class UDPServerFactory {
+  + UDPServerFactory(): 
+  + create(int): UDPServerTransport
+}
+class UDPServerTransport {
+  + UDPServerTransport(DatagramChannel): 
+  - sendFrameQueue: Queue<Pair<SocketAddress, Frame>>
+  - handler: IMessageHandler<SocketAddress, SocketMessage>
+  ~ serDesService: JSONSerDesService<SocketMessage>
+  - networkKey: SelectionKey
+  - TIMEOUT: int
+  - clientSinkMap: Map<SocketAddress, SinkChannel>
+  - selector: Selector
+  - datagramChannel: DatagramChannel
+  - log: Logger
+  + run(): void
+  - regSendClient(SocketAddress, Frame, List<Frame>): void
+  - regClient(SocketAddress, Frame, Status, List<Frame>): void
+  + subscribe(IMessageHandler<SocketAddress, SocketMessage>): void
+  - readNewFrame(SelectionKey, Frame): void
+  + send(SocketAddress, SocketMessage): void
+  - scheduleSend(Pair<SocketAddress, Frame>): void
+  - closeSessionByKey(SelectionKey): void
+  - headerFrame(TransportSession, Frame): void
+  - finishReading(SelectionKey): void
+  - regRecvClient(SocketAddress, Frame): void
+}
+
+APIApplication                      --^  AbstractApplication                
+APICommand                          ..^  IAPIMessage                        
+APICommand                          ..^  IIdentifiableCommand               
+APICommandResponse                  ..^  IAPIMessage                        
+APICommandResponse                 "1" *--> "status\n1" Status                             
+AbstractAPIClient                  "1" *--> "transport\n1" IClientTransport                   
+AbstractAPIClient                   ..>  IIdentifiableMessage               
+AbstractApplication                "1" *--> "commandHandlers\n*" IApplicationCommandHandler         
+AbstractApplication                 ..^  IFilteredApplication               
+AbstractInputTransportApplication   --^  AbstractApplication                
+AbstractInputTransportApplication   ..>  IIdentifiableMessage               
+AbstractInputTransportApplication  "1" *--> "transport\n1" IServerTransport                   
+AbstractOutputTransportApplication  --^  AbstractApplication                
+AbstractOutputTransportApplication "1" *--> "transport\n1" IServerTransport                   
+AppRequest                         "1" *--> "payload\n1" APICommand                         
+AppRequest                         "1" *--> "response\n1" AppResponseController              
+AppRequest                         "1" *--> "status\n1" ReqStatus                          
+AppRequest                         "1" *--> "session\n1" Session                            
+AppResponseController              "1" *--> "response\n1" APICommandResponse                 
+AppResponseController              "1" *--> "destination\n1" IDestinationServerApplication      
+ClientMain                         "1" *--> "client\n1" UDPClientTransport                 
+CommandType                         +--  SocketMessage                      
+ErrorHandlingApplication            --^  APIApplication                     
+JSONSerDesService                   --^  SerDesService                      
+ReqStatus                           +--  AppRequest                         
+Session                            "1" *--> "state\n1" State                              
+SocketAPIClient                     --^  AbstractAPIClient                  
+SocketAPIClient                    "1" *--> "serDesService\n1" JSONSerDesService                  
+SocketMessage                      "1" *--> "cmdType\n1" CommandType                        
+SocketMessage                       ..^  IIdentifiableMessage               
+State                               +--  Session                            
+Status                              +--  APICommandResponse                 
+Status                              +--  TransportSession                   
+TransportSession                   "1" *--> "receiveFrameList\n*" Frame                              
+TransportSession                   "1" *--> "status\n1" Status                             
+UDPClientTransport                  ..^  IClientTransport                   
+UDPClientTransport                 "1" *--> "serDesService\n1" JSONSerDesService                  
+UDPInputTransportApplication        --^  AbstractInputTransportApplication  
+UDPInputTransportApplication       "1" *--> "serDesService\n1" JSONSerDesService                  
+UDPOutputTransportApplication       --^  AbstractOutputTransportApplication 
+UDPOutputTransportApplication      "1" *--> "serDesService\n1" JSONSerDesService                  
+UDPServerTransport                 "1" *--> "handler\n1" IMessageHandler                    
+UDPServerTransport                  ..^  IServerTransport                   
+UDPServerTransport                 "1" *--> "serDesService\n1" JSONSerDesService                  
+UDPServerTransport                 "1" *--> "sendFrameQueue\n*" Pair                               
+@enduml
